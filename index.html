@@ -589,6 +589,7 @@ function renderLoot(bossName) {
       const img = document.createElement('img');
       img.src = item.iconUrl;
       img.alt = '';
+      img.referrerPolicy = 'no-referrer';
       // If the guessed filename is wrong for this item, just hide the
       // empty preview rather than showing a broken image icon.
       img.onerror = () => { preview.style.display = 'none'; };
@@ -602,7 +603,7 @@ function renderLoot(bossName) {
     if (item.itemClass) {
       const classBadge = document.createElement('span');
       classBadge.className = 'class-badge';
-      classBadge.textContent = item.itemClass;
+      classBadge.textContent = item.itemClass.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
       badges.appendChild(classBadge);
     }
 
