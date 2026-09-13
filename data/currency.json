@@ -18,7 +18,7 @@
     }
   ],
   "defaultLeague": "Allflame",
-  "fetchedAt": "2026-09-13T11:36:09.942Z",
+  "fetchedAt": "2026-09-13T11:54:18.503Z",
   "data": {
     "Allflame": {
       "source": "exchange",
@@ -29,23 +29,26 @@
           "value": 3.02,
           "unit": "chaos",
           "changePct": -29.220169119949883,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.008650816384989974
         },
         {
           "id": "chaos",
-          "name": "chaos",
+          "name": "Chaos Orb",
           "value": 1,
           "unit": "chaos",
           "changePct": 125.16644474034622,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002864508736751647
         },
         {
           "id": "divine",
-          "name": "divine",
+          "name": "Divine Orb",
           "value": 349.1,
           "unit": "chaos",
           "changePct": 111.24087591240878,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1
         },
         {
           "id": "blessed",
@@ -53,7 +56,8 @@
           "value": 0.2528,
           "unit": "chaos",
           "changePct": -82.11300985406011,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0007241478086508164
         },
         {
           "id": "abrasive-catalyst",
@@ -61,7 +65,8 @@
           "value": 1.67,
           "unit": "chaos",
           "changePct": -266.89774696707104,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00478372959037525
         },
         {
           "id": "alch",
@@ -69,7 +74,8 @@
           "value": 0.01547,
           "unit": "chaos",
           "changePct": 150.5737704918033,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00004431395015754798
         },
         {
           "id": "alt",
@@ -77,7 +83,8 @@
           "value": 0.2289,
           "unit": "chaos",
           "changePct": 68.22157434402331,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006556860498424519
         },
         {
           "id": "ancient-orb",
@@ -85,7 +92,8 @@
           "value": 12.44,
           "unit": "chaos",
           "changePct": -1689.5652173913045,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.03563448868519049
         },
         {
           "id": "annul",
@@ -93,7 +101,8 @@
           "value": 24.86,
           "unit": "chaos",
           "changePct": -52.33126110124334,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.07121168719564594
         },
         {
           "id": "aug",
@@ -101,7 +110,8 @@
           "value": 0.03876,
           "unit": "chaos",
           "changePct": -5.24102232287286,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00011102835863649384
         },
         {
           "id": "awakeners-orb",
@@ -109,7 +119,8 @@
           "value": 934.1,
           "unit": "chaos",
           "changePct": -204.07470288624788,
-          "icon": ""
+          "icon": "",
+          "divineValue": 2.6757376109997133
         },
         {
           "id": "bauble",
@@ -117,7 +128,8 @@
           "value": 0.7219,
           "unit": "chaos",
           "changePct": 34.425022999080035,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0020678888570610137
         },
         {
           "id": "chance",
@@ -125,7 +137,8 @@
           "value": 0.1419,
           "unit": "chaos",
           "changePct": -845.6521739130435,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0004064737897450587
         },
         {
           "id": "dead-mans-sulphur",
@@ -133,7 +146,8 @@
           "value": 0.01128,
           "unit": "chaos",
           "changePct": -137.35705209656925,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00003231165855055858
         },
         {
           "id": "elders-exalted-orb",
@@ -141,7 +155,8 @@
           "value": 132.4,
           "unit": "chaos",
           "changePct": -657.5301204819277,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3792609567459181
         },
         {
           "id": "eldritch-chaos-orb",
@@ -149,7 +164,8 @@
           "value": 57.62,
           "unit": "chaos",
           "changePct": -8431.428571428572,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.16505299341162988
         },
         {
           "id": "eldritch-exalted-orb",
@@ -157,7 +173,8 @@
           "value": 4.09,
           "unit": "chaos",
           "changePct": -58.96493212669684,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.011715840733314236
         },
         {
           "id": "eldritch-orb-of-annulment",
@@ -165,7 +182,8 @@
           "value": 59.69,
           "unit": "chaos",
           "changePct": -129.44971537001896,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.1709825264967058
         },
         {
           "id": "enkindling-orb",
@@ -173,7 +191,8 @@
           "value": 2.07,
           "unit": "chaos",
           "changePct": 64.39151902410688,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005929533085075909
         },
         {
           "id": "exalted",
@@ -181,7 +200,8 @@
           "value": 2.17,
           "unit": "chaos",
           "changePct": -3.7212049616066096,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006215983958751074
         },
         {
           "id": "exceptional-eldritch-ichor",
@@ -189,7 +209,8 @@
           "value": 262.7,
           "unit": "chaos",
           "changePct": -390.8450704225352,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.7525064451446576
         },
         {
           "id": "fertile-catalyst",
@@ -197,7 +218,8 @@
           "value": 46.62,
           "unit": "chaos",
           "changePct": 83.96501457725945,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.13354339730736178
         },
         {
           "id": "fracturing-orb",
@@ -205,7 +227,8 @@
           "value": 661.4,
           "unit": "chaos",
           "changePct": 41.06583072100314,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.8945860784875392
         },
         {
           "id": "fracturing-shard",
@@ -213,7 +236,8 @@
           "value": 25.4,
           "unit": "chaos",
           "changePct": -27.571041948579158,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.07275852191349183
         },
         {
           "id": "fusing",
@@ -221,7 +245,8 @@
           "value": 0.1487,
           "unit": "chaos",
           "changePct": 56.11137328928738,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0004259524491549699
         },
         {
           "id": "grand-eldritch-ember",
@@ -229,7 +254,8 @@
           "value": 17.13,
           "unit": "chaos",
           "changePct": -503.3132530120483,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.04906903466055571
         },
         {
           "id": "grand-eldritch-ichor",
@@ -237,7 +263,8 @@
           "value": 11.21,
           "unit": "chaos",
           "changePct": -17.318181818181813,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.03211114293898597
         },
         {
           "id": "greater-eldritch-ember",
@@ -245,7 +272,8 @@
           "value": 1.26,
           "unit": "chaos",
           "changePct": -79.92831541218638,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0036092810083070753
         },
         {
           "id": "greater-eldritch-ichor",
@@ -253,7 +281,8 @@
           "value": 0.9783,
           "unit": "chaos",
           "changePct": 14.305270362765235,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002802348897164136
         },
         {
           "id": "imbued-catalyst",
@@ -261,7 +290,8 @@
           "value": 1.57,
           "unit": "chaos",
           "changePct": -110.61259706643658,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.004497278716700086
         },
         {
           "id": "instilling-orb",
@@ -269,7 +299,8 @@
           "value": 0.2049,
           "unit": "chaos",
           "changePct": -25.826630920464705,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0005869378401604124
         },
         {
           "id": "intrinsic-catalyst",
@@ -277,7 +308,8 @@
           "value": 3.02,
           "unit": "chaos",
           "changePct": -2237.804878048781,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.008650816384989974
         },
         {
           "id": "jewellers",
@@ -285,7 +317,8 @@
           "value": 0.01417,
           "unit": "chaos",
           "changePct": -38.50877192982456,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000040590088799770836
         },
         {
           "id": "lesser-eldritch-ember",
@@ -293,7 +326,8 @@
           "value": 0.3317,
           "unit": "chaos",
           "changePct": -292.73034657650044,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0009501575479805213
         },
         {
           "id": "lesser-eldritch-ichor",
@@ -301,7 +335,8 @@
           "value": 0.2686,
           "unit": "chaos",
           "changePct": 177.14552238805973,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0007694070466914924
         },
         {
           "id": "mavens-chisel-of-avarice",
@@ -309,7 +344,8 @@
           "value": 151.4,
           "unit": "chaos",
           "changePct": 23.642800944138465,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.43368662274419933
         },
         {
           "id": "mavens-chisel-of-scarabs",
@@ -317,7 +353,8 @@
           "value": 47.9,
           "unit": "chaos",
           "changePct": -396.27092846270926,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.13720996849040387
         },
         {
           "id": "orb-of-binding",
@@ -325,7 +362,8 @@
           "value": 0.01429,
           "unit": "chaos",
           "changePct": -15.809097688292312,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00004093382984818103
         },
         {
           "id": "orb-of-conflict",
@@ -333,7 +371,8 @@
           "value": 586.8,
           "unit": "chaos",
           "changePct": 156.93950177935943,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.6808937267258663
         },
         {
           "id": "orb-of-intention",
@@ -341,7 +380,8 @@
           "value": 1.78,
           "unit": "chaos",
           "changePct": -51.89251661369547,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005098825551417932
         },
         {
           "id": "orb-of-remembrance",
@@ -349,7 +389,8 @@
           "value": 135.2,
           "unit": "chaos",
           "changePct": -29.909365558912388,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3872815812088226
         },
         {
           "id": "orb-of-unmaking",
@@ -357,7 +398,8 @@
           "value": 0.2833,
           "unit": "chaos",
           "changePct": -38.618035190615835,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0008115153251217416
         },
         {
           "id": "orb-of-unravelling",
@@ -365,7 +407,8 @@
           "value": 19.96,
           "unit": "chaos",
           "changePct": 147.96942188246535,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.057175594385562876
         },
         {
           "id": "primal-lifeforce",
@@ -373,7 +416,8 @@
           "value": 0.04226,
           "unit": "chaos",
           "changePct": -125.21739130434784,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0001210541392151246
         },
         {
           "id": "redeemers-exalted-orb",
@@ -381,7 +425,8 @@
           "value": 117.3,
           "unit": "chaos",
           "changePct": -880.9667673716012,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3360068748209682
         },
         {
           "id": "reflecting-mist",
@@ -389,7 +434,8 @@
           "value": 1645,
           "unit": "chaos",
           "changePct": -600.8797653958943,
-          "icon": ""
+          "icon": "",
+          "divineValue": 4.712116871956459
         },
         {
           "id": "regal",
@@ -397,7 +443,8 @@
           "value": 0.06337,
           "unit": "chaos",
           "changePct": -149.31650893796004,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00018152391864795185
         },
         {
           "id": "regret",
@@ -405,7 +452,8 @@
           "value": 2.12,
           "unit": "chaos",
           "changePct": 128.54710556186154,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006072758521913492
         },
         {
           "id": "sacred-lifeforce",
@@ -413,7 +461,8 @@
           "value": 49.09,
           "unit": "chaos",
           "changePct": -307.2282299373933,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.14061873388713836
         },
         {
           "id": "sandswept-lifeforce",
@@ -421,7 +470,8 @@
           "value": 569.6,
           "unit": "chaos",
           "changePct": -62.683823529411775,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.6316241764537383
         },
         {
           "id": "scour",
@@ -429,7 +479,8 @@
           "value": 0.9212,
           "unit": "chaos",
           "changePct": 666.6666666666666,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002638785448295617
         },
         {
           "id": "scrap",
@@ -437,7 +488,8 @@
           "value": 0.2296,
           "unit": "chaos",
           "changePct": -2309.2534174553102,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006576912059581781
         },
         {
           "id": "shapers-exalted-orb",
@@ -445,7 +497,8 @@
           "value": 153.2,
           "unit": "chaos",
           "changePct": 945.9119496855345,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.43884273847035227
         },
         {
           "id": "tainted-blacksmiths-whetstone",
@@ -453,7 +506,8 @@
           "value": 2.55,
           "unit": "chaos",
           "changePct": -22.581237378373412,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.007304497278716699
         },
         {
           "id": "tainted-exalted-orb",
@@ -461,7 +515,8 @@
           "value": 419.8,
           "unit": "chaos",
           "changePct": -453.5410764872522,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.2025207676883414
         },
         {
           "id": "tainted-orb-of-fusing",
@@ -469,7 +524,8 @@
           "value": 22.36,
           "unit": "chaos",
           "changePct": -52.50312891113893,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.06405041535376682
         },
         {
           "id": "tempering-catalyst",
@@ -477,7 +533,8 @@
           "value": 7.67,
           "unit": "chaos",
           "changePct": 16.846473029045654,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.02197078201088513
         },
         {
           "id": "turbulent-catalyst",
@@ -485,7 +542,8 @@
           "value": 2.42,
           "unit": "chaos",
           "changePct": -59.970311726867884,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006932111142938986
         },
         {
           "id": "veiled-exalted-orb",
@@ -493,7 +551,8 @@
           "value": 4716,
           "unit": "chaos",
           "changePct": 425.16129032258067,
-          "icon": ""
+          "icon": "",
+          "divineValue": 13.509023202520767
         },
         {
           "id": "vivid-lifeforce",
@@ -501,7 +560,8 @@
           "value": 0.1868,
           "unit": "chaos",
           "changePct": 982.6086956521739,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0005350902320252076
         },
         {
           "id": "wild-lifeforce",
@@ -509,7 +569,8 @@
           "value": 0.03162,
           "unit": "chaos",
           "changePct": -26.602564102564102,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00009057576625608708
         },
         {
           "id": "chrome",
@@ -517,7 +578,8 @@
           "value": 5.38,
           "unit": "chaos",
           "changePct": -136.85300207039336,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.01541105700372386
         },
         {
           "id": "crusaders-exalted-orb",
@@ -525,7 +587,8 @@
           "value": 215.4,
           "unit": "chaos",
           "changePct": -171.2895377128954,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.6170151818963048
         },
         {
           "id": "hinekoras-lock",
@@ -533,7 +596,8 @@
           "value": 88005,
           "unit": "chaos",
           "changePct": 115.85365853658536,
-          "icon": ""
+          "icon": "",
+          "divineValue": 252.0910913778287
         },
         {
           "id": "exceptional-eldritch-ember",
@@ -541,7 +605,8 @@
           "value": 254.4,
           "unit": "chaos",
           "changePct": 66.71554252199412,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.728731022629619
         },
         {
           "id": "flesh-of-xesht",
@@ -549,7 +614,8 @@
           "value": 96.09,
           "unit": "chaos",
           "changePct": 164.52702702702703,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.27525064451446574
         },
         {
           "id": "foulborn-exalted-orb",
@@ -557,7 +623,8 @@
           "value": 2310,
           "unit": "chaos",
           "changePct": -27.51937984496124,
-          "icon": ""
+          "icon": "",
+          "divineValue": 6.6170151818963046
         },
         {
           "id": "foulborn-orb-of-augmentation",
@@ -565,7 +632,8 @@
           "value": 2.28,
           "unit": "chaos",
           "changePct": -28.57524487978629,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006531079919793755
         },
         {
           "id": "foulborn-regal-orb",
@@ -573,7 +641,8 @@
           "value": 20.26,
           "unit": "chaos",
           "changePct": -39.482312338222606,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.05803494700658837
         },
         {
           "id": "gcp",
@@ -581,7 +650,8 @@
           "value": 3.15,
           "unit": "chaos",
           "changePct": 23.35600907029479,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.009023202520767687
         },
         {
           "id": "hunters-exalted-orb",
@@ -589,7 +659,8 @@
           "value": 437,
           "unit": "chaos",
           "changePct": 357.6041666666667,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.2517903179604697
         },
         {
           "id": "mavens-chisel-of-divination",
@@ -597,7 +668,8 @@
           "value": 37.32,
           "unit": "chaos",
           "changePct": -195.859872611465,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.10690346605557147
         },
         {
           "id": "mavens-chisel-of-procurement",
@@ -605,7 +677,8 @@
           "value": 4.19,
           "unit": "chaos",
           "changePct": 4.440497335701599,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.012002291606989401
         },
         {
           "id": "mavens-chisel-of-proliferation",
@@ -613,7 +686,8 @@
           "value": 29.53,
           "unit": "chaos",
           "changePct": 113.17460317460319,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.08458894299627613
         },
         {
           "id": "mavens-orb",
@@ -621,7 +695,8 @@
           "value": 1540,
           "unit": "chaos",
           "changePct": -1900,
-          "icon": ""
+          "icon": "",
+          "divineValue": 4.411343454597536
         },
         {
           "id": "mirror",
@@ -629,7 +704,8 @@
           "value": 375030,
           "unit": "chaos",
           "changePct": 517.0854271356784,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1074.2767115439701
         },
         {
           "id": "mirror-shard",
@@ -637,7 +713,8 @@
           "value": 19928,
           "unit": "chaos",
           "changePct": 1989.0909090909088,
-          "icon": ""
+          "icon": "",
+          "divineValue": 57.083930105986816
         },
         {
           "id": "noxious-catalyst",
@@ -645,7 +722,8 @@
           "value": 1.58,
           "unit": "chaos",
           "changePct": 124.49334105385064,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.004525923804067603
         },
         {
           "id": "portal",
@@ -653,7 +731,8 @@
           "value": 0.0366,
           "unit": "chaos",
           "changePct": 1431.818181818182,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00010484101976511028
         },
         {
           "id": "prismatic-catalyst",
@@ -661,7 +740,8 @@
           "value": 119,
           "unit": "chaos",
           "changePct": -34.9367088607595,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.340876539673446
         },
         {
           "id": "rogues-marker",
@@ -669,7 +749,8 @@
           "value": 0.0003494,
           "unit": "chaos",
           "changePct": -76.75292153589315,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0000010008593526210255
         },
         {
           "id": "sacred-orb",
@@ -677,7 +758,8 @@
           "value": 115.3,
           "unit": "chaos",
           "changePct": -215.64327485380116,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3302778573474649
         },
         {
           "id": "stacked-deck",
@@ -685,7 +767,8 @@
           "value": 6.22,
           "unit": "chaos",
           "changePct": -302.70602706027057,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.017817244342595243
         },
         {
           "id": "tailoring-orb",
@@ -693,7 +776,8 @@
           "value": 670.5,
           "unit": "chaos",
           "changePct": 1233.5820895522388,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.9206531079919793
         },
         {
           "id": "tainted-armourers-scrap",
@@ -701,7 +785,8 @@
           "value": 3.03,
           "unit": "chaos",
           "changePct": -34.05196241017137,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00867946147235749
         },
         {
           "id": "tainted-catalyst",
@@ -709,7 +794,8 @@
           "value": 11.24,
           "unit": "chaos",
           "changePct": -487.87276341948314,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.03219707820108851
         },
         {
           "id": "tainted-chaos-orb",
@@ -717,7 +803,8 @@
           "value": 18.34,
           "unit": "chaos",
           "changePct": 0.6859205776173332,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.052535090232025204
         },
         {
           "id": "tainted-chromatic-orb",
@@ -725,7 +812,8 @@
           "value": 8.43,
           "unit": "chaos",
           "changePct": 26.68559261887865,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.024147808650816383
         },
         {
           "id": "tainted-divine-orb",
@@ -733,7 +821,8 @@
           "value": 2029,
           "unit": "chaos",
           "changePct": -108.51063829787235,
-          "icon": ""
+          "icon": "",
+          "divineValue": 5.812088226869092
         },
         {
           "id": "tainted-divine-teardrop",
@@ -741,7 +830,8 @@
           "value": 1920,
           "unit": "chaos",
           "changePct": 87.8585917125471,
-          "icon": ""
+          "icon": "",
+          "divineValue": 5.499856774563162
         },
         {
           "id": "tainted-jewellers-orb",
@@ -749,7 +839,8 @@
           "value": 1.24,
           "unit": "chaos",
           "changePct": 13.931144915932748,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.003551990833572042
         },
         {
           "id": "tainted-mythic-orb",
@@ -757,7 +848,8 @@
           "value": 15.78,
           "unit": "chaos",
           "changePct": -399.3288590604027,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.045201947865940985
         },
         {
           "id": "tempering-orb",
@@ -765,7 +857,8 @@
           "value": 668.7,
           "unit": "chaos",
           "changePct": 116.03053435114504,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.9154969922658265
         },
         {
           "id": "transmutation-shard",
@@ -773,7 +866,8 @@
           "value": 242.7,
           "unit": "chaos",
           "changePct": -53.175653324512076,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.6952162704096246
         },
         {
           "id": "transmute",
@@ -781,7 +875,8 @@
           "value": 0.007445,
           "unit": "chaos",
           "changePct": 1630.9523809523807,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00002132626754511601
         },
         {
           "id": "unstable-catalyst",
@@ -789,7 +884,8 @@
           "value": 8.43,
           "unit": "chaos",
           "changePct": -9.751121991024075,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.024147808650816383
         },
         {
           "id": "vaal",
@@ -797,7 +893,8 @@
           "value": 0.9426,
           "unit": "chaos",
           "changePct": -7.974554129274107,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002700085935262102
         },
         {
           "id": "veiled-chaos-orb",
@@ -805,7 +902,8 @@
           "value": 88.1,
           "unit": "chaos",
           "changePct": 1155.081967213115,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.25236321970782005
         },
         {
           "id": "warlords-exalted-orb",
@@ -813,7 +911,8 @@
           "value": 486.1,
           "unit": "chaos",
           "changePct": 117.36909323116218,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.3924376969349757
         },
         {
           "id": "whetstone",
@@ -821,7 +920,8 @@
           "value": 0.1029,
           "unit": "chaos",
           "changePct": -876.1970853573906,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0002947579490117445
         },
         {
           "id": "wisdom",
@@ -829,7 +929,8 @@
           "value": 0.009522,
           "unit": "chaos",
           "changePct": -157.39837398373984,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00002727585219134918
         }
       ]
     },
@@ -842,15 +943,17 @@
           "value": 0.5,
           "unit": "chaos",
           "changePct": -100.48054919908466,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002623294858342078
         },
         {
           "id": "chaos",
-          "name": "chaos",
+          "name": "Chaos Orb",
           "value": 1,
           "unit": "chaos",
           "changePct": 438.0952380952381,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005246589716684156
         },
         {
           "id": "alch",
@@ -858,7 +961,8 @@
           "value": 0.1523,
           "unit": "chaos",
           "changePct": 1060.6182795698924,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0007990556138509968
         },
         {
           "id": "alt",
@@ -866,7 +970,8 @@
           "value": 0.2437,
           "unit": "chaos",
           "changePct": -1494.8275862068965,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0012785939139559287
         },
         {
           "id": "ancient-orb",
@@ -874,7 +979,8 @@
           "value": 6.8,
           "unit": "chaos",
           "changePct": 135.07821901323703,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.035676810073452254
         },
         {
           "id": "annul",
@@ -882,7 +988,8 @@
           "value": 25.03,
           "unit": "chaos",
           "changePct": 207.83882783882785,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.13132214060860442
         },
         {
           "id": "aug",
@@ -890,7 +997,8 @@
           "value": 0.06667,
           "unit": "chaos",
           "changePct": -28.54692859370128,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0003497901364113326
         },
         {
           "id": "bauble",
@@ -898,7 +1006,8 @@
           "value": 1.29,
           "unit": "chaos",
           "changePct": -146.3722397476341,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006768100734522561
         },
         {
           "id": "chance",
@@ -906,7 +1015,8 @@
           "value": 0.0625,
           "unit": "chaos",
           "changePct": -433.33333333333337,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00032791185729275974
         },
         {
           "id": "dead-mans-sulphur",
@@ -914,15 +1024,17 @@
           "value": 0.009117,
           "unit": "chaos",
           "changePct": -41.6243654822335,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00004783315844700945
         },
         {
           "id": "divine",
-          "name": "divine",
+          "name": "Divine Orb",
           "value": 190.6,
           "unit": "chaos",
           "changePct": 407.52688172043,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1
         },
         {
           "id": "eldritch-chaos-orb",
@@ -930,7 +1042,8 @@
           "value": 112.7,
           "unit": "chaos",
           "changePct": -1298.1873111782477,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.5912906610703044
         },
         {
           "id": "eldritch-orb-of-annulment",
@@ -938,7 +1051,8 @@
           "value": 119.8,
           "unit": "chaos",
           "changePct": -255.05882352941174,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.6285414480587618
         },
         {
           "id": "exalted",
@@ -946,7 +1060,8 @@
           "value": 2.45,
           "unit": "chaos",
           "changePct": 136.35220125786162,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.012854144805876181
         },
         {
           "id": "exceptional-eldritch-ichor",
@@ -954,7 +1069,8 @@
           "value": 50,
           "unit": "chaos",
           "changePct": -100,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.2623294858342078
         },
         {
           "id": "fertile-catalyst",
@@ -962,7 +1078,8 @@
           "value": 40.03,
           "unit": "chaos",
           "changePct": 91.96661450182575,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.21002098635886676
         },
         {
           "id": "fracturing-orb",
@@ -970,7 +1087,8 @@
           "value": 629.1,
           "unit": "chaos",
           "changePct": -356.7391304347826,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.300629590766002
         },
         {
           "id": "fusing",
@@ -978,7 +1096,8 @@
           "value": 0.1225,
           "unit": "chaos",
           "changePct": -164.7484756097561,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000642707240293809
         },
         {
           "id": "grand-eldritch-ember",
@@ -986,7 +1105,8 @@
           "value": 10,
           "unit": "chaos",
           "changePct": 1358.132530120482,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.05246589716684155
         },
         {
           "id": "grand-eldritch-ichor",
@@ -994,7 +1114,8 @@
           "value": 19.06,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.09999999999999999
         },
         {
           "id": "greater-eldritch-ember",
@@ -1002,7 +1123,8 @@
           "value": 4,
           "unit": "chaos",
           "changePct": 951.3043478260871,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.020986358866736624
         },
         {
           "id": "instilling-orb",
@@ -1010,7 +1132,8 @@
           "value": 1.5,
           "unit": "chaos",
           "changePct": -45.60617933504981,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.007869884575026234
         },
         {
           "id": "jewellers",
@@ -1018,7 +1141,8 @@
           "value": 0.04762,
           "unit": "chaos",
           "changePct": 58.135673624288444,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0002498426023084995
         },
         {
           "id": "lesser-eldritch-ember",
@@ -1026,7 +1150,8 @@
           "value": 1,
           "unit": "chaos",
           "changePct": 1822.8021978021975,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005246589716684156
         },
         {
           "id": "lesser-eldritch-ichor",
@@ -1034,7 +1159,8 @@
           "value": 1,
           "unit": "chaos",
           "changePct": -62144.44444444446,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005246589716684156
         },
         {
           "id": "orb-of-unmaking",
@@ -1042,7 +1168,8 @@
           "value": 0.3333,
           "unit": "chaos",
           "changePct": -171.57809983896942,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0017486883525708288
         },
         {
           "id": "orb-of-unravelling",
@@ -1050,7 +1177,8 @@
           "value": 40,
           "unit": "chaos",
           "changePct": 0,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.2098635886673662
         },
         {
           "id": "primal-lifeforce",
@@ -1058,7 +1186,8 @@
           "value": 0.0286,
           "unit": "chaos",
           "changePct": -356.8030447193149,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00015005246589716684
         },
         {
           "id": "regret",
@@ -1066,7 +1195,8 @@
           "value": 1.32,
           "unit": "chaos",
           "changePct": -141.4518317503392,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006925498426023085
         },
         {
           "id": "sandswept-lifeforce",
@@ -1074,7 +1204,8 @@
           "value": 200,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.0493179433368311
         },
         {
           "id": "scour",
@@ -1082,7 +1213,8 @@
           "value": 0.4806,
           "unit": "chaos",
           "changePct": 2112.5,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0025215110178384054
         },
         {
           "id": "scrap",
@@ -1090,7 +1222,8 @@
           "value": 0.125,
           "unit": "chaos",
           "changePct": 8.772189349112438,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006558237145855195
         },
         {
           "id": "tempering-catalyst",
@@ -1098,7 +1231,8 @@
           "value": 14,
           "unit": "chaos",
           "changePct": -31.740614334470983,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.07345225603357818
         },
         {
           "id": "vivid-lifeforce",
@@ -1106,7 +1240,8 @@
           "value": 0.04797,
           "unit": "chaos",
           "changePct": -128.57142857142858,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0002516789087093389
         },
         {
           "id": "wild-lifeforce",
@@ -1114,7 +1249,8 @@
           "value": 0.02865,
           "unit": "chaos",
           "changePct": 18.164852255054445,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00015031479538300105
         },
         {
           "id": "chrome",
@@ -1122,7 +1258,8 @@
           "value": 4,
           "unit": "chaos",
           "changePct": -320.63334982681846,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.020986358866736624
         },
         {
           "id": "awakeners-orb",
@@ -1130,7 +1267,8 @@
           "value": 699,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.6673662119622246
         },
         {
           "id": "elders-exalted-orb",
@@ -1138,7 +1276,8 @@
           "value": 667.3,
           "unit": "chaos",
           "changePct": -69.88911003696332,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.5010493179433366
         },
         {
           "id": "orb-of-conflict",
@@ -1146,7 +1285,8 @@
           "value": 419.4,
           "unit": "chaos",
           "changePct": -61.81748759068347,
-          "icon": ""
+          "icon": "",
+          "divineValue": 2.2004197271773345
         },
         {
           "id": "redeemers-exalted-orb",
@@ -1154,7 +1294,8 @@
           "value": 476.6,
           "unit": "chaos",
           "changePct": -235.69469835466182,
-          "icon": ""
+          "icon": "",
+          "divineValue": 2.5005246589716688
         },
         {
           "id": "foulborn-orb-of-augmentation",
@@ -1162,7 +1303,8 @@
           "value": 8,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.04197271773347325
         },
         {
           "id": "foulborn-regal-orb",
@@ -1170,7 +1312,8 @@
           "value": 30,
           "unit": "chaos",
           "changePct": -50,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.15739769150052466
         },
         {
           "id": "gcp",
@@ -1178,7 +1321,8 @@
           "value": 1.89,
           "unit": "chaos",
           "changePct": 157.15323166303557,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.009916054564533053
         },
         {
           "id": "hunters-exalted-orb",
@@ -1186,7 +1330,8 @@
           "value": 953.2,
           "unit": "chaos",
           "changePct": -200,
-          "icon": ""
+          "icon": "",
+          "divineValue": 5.0010493179433375
         },
         {
           "id": "mavens-chisel-of-proliferation",
@@ -1194,7 +1339,8 @@
           "value": 10,
           "unit": "chaos",
           "changePct": -161.76691165441724,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.05246589716684155
         },
         {
           "id": "portal",
@@ -1202,7 +1348,8 @@
           "value": 0.2,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.001049317943336831
         },
         {
           "id": "prismatic-catalyst",
@@ -1210,7 +1357,8 @@
           "value": 22,
           "unit": "chaos",
           "changePct": -155.75606720597386,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.11542497376705142
         },
         {
           "id": "sacred-orb",
@@ -1218,7 +1366,8 @@
           "value": 40,
           "unit": "chaos",
           "changePct": -905.4012345679013,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.2098635886673662
         },
         {
           "id": "stacked-deck",
@@ -1226,7 +1375,8 @@
           "value": 2.91,
           "unit": "chaos",
           "changePct": 137.76460626587635,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.015267576075550893
         },
         {
           "id": "tainted-armourers-scrap",
@@ -1234,7 +1384,8 @@
           "value": 6,
           "unit": "chaos",
           "changePct": -166.64222873900292,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.031479538300104935
         },
         {
           "id": "tainted-catalyst",
@@ -1242,7 +1393,8 @@
           "value": 12,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.06295907660020987
         },
         {
           "id": "tainted-chromatic-orb",
@@ -1250,7 +1402,8 @@
           "value": 2,
           "unit": "chaos",
           "changePct": 399.5409836065574,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.010493179433368312
         },
         {
           "id": "tainted-divine-orb",
@@ -1258,7 +1411,8 @@
           "value": 953.2,
           "unit": "chaos",
           "changePct": -45.31249999999999,
-          "icon": ""
+          "icon": "",
+          "divineValue": 5.0010493179433375
         },
         {
           "id": "tainted-divine-teardrop",
@@ -1266,7 +1420,8 @@
           "value": 667.3,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.5010493179433366
         },
         {
           "id": "vaal",
@@ -1274,7 +1429,8 @@
           "value": 0.8835,
           "unit": "chaos",
           "changePct": 262.9194630872483,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.004635362014690451
         },
         {
           "id": "veiled-chaos-orb",
@@ -1282,7 +1438,8 @@
           "value": 57.5,
           "unit": "chaos",
           "changePct": 53.74365482233504,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.30167890870933894
         },
         {
           "id": "warlords-exalted-orb",
@@ -1290,7 +1447,8 @@
           "value": 762.6,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 4.0010493179433375
         },
         {
           "id": "whetstone",
@@ -1298,7 +1456,8 @@
           "value": 0.125,
           "unit": "chaos",
           "changePct": -71.68949771689496,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006558237145855195
         },
         {
           "id": "greater-eldritch-ichor",
@@ -1306,7 +1465,8 @@
           "value": 2.5,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.013116474291710388
         },
         {
           "id": "sacred-lifeforce",
@@ -1314,7 +1474,8 @@
           "value": 571.9,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.0005246589716683
         },
         {
           "id": "shapers-exalted-orb",
@@ -1322,7 +1483,8 @@
           "value": 1811,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 9.501573976915006
         }
       ]
     },
@@ -1335,15 +1497,17 @@
           "value": 11.27,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.014289336883479142
         },
         {
           "id": "divine",
-          "name": "divine",
+          "name": "Divine Orb",
           "value": 788.7,
           "unit": "chaos",
           "changePct": -95.30201342281879,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1
         },
         {
           "id": "blessed",
@@ -1351,15 +1515,17 @@
           "value": 11.27,
           "unit": "chaos",
           "changePct": -1078.4065524944156,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.014289336883479142
         },
         {
           "id": "chaos",
-          "name": "chaos",
+          "name": "Chaos Orb",
           "value": 1,
           "unit": "chaos",
           "changePct": -94.26829268292684,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0012679092177000125
         },
         {
           "id": "abrasive-catalyst",
@@ -1367,7 +1533,8 @@
           "value": 0.5,
           "unit": "chaos",
           "changePct": -100,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006339546088500063
         },
         {
           "id": "alch",
@@ -1375,7 +1542,8 @@
           "value": 0.01,
           "unit": "chaos",
           "changePct": 2958.4269662921347,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000012679092177000126
         },
         {
           "id": "alt",
@@ -1383,7 +1551,8 @@
           "value": 0.1363,
           "unit": "chaos",
           "changePct": 884.0182648401827,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0001728160263725117
         },
         {
           "id": "ancient-orb",
@@ -1391,7 +1560,8 @@
           "value": 19.91,
           "unit": "chaos",
           "changePct": -22.573609596510362,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.02524407252440725
         },
         {
           "id": "annul",
@@ -1399,7 +1569,8 @@
           "value": 50.78,
           "unit": "chaos",
           "changePct": -31.274319066147854,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.06438443007480664
         },
         {
           "id": "aug",
@@ -1407,7 +1578,8 @@
           "value": 0.07246,
           "unit": "chaos",
           "changePct": 79.25546263825196,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0000918727019145429
         },
         {
           "id": "bauble",
@@ -1415,7 +1587,8 @@
           "value": 1.92,
           "unit": "chaos",
           "changePct": 340.52812858783,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002434385697984024
         },
         {
           "id": "chance",
@@ -1423,7 +1596,8 @@
           "value": 0.02834,
           "unit": "chaos",
           "changePct": -407.4217074217074,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00003593254722961836
         },
         {
           "id": "elders-exalted-orb",
@@ -1431,7 +1605,8 @@
           "value": 43,
           "unit": "chaos",
           "changePct": -101.00230591852421,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.05452009636110054
         },
         {
           "id": "eldritch-chaos-orb",
@@ -1439,7 +1614,8 @@
           "value": 197.2,
           "unit": "chaos",
           "changePct": 39.85507246376811,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.2500316977304425
         },
         {
           "id": "eldritch-orb-of-annulment",
@@ -1447,7 +1623,8 @@
           "value": 193.7,
           "unit": "chaos",
           "changePct": 47.3980686695279,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.24559401546849244
         },
         {
           "id": "enkindling-orb",
@@ -1455,7 +1632,8 @@
           "value": 5.26,
           "unit": "chaos",
           "changePct": 83.62068965517241,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006669202485102066
         },
         {
           "id": "exalted",
@@ -1463,7 +1641,8 @@
           "value": 10.43,
           "unit": "chaos",
           "changePct": 36.29579375848032,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.013224293140611132
         },
         {
           "id": "fertile-catalyst",
@@ -1471,7 +1650,8 @@
           "value": 85.09,
           "unit": "chaos",
           "changePct": 46.231155778894475,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.10788639533409408
         },
         {
           "id": "fracturing-orb",
@@ -1479,7 +1659,8 @@
           "value": 899.7,
           "unit": "chaos",
           "changePct": 171.74603174603175,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.1407379231647015
         },
         {
           "id": "fusing",
@@ -1487,7 +1668,8 @@
           "value": 0.4159,
           "unit": "chaos",
           "changePct": 47.960927960927954,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0005273234436414352
         },
         {
           "id": "grand-eldritch-ember",
@@ -1495,7 +1677,8 @@
           "value": 79.22,
           "unit": "chaos",
           "changePct": -401.0113780025284,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.100443768226195
         },
         {
           "id": "grand-eldritch-ichor",
@@ -1503,7 +1686,8 @@
           "value": 17.33,
           "unit": "chaos",
           "changePct": 501.2987012987013,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.021972866742741216
         },
         {
           "id": "greater-eldritch-ember",
@@ -1511,7 +1695,8 @@
           "value": 13.14,
           "unit": "chaos",
           "changePct": -147.7578475336323,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.016660327120578168
         },
         {
           "id": "greater-eldritch-ichor",
@@ -1519,7 +1704,8 @@
           "value": 5.26,
           "unit": "chaos",
           "changePct": -71.42,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.006669202485102066
         },
         {
           "id": "imbued-catalyst",
@@ -1527,7 +1713,8 @@
           "value": 0.2,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00025358184354000256
         },
         {
           "id": "instilling-orb",
@@ -1535,7 +1722,8 @@
           "value": 0.5,
           "unit": "chaos",
           "changePct": -95.31197301854975,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006339546088500063
         },
         {
           "id": "intrinsic-catalyst",
@@ -1543,7 +1731,8 @@
           "value": 17.53,
           "unit": "chaos",
           "changePct": -40.5352798053528,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.02222644858628122
         },
         {
           "id": "jewellers",
@@ -1551,7 +1740,8 @@
           "value": 0.03333,
           "unit": "chaos",
           "changePct": -82.56021409455843,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00004225941422594142
         },
         {
           "id": "lesser-eldritch-ember",
@@ -1559,7 +1749,8 @@
           "value": 0.2617,
           "unit": "chaos",
           "changePct": -1100.286123032904,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00033181184227209327
         },
         {
           "id": "lesser-eldritch-ichor",
@@ -1567,7 +1758,8 @@
           "value": 0.1325,
           "unit": "chaos",
           "changePct": -109.37691717791411,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00016799797134525168
         },
         {
           "id": "mavens-chisel-of-avarice",
@@ -1575,7 +1767,8 @@
           "value": 554.4,
           "unit": "chaos",
           "changePct": -11013.04347826087,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.702928870292887
         },
         {
           "id": "mavens-chisel-of-scarabs",
@@ -1583,7 +1776,8 @@
           "value": 40.12,
           "unit": "chaos",
           "changePct": -546.0069444444446,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.050868517814124506
         },
         {
           "id": "orb-of-conflict",
@@ -1591,7 +1785,8 @@
           "value": 1696,
           "unit": "chaos",
           "changePct": 58.56164383561644,
-          "icon": ""
+          "icon": "",
+          "divineValue": 2.1503740332192214
         },
         {
           "id": "orb-of-unmaking",
@@ -1599,7 +1794,8 @@
           "value": 1.4,
           "unit": "chaos",
           "changePct": -112.65432098765433,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0017750729047800176
         },
         {
           "id": "orb-of-unravelling",
@@ -1607,7 +1803,8 @@
           "value": 84.67,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.10735387346266007
         },
         {
           "id": "primal-lifeforce",
@@ -1615,7 +1812,8 @@
           "value": 0.1023,
           "unit": "chaos",
           "changePct": 41.612483745123534,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0001297071129707113
         },
         {
           "id": "regal",
@@ -1623,7 +1821,8 @@
           "value": 0.3481,
           "unit": "chaos",
           "changePct": 3284.0163934426228,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0004413591986813744
         },
         {
           "id": "regret",
@@ -1631,7 +1830,8 @@
           "value": 2.85,
           "unit": "chaos",
           "changePct": 24.36829352717203,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0036135412704450362
         },
         {
           "id": "sacred-lifeforce",
@@ -1639,7 +1839,8 @@
           "value": 219.1,
           "unit": "chaos",
           "changePct": 7.602905569007266,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.27779890959807274
         },
         {
           "id": "sandswept-lifeforce",
@@ -1647,7 +1848,8 @@
           "value": 299.8,
           "unit": "chaos",
           "changePct": -117.82608695652175,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3801191834664638
         },
         {
           "id": "scour",
@@ -1655,7 +1857,8 @@
           "value": 1.59,
           "unit": "chaos",
           "changePct": 85.69206842923795,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0020159756561430203
         },
         {
           "id": "scrap",
@@ -1663,7 +1866,8 @@
           "value": 0.6309,
           "unit": "chaos",
           "changePct": 10,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000799923925446938
         },
         {
           "id": "tainted-exalted-orb",
@@ -1671,7 +1875,8 @@
           "value": 4433,
           "unit": "chaos",
           "changePct": 60.85229324665943,
-          "icon": ""
+          "icon": "",
+          "divineValue": 5.620641562064156
         },
         {
           "id": "tempering-catalyst",
@@ -1679,7 +1884,8 @@
           "value": 52.58,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.06666666666666667
         },
         {
           "id": "veiled-exalted-orb",
@@ -1687,7 +1893,8 @@
           "value": 288.7,
           "unit": "chaos",
           "changePct": 153.9503386004515,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.3660453911499936
         },
         {
           "id": "vivid-lifeforce",
@@ -1695,7 +1902,8 @@
           "value": 0.5987,
           "unit": "chaos",
           "changePct": 22.80701754385965,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0007590972486369975
         },
         {
           "id": "wild-lifeforce",
@@ -1703,7 +1911,8 @@
           "value": 0.08151,
           "unit": "chaos",
           "changePct": -108.54386770785484,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00010334728033472803
         },
         {
           "id": "chrome",
@@ -1711,7 +1920,8 @@
           "value": 2.47,
           "unit": "chaos",
           "changePct": -234.54545454545453,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.003131735767719031
         },
         {
           "id": "crusaders-exalted-orb",
@@ -1719,7 +1929,8 @@
           "value": 1183,
           "unit": "chaos",
           "changePct": 185.71428571428572,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.499936604539115
         },
         {
           "id": "awakeners-orb",
@@ -1727,7 +1938,8 @@
           "value": 1577,
           "unit": "chaos",
           "changePct": -8548.148148148146,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.9994928363129199
         },
         {
           "id": "eldritch-exalted-orb",
@@ -1735,7 +1947,8 @@
           "value": 77.57,
           "unit": "chaos",
           "changePct": 24.480271531607972,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.09835171801698997
         },
         {
           "id": "hinekoras-lock",
@@ -1743,7 +1956,8 @@
           "value": 398280,
           "unit": "chaos",
           "changePct": -144.04761904761904,
-          "icon": ""
+          "icon": "",
+          "divineValue": 504.982883225561
         },
         {
           "id": "orb-of-remembrance",
@@ -1751,7 +1965,8 @@
           "value": 752.8,
           "unit": "chaos",
           "changePct": -123.81801962533451,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.9544820590845694
         },
         {
           "id": "redeemers-exalted-orb",
@@ -1759,7 +1974,8 @@
           "value": 424.7,
           "unit": "chaos",
           "changePct": 22.8046833422033,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.5384810447571954
         },
         {
           "id": "reflecting-mist",
@@ -1767,7 +1983,8 @@
           "value": 20280,
           "unit": "chaos",
           "changePct": -276.2441937624419,
-          "icon": ""
+          "icon": "",
+          "divineValue": 25.713198934956257
         },
         {
           "id": "shapers-exalted-orb",
@@ -1775,7 +1992,8 @@
           "value": 788.7,
           "unit": "chaos",
           "changePct": -100,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1
         },
         {
           "id": "tainted-orb-of-fusing",
@@ -1783,7 +2001,8 @@
           "value": 33.56,
           "unit": "chaos",
           "changePct": -489.3789378937893,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.04255103334601243
         },
         {
           "id": "turbulent-catalyst",
@@ -1791,7 +2010,8 @@
           "value": 17.92,
           "unit": "chaos",
           "changePct": 3400,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.02272093318118423
         },
         {
           "id": "exceptional-eldritch-ember",
@@ -1799,7 +2019,8 @@
           "value": 1299,
           "unit": "chaos",
           "changePct": -49.15611814345991,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.6470140737923165
         },
         {
           "id": "exceptional-eldritch-ichor",
@@ -1807,7 +2028,8 @@
           "value": 1166,
           "unit": "chaos",
           "changePct": -164.38492063492063,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.4783821478382146
         },
         {
           "id": "flesh-of-xesht",
@@ -1815,7 +2037,8 @@
           "value": 860.4,
           "unit": "chaos",
           "changePct": -113.63636363636364,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.0909090909090908
         },
         {
           "id": "foulborn-exalted-orb",
@@ -1823,7 +2046,8 @@
           "value": 11304,
           "unit": "chaos",
           "changePct": -13.130252100840337,
-          "icon": ""
+          "icon": "",
+          "divineValue": 14.332445796880943
         },
         {
           "id": "foulborn-orb-of-augmentation",
@@ -1831,7 +2055,8 @@
           "value": 63.09,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0799923925446938
         },
         {
           "id": "gcp",
@@ -1839,7 +2064,8 @@
           "value": 8.18,
           "unit": "chaos",
           "changePct": -797.4424552429667,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.010371497400786103
         },
         {
           "id": "hunters-exalted-orb",
@@ -1847,7 +2073,8 @@
           "value": 1577,
           "unit": "chaos",
           "changePct": 113.31058020477815,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.9994928363129199
         },
         {
           "id": "mavens-chisel-of-divination",
@@ -1855,7 +2082,8 @@
           "value": 200.9,
           "unit": "chaos",
           "changePct": -2603.9062499999995,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.2547229618359325
         },
         {
           "id": "mavens-chisel-of-procurement",
@@ -1863,7 +2091,8 @@
           "value": 3,
           "unit": "chaos",
           "changePct": 0,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.003803727653100038
         },
         {
           "id": "mavens-chisel-of-proliferation",
@@ -1871,7 +2100,8 @@
           "value": 171.5,
           "unit": "chaos",
           "changePct": -167.77041942604856,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.21744643083555215
         },
         {
           "id": "mavens-orb",
@@ -1879,7 +2109,8 @@
           "value": 6522,
           "unit": "chaos",
           "changePct": -23.809523809523807,
-          "icon": ""
+          "icon": "",
+          "divineValue": 8.269303917839482
         },
         {
           "id": "mirror",
@@ -1887,7 +2118,8 @@
           "value": 1264921,
           "unit": "chaos",
           "changePct": -88.67924528301887,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1603.8049955623176
         },
         {
           "id": "mirror-shard",
@@ -1895,7 +2127,8 @@
           "value": 64584,
           "unit": "chaos",
           "changePct": -1666.6666666666667,
-          "icon": ""
+          "icon": "",
+          "divineValue": 81.88664891593761
         },
         {
           "id": "noxious-catalyst",
@@ -1903,7 +2136,8 @@
           "value": 2,
           "unit": "chaos",
           "changePct": 0,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.002535818435400025
         },
         {
           "id": "portal",
@@ -1911,7 +2145,8 @@
           "value": 0.4929,
           "unit": "chaos",
           "changePct": -4761.538461538461,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0006249524534043362
         },
         {
           "id": "prismatic-catalyst",
@@ -1919,7 +2154,8 @@
           "value": 39.43,
           "unit": "chaos",
           "changePct": 2453.389830508475,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.049993660453911494
         },
         {
           "id": "rogues-marker",
@@ -1927,7 +2163,8 @@
           "value": 0.01213,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000015379738810701155
         },
         {
           "id": "sacred-orb",
@@ -1935,7 +2172,8 @@
           "value": 194.2,
           "unit": "chaos",
           "changePct": 639.8148148148148,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.24622797007734243
         },
         {
           "id": "stacked-deck",
@@ -1943,7 +2181,8 @@
           "value": 18.06,
           "unit": "chaos",
           "changePct": 403.44827586206895,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.022898440471662226
         },
         {
           "id": "tailoring-orb",
@@ -1951,7 +2190,8 @@
           "value": 1651,
           "unit": "chaos",
           "changePct": -3992.307692307692,
-          "icon": ""
+          "icon": "",
+          "divineValue": 2.093318118422721
         },
         {
           "id": "tainted-catalyst",
@@ -1959,7 +2199,8 @@
           "value": 90.76,
           "unit": "chaos",
           "changePct": -586.6906474820145,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.11507544059845315
         },
         {
           "id": "tainted-chaos-orb",
@@ -1967,7 +2208,8 @@
           "value": 4,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00507163687080005
         },
         {
           "id": "tainted-chromatic-orb",
@@ -1975,7 +2217,8 @@
           "value": 32,
           "unit": "chaos",
           "changePct": 83.98576512455516,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0405730949664004
         },
         {
           "id": "tainted-divine-orb",
@@ -1983,7 +2226,8 @@
           "value": 2620,
           "unit": "chaos",
           "changePct": 81.37697516930024,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.321922150374033
         },
         {
           "id": "tainted-divine-teardrop",
@@ -1991,7 +2235,8 @@
           "value": 6901,
           "unit": "chaos",
           "changePct": -5000,
-          "icon": ""
+          "icon": "",
+          "divineValue": 8.749841511347787
         },
         {
           "id": "tainted-mythic-orb",
@@ -1999,7 +2244,8 @@
           "value": 31.55,
           "unit": "chaos",
           "changePct": null,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.0400025358184354
         },
         {
           "id": "tempering-orb",
@@ -2007,7 +2253,8 @@
           "value": 2622,
           "unit": "chaos",
           "changePct": 60.97804391217565,
-          "icon": ""
+          "icon": "",
+          "divineValue": 3.324457968809433
         },
         {
           "id": "transmute",
@@ -2015,7 +2262,8 @@
           "value": 0.004023,
           "unit": "chaos",
           "changePct": 155.9890485968515,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.00000510079878280715
         },
         {
           "id": "unstable-catalyst",
@@ -2023,7 +2271,8 @@
           "value": 88.79,
           "unit": "chaos",
           "changePct": -148.1865284974093,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.11257765943958413
         },
         {
           "id": "vaal",
@@ -2031,7 +2280,8 @@
           "value": 4.54,
           "unit": "chaos",
           "changePct": -64.65324384787472,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.005756307848358057
         },
         {
           "id": "veiled-chaos-orb",
@@ -2039,7 +2289,8 @@
           "value": 235.2,
           "unit": "chaos",
           "changePct": -103.61216730038024,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.29821224800304297
         },
         {
           "id": "warlords-exalted-orb",
@@ -2047,7 +2298,8 @@
           "value": 1262,
           "unit": "chaos",
           "changePct": -1119.1304347826087,
-          "icon": ""
+          "icon": "",
+          "divineValue": 1.600101432737416
         },
         {
           "id": "wisdom",
@@ -2055,7 +2307,8 @@
           "value": 0.003603,
           "unit": "chaos",
           "changePct": -108.5679806918745,
-          "icon": ""
+          "icon": "",
+          "divineValue": 0.000004568276911373145
         }
       ]
     },
