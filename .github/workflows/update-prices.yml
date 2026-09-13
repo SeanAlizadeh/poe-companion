@@ -1,0 +1,32 @@
+name: Update PoE Prices
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch prices
+        run: node scripts/fetch-prices.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "poe-companion-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/currency.json
+          git diff --staged --quiet || git commit -m "Update currency prices [automated]"
+          git push
