@@ -48,7 +48,7 @@
     gap: 8px;
     margin-bottom: 12px;
   }
-  input[type="text"], button {
+  input[type="text"], select, button {
     background: var(--panel);
     border: 1px solid var(--border);
     color: var(--text);
@@ -133,10 +133,11 @@
 <div class="wrap">
   <header>
     <h1>The Chaos Ledger</h1>
-    <p class="tag">Currency prices for <span id="leagueName">…</span>, sourced from poe.ninja</p>
+    <p class="tag">Live currency prices, sourced from poe.ninja</p>
   </header>
 
   <div class="toolbar">
+    <select id="leagueSelect"><option>Loading...</option></select>
     <button id="refreshBtn">Refresh</button>
     <button id="starredBtn">★ Starred only</button>
   </div>
@@ -183,21 +184,48 @@ async function saveStarred() {
   }
 }
 
+let allData = null; // the full parsed data/currency.json
+let selectedLeague = null;
+
 async function loadCurrency() {
   setStatus('Loading prices...');
   try {
     // Cache-bust so we don't get stuck on a stale copy from the browser cache.
     const res = await fetch(DATA_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    currentLines = data.lines || [];
-    document.getElementById('leagueName').textContent = (data.league && data.league.name) || 'unknown league';
-    const fetchedAt = data.fetchedAt ? new Date(data.fetchedAt).toLocaleString() : 'unknown time';
-    setStatus('Loaded ' + currentLines.length + ' currencies (' + (data.source || 'unknown') + ' market). Data snapshot from ' + fetchedAt);
-    render();
+    allData = await res.json();
+
+    const select = document.getElementById('leagueSelect');
+    select.innerHTML = '';
+    (allData.leagues || []).forEach(l => {
+      const opt = document.createElement('option');
+      opt.value = l.id;
+      opt.textContent = l.name || l.id;
+      select.appendChild(opt);
+    });
+
+    selectedLeague = allData.defaultLeague || (allData.leagues[0] && allData.leagues[0].id);
+    select.value = selectedLeague;
+    applySelectedLeague();
   } catch (e) {
     setStatus('Could not load data/currency.json (' + e.message + '). If this is the first deploy, the update workflow may not have run yet, check the Actions tab.', true);
   }
+}
+
+function applySelectedLeague() {
+  if (!allData || !selectedLeague) return;
+  const leagueData = allData.data[selectedLeague];
+  const leagueMeta = (allData.leagues || []).find(l => l.id === selectedLeague);
+  if (!leagueData) {
+    setStatus('No data for that league in the last snapshot.', true);
+    currentLines = [];
+    render();
+    return;
+  }
+  currentLines = leagueData.lines || [];
+  const fetchedAt = allData.fetchedAt ? new Date(allData.fetchedAt).toLocaleString() : 'unknown time';
+  setStatus('Loaded ' + currentLines.length + ' currencies for ' + (leagueMeta ? leagueMeta.name : selectedLeague) + ' (' + leagueData.source + ' market). Snapshot from ' + fetchedAt);
+  render();
 }
 
 function render() {
@@ -261,6 +289,10 @@ async function init() {
   await loadCurrency();
 
   document.getElementById('refreshBtn').onclick = loadCurrency;
+  document.getElementById('leagueSelect').onchange = (e) => {
+    selectedLeague = e.target.value;
+    applySelectedLeague();
+  };
   document.getElementById('searchInput').oninput = render;
   document.getElementById('starredBtn').onclick = (e) => {
     showStarredOnly = !showStarredOnly;
