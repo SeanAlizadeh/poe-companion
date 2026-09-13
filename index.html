@@ -101,6 +101,14 @@
     margin-left: 4px;
     vertical-align: middle;
   }
+  .mover-section-header {
+    font-family: var(--font-display);
+    font-size: 13px;
+    color: var(--gold);
+    padding: 10px 8px 4px;
+    border-bottom: 1px solid var(--gold-dim);
+    margin-top: 4px;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -185,6 +193,7 @@
   <footer>
     Prices are fetched by a scheduled job and committed to this site, not called live from your browser. Data updates roughly every 30 minutes.
     <br>"7d change" is poe.ninja's own week-over-week trend. A ⚠ flag means very low trade volume, treat that price as unreliable, it can be skewed by a single odd listing.
+    <br>Big Movers excludes thin-market currencies and anything worth under 1 chaos (tiny-value items can swing wildly in % terms without meaning anything), and splits results into Rising (consider selling) and Dropping (maybe a cheap buy).
     <br>Currency count varies slightly run to run: poe.ninja only lists currencies with at least one active listing at snapshot time, we don't cut the list down ourselves.
   </footer>
 </div>
@@ -267,87 +276,123 @@ function applySelectedLeague() {
   render();
 }
 
+function buildRow(l) {
+  const row = document.createElement('div');
+  row.className = 'row';
+
+  const star = document.createElement('button');
+  star.className = 'star' + (starred.has(l.id) ? ' starred' : '');
+  star.textContent = starred.has(l.id) ? '★' : '☆';
+  star.onclick = () => {
+    if (starred.has(l.id)) starred.delete(l.id); else starred.add(l.id);
+    saveStarred();
+    render();
+  };
+
+  const img = document.createElement('img');
+  if (l.icon) img.src = l.icon;
+
+  const name = document.createElement('div');
+  name.className = 'name';
+  name.textContent = l.name;
+  // poe.ninja's volume figure isn't precisely documented, but low values
+  // reliably correlate with thin markets, where one odd listing can
+  // distort the whole price. Threshold is a rough heuristic, not exact.
+  if (l.volume !== null && l.volume !== undefined && l.volume < 20) {
+    const flag = document.createElement('span');
+    flag.className = 'thin-flag';
+    flag.textContent = '⚠';
+    flag.title = 'Low trade volume, price may be unreliable';
+    name.appendChild(flag);
+  }
+
+  const value = document.createElement('div');
+  value.className = 'value';
+  const unitLabel = (l.unit === 'chaos' || !l.unit) ? 'c' : l.unit;
+  const chaosText = l.value ? l.value.toFixed(1) + ' ' + unitLabel : '-';
+  const divineText = (l.divineValue !== null && l.divineValue !== undefined) ? l.divineValue.toFixed(2) + ' div' : '';
+  value.innerHTML = chaosText + (divineText ? '<br><span style="color:var(--text-dim);font-size:11px;">' + divineText + '</span>' : '');
+
+  const change = document.createElement('div');
+  if (l.changePct === null || l.changePct === undefined) {
+    change.className = 'change flat';
+    change.textContent = '—';
+  } else {
+    const pct = l.changePct;
+    change.className = 'change ' + (pct > 1 ? 'up' : pct < -1 ? 'down' : 'flat');
+    change.textContent = (pct > 0 ? '+' : '') + pct.toFixed(1) + '%';
+  }
+
+  row.appendChild(star);
+  row.appendChild(img);
+  row.appendChild(name);
+  row.appendChild(value);
+  row.appendChild(change);
+  return row;
+}
+
+// Below this chaos value, a big % swing is just noise, nobody's making
+// real profit off a currency worth a fraction of a chaos moving around.
+const MOVER_MIN_VALUE = 1;
+
+function renderBigMovers(rows) {
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+
+  const eligible = rows.filter(l =>
+    !(l.volume !== null && l.volume !== undefined && l.volume < 20) &&
+    l.changePct !== null && l.changePct !== undefined &&
+    (l.value || 0) >= MOVER_MIN_VALUE
+  );
+
+  if (!eligible.length) {
+    list.innerHTML = '<p style="color:var(--text-dim);font-size:13px;">No qualifying movers right now (filtered out thin-market and sub-' + MOVER_MIN_VALUE + 'c currencies).</p>';
+    return;
+  }
+
+  const rising = eligible.filter(l => l.changePct > 0).sort((a, b) => b.changePct - a.changePct);
+  const dropping = eligible.filter(l => l.changePct < 0).sort((a, b) => a.changePct - b.changePct);
+
+  if (rising.length) {
+    const header = document.createElement('div');
+    header.className = 'mover-section-header';
+    header.textContent = '📈 Rising, consider selling';
+    list.appendChild(header);
+    rising.forEach(l => list.appendChild(buildRow(l)));
+  }
+  if (dropping.length) {
+    const header = document.createElement('div');
+    header.className = 'mover-section-header';
+    header.textContent = '📉 Dropping, maybe a cheap buy';
+    list.appendChild(header);
+    dropping.forEach(l => list.appendChild(buildRow(l)));
+  }
+}
+
 function render() {
   const list = document.getElementById('list');
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
   let rows = currentLines.filter(l => l.name.toLowerCase().includes(query));
   if (showStarredOnly) rows = rows.filter(l => starred.has(l.id));
+
   if (showBigMovers) {
-    // Exclude anything we've flagged as thin-market, a big % swing on
-    // almost no volume is noise, not a real opportunity. Lines with
-    // unknown volume (older fallback data sources) are kept, since we
-    // can't judge them either way.
-    rows = rows.filter(l => !(l.volume !== null && l.volume !== undefined && l.volume < 20));
-    rows = rows.filter(l => l.changePct !== null && l.changePct !== undefined);
-    rows.sort((a, b) => Math.abs(b.changePct) - Math.abs(a.changePct));
-  } else {
-    rows.sort((a, b) => {
-      const aStar = starred.has(a.id) ? 1 : 0;
-      const bStar = starred.has(b.id) ? 1 : 0;
-      if (aStar !== bStar) return bStar - aStar; // starred first
-      return (b.value || 0) - (a.value || 0);
-    });
+    renderBigMovers(rows);
+    return;
   }
+
+  rows.sort((a, b) => {
+    const aStar = starred.has(a.id) ? 1 : 0;
+    const bStar = starred.has(b.id) ? 1 : 0;
+    if (aStar !== bStar) return bStar - aStar; // starred first
+    return (b.value || 0) - (a.value || 0);
+  });
 
   list.innerHTML = '';
   if (!rows.length) {
     list.innerHTML = '<p style="color:var(--text-dim);font-size:13px;">No currencies match.</p>';
     return;
   }
-  rows.forEach(l => {
-    const row = document.createElement('div');
-    row.className = 'row';
-
-    const star = document.createElement('button');
-    star.className = 'star' + (starred.has(l.id) ? ' starred' : '');
-    star.textContent = starred.has(l.id) ? '★' : '☆';
-    star.onclick = () => {
-      if (starred.has(l.id)) starred.delete(l.id); else starred.add(l.id);
-      saveStarred();
-      render();
-    };
-
-    const img = document.createElement('img');
-    if (l.icon) img.src = l.icon;
-
-    const name = document.createElement('div');
-    name.className = 'name';
-    name.textContent = l.name;
-    // poe.ninja's volume figure isn't precisely documented, but low values
-    // reliably correlate with thin markets, where one odd listing can
-    // distort the whole price. Threshold is a rough heuristic, not exact.
-    if (l.volume !== null && l.volume !== undefined && l.volume < 20) {
-      const flag = document.createElement('span');
-      flag.className = 'thin-flag';
-      flag.textContent = '⚠';
-      flag.title = 'Low trade volume, price may be unreliable';
-      name.appendChild(flag);
-    }
-
-    const value = document.createElement('div');
-    value.className = 'value';
-    const unitLabel = (l.unit === 'chaos' || !l.unit) ? 'c' : l.unit;
-    const chaosText = l.value ? l.value.toFixed(1) + ' ' + unitLabel : '-';
-    const divineText = (l.divineValue !== null && l.divineValue !== undefined) ? l.divineValue.toFixed(2) + ' div' : '';
-    value.innerHTML = chaosText + (divineText ? '<br><span style="color:var(--text-dim);font-size:11px;">' + divineText + '</span>' : '');
-
-    const change = document.createElement('div');
-    if (l.changePct === null || l.changePct === undefined) {
-      change.className = 'change flat';
-      change.textContent = '—';
-    } else {
-      const pct = l.changePct;
-      change.className = 'change ' + (pct > 1 ? 'up' : pct < -1 ? 'down' : 'flat');
-      change.textContent = (pct > 0 ? '+' : '') + pct.toFixed(1) + '%';
-    }
-
-    row.appendChild(star);
-    row.appendChild(img);
-    row.appendChild(name);
-    row.appendChild(value);
-    row.appendChild(change);
-    list.appendChild(row);
-  });
+  rows.forEach(l => list.appendChild(buildRow(l)));
 }
 
 async function init() {
