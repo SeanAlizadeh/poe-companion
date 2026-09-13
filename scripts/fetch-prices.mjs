@@ -42,35 +42,52 @@ function normalizeLegacyShape(data) {
 
 function normalizeExchangeShape(data) {
   const primary = (data.core && data.core.primary) || 'chaos';
-  const items = (data.core && data.core.items) || {};
+  const itemsArray = (data.core && data.core.items) || [];
+  const itemsById = {};
+  itemsArray.forEach((it) => { itemsById[it.id] = it; });
   return (data.lines || []).map((line) => ({
     id: line.id,
-    name: (items[line.id] && items[line.id].name) || String(line.id),
+    name: (itemsById[line.id] && itemsById[line.id].name) || String(line.id),
     value: line.primaryValue,
     unit: primary,
     changePct: computeChange(line.sparkline),
-    icon: (items[line.id] && items[line.id].icon) || ''
+    icon: (itemsById[line.id] && itemsById[line.id].icon) || ''
+  }));
+}
+
+function addDivineValues(lines) {
+  const divine = lines.find((l) => l.name && l.name.toLowerCase() === 'divine orb');
+  const chaosPerDivine = divine ? divine.value : null;
+  return lines.map((l) => ({
+    ...l,
+    divineValue: chaosPerDivine ? l.value / chaosPerDivine : null
   }));
 }
 
 async function fetchLeagueLines(leagueId) {
+  let lines, source;
   try {
     const data = await getJSON(EXCHANGE_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
     if (data.lines && data.lines.length) {
-      return { lines: normalizeExchangeShape(data), source: 'exchange' };
+      lines = normalizeExchangeShape(data);
+      source = 'exchange';
+    } else {
+      throw new Error('empty exchange response');
     }
-    throw new Error('empty exchange response');
   } catch (e1) {
     console.warn('[' + leagueId + '] Exchange overview failed, falling back to stash overview:', e1.message);
     try {
       const data2 = await getJSON(STASH_CURRENCY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
-      return { lines: normalizeLegacyShape(data2), source: 'stash' };
+      lines = normalizeLegacyShape(data2);
+      source = 'stash';
     } catch (e2) {
       console.warn('[' + leagueId + '] Stash overview failed, falling back to legacy endpoint:', e2.message);
       const data3 = await getJSON(LEGACY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
-      return { lines: normalizeLegacyShape(data3), source: 'legacy' };
+      lines = normalizeLegacyShape(data3);
+      source = 'legacy';
     }
   }
+  return { lines: addDivineValues(lines), source };
 }
 
 async function main() {
