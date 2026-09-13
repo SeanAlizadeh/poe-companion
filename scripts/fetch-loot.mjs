@@ -3,7 +3,7 @@
 // GitHub Actions on a much slower schedule than the price fetcher, since
 // this data barely changes between runs.
 
-const API_BASE = 'https://www.poewiki.net/api.php';
+const API_BASE = 'https://www.poewiki.net/w/api.php';
 
 const USER_AGENT = 'poe-companion/1.0 (personal project, github.com/Seanathustra/poe-companion)';
 
@@ -83,17 +83,23 @@ async function main() {
   const bossResults = [];
 
   for (const bossName of BOSSES) {
+    let ids;
     try {
-      const ids = await resolveMonsterIds(bossName);
-      if (!ids.length) {
-        console.warn('No monster id found for "' + bossName + '", skipping. Check the exact wiki page name.');
-        continue;
-      }
+      ids = await resolveMonsterIds(bossName);
+    } catch (err) {
+      console.warn('[' + bossName + '] Failed to resolve monster id(s):', err.message);
+      continue;
+    }
+    if (!ids.length) {
+      console.warn('No monster id found for "' + bossName + '", skipping. Check the exact wiki page name.');
+      continue;
+    }
+    try {
       const items = await fetchDropsForIds(ids);
       bossResults.push({ name: bossName, monsterIds: ids, items });
       console.log('Resolved "' + bossName + '" -> ' + ids.length + ' id(s), ' + items.length + ' item(s)');
     } catch (err) {
-      console.warn('Failed to fetch drops for "' + bossName + '":', err.message);
+      console.warn('[' + bossName + '] Resolved id(s) ' + ids.join(', ') + ' but failed to fetch drops:', err.message);
     }
   }
 
