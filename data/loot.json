@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:18:27.788Z",
+  "generatedAt": "2026-09-13T18:46:40.706Z",
   "bosses": [
     {
       "name": "Sirus, Awakener of Worlds",
@@ -21,54 +21,72 @@
           "name": "A Fate Worse Than Death",
           "pageName": "A Fate Worse Than Death",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/A%20Fate%20Worse%20Than%20Death%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
           "name": "Annihilation Support",
           "pageName": "Annihilation Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Annihilation%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Annihilation_Support"
         },
         {
           "name": "Awakener's Orb",
           "pageName": "Awakener's Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Awakener's%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Awakener's_Orb"
         },
         {
           "name": "Crown of the Inward Eye",
           "pageName": "Crown of the Inward Eye",
           "rarity": "unique",
+          "itemClass": "Helmet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Crown%20of%20the%20Inward%20Eye%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Crown_of_the_Inward_Eye"
         },
         {
           "name": "Hands of the High Templar",
           "pageName": "Hands of the High Templar",
           "rarity": "unique",
+          "itemClass": "Gloves",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Hands%20of%20the%20High%20Templar%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Hands_of_the_High_Templar"
         },
         {
           "name": "Orb of Dominance",
           "pageName": "Orb of Dominance",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Orb%20of%20Dominance%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
         },
         {
           "name": "The Burden of Truth",
           "pageName": "The Burden of Truth",
           "rarity": "unique",
+          "itemClass": "Belt",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Burden%20of%20Truth%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Burden_of_Truth"
         },
         {
           "name": "The Saviour",
           "pageName": "The Saviour",
           "rarity": "unique",
+          "itemClass": "One Hand Sword",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Saviour%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Saviour"
         },
         {
           "name": "Thread of Hope",
           "pageName": "Thread of Hope",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Thread%20of%20Hope%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Thread_of_Hope"
         }
       ]
@@ -91,66 +109,88 @@
           "name": "Arn's Anguish",
           "pageName": "Arn's Anguish",
           "rarity": "unique",
+          "itemClass": "Belt",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Arn's%20Anguish%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Arn's_Anguish"
         },
         {
           "name": "Auspicious Ambitions",
           "pageName": "Auspicious Ambitions",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Auspicious%20Ambitions%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
         },
         {
           "name": "Ceremonial Voidstone",
           "pageName": "Ceremonial Voidstone",
           "rarity": "normal",
+          "itemClass": "AtlasUpgradeItem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Ceremonial%20Voidstone%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Ceremonial_Voidstone"
         },
         {
           "name": "Doppelgänger Guise",
           "pageName": "Doppelgänger Guise",
           "rarity": "unique",
+          "itemClass": "Body Armour",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Doppelg%C3%A4nger%20Guise%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Doppelg%C3%A4nger_Guise"
         },
         {
           "name": "Echoforge",
           "pageName": "Echoforge",
           "rarity": "unique",
+          "itemClass": "Two Hand Sword",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Echoforge%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Echoforge"
         },
         {
           "name": "Eclipse Support",
           "pageName": "Eclipse Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eclipse%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eclipse_Support"
         },
         {
           "name": "Graven's Secret",
           "pageName": "Graven's Secret",
           "rarity": "unique",
+          "itemClass": "Belt",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Graven's%20Secret%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Graven's_Secret"
         },
         {
           "name": "Invert the Rules Support",
           "pageName": "Invert the Rules Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Invert%20the%20Rules%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Invert_the_Rules_Support"
         },
         {
           "name": "Legacy of Fury",
           "pageName": "Legacy of Fury",
           "rarity": "unique",
+          "itemClass": "Boots",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Legacy%20of%20Fury%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Legacy_of_Fury"
         },
         {
           "name": "Olesya's Delight",
           "pageName": "Olesya's Delight",
           "rarity": "unique",
+          "itemClass": "Belt",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Olesya's%20Delight%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Olesya's_Delight"
         },
         {
           "name": "Orb of Conflict",
           "pageName": "Orb of Conflict",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Orb%20of%20Conflict%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Conflict"
         }
       ]
@@ -177,54 +217,72 @@
           "name": "Dying Sun",
           "pageName": "Dying Sun",
           "rarity": "unique",
+          "itemClass": "UtilityFlask",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dying%20Sun%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dying_Sun"
         },
         {
           "name": "Fragment of Knowledge",
           "pageName": "Fragment of Knowledge",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Fragment%20of%20Knowledge%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Knowledge"
         },
         {
           "name": "Fragment of Shape",
           "pageName": "Fragment of Shape",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Fragment%20of%20Shape%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Shape"
         },
         {
           "name": "Orb of Dominance",
           "pageName": "Orb of Dominance",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Orb%20of%20Dominance%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
         },
         {
           "name": "Shaper's Exalted Orb",
           "pageName": "Shaper's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Shaper's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Shaper's_Exalted_Orb"
         },
         {
           "name": "Shaper's Touch",
           "pageName": "Shaper's Touch",
           "rarity": "unique",
+          "itemClass": "Gloves",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Shaper's%20Touch%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Shaper's_Touch"
         },
         {
           "name": "Solstice Vigil",
           "pageName": "Solstice Vigil",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Solstice%20Vigil%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Solstice_Vigil"
         },
         {
           "name": "Voidstorm Support",
           "pageName": "Voidstorm Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Voidstorm%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Voidstorm_Support"
         },
         {
           "name": "Voidwalker",
           "pageName": "Voidwalker",
           "rarity": "unique",
+          "itemClass": "Boots",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Voidwalker%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Voidwalker"
         }
       ]
@@ -245,150 +303,200 @@
           "name": "Auspicious Ambitions",
           "pageName": "Auspicious Ambitions",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Auspicious%20Ambitions%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
         },
         {
           "name": "Blasphemer's Grasp",
           "pageName": "Blasphemer's Grasp",
           "rarity": "unique",
+          "itemClass": "Gloves",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Blasphemer's%20Grasp%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Blasphemer's_Grasp"
         },
         {
           "name": "Cooldown Recovery Support",
           "pageName": "Cooldown Recovery Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Cooldown%20Recovery%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Cooldown_Recovery_Support"
         },
         {
           "name": "Cyclopean Coil",
           "pageName": "Cyclopean Coil",
           "rarity": "unique",
+          "itemClass": "Belt",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Cyclopean%20Coil%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Cyclopean_Coil"
         },
         {
           "name": "Disintegrator",
           "pageName": "Disintegrator",
           "rarity": "unique",
+          "itemClass": "Warstaff",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Disintegrator%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Disintegrator"
         },
         {
           "name": "Elder's Exalted Orb",
           "pageName": "Elder's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Elder's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Elder's_Exalted_Orb"
         },
         {
           "name": "Eldritch Blasphemy Support",
           "pageName": "Eldritch Blasphemy Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Blasphemy%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Blasphemy_Support"
         },
         {
           "name": "Fragment of Emptiness",
           "pageName": "Fragment of Emptiness",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Fragment%20of%20Emptiness%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Emptiness"
         },
         {
           "name": "Fragment of Terror",
           "pageName": "Fragment of Terror",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Fragment%20of%20Terror%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Terror"
         },
         {
           "name": "Hopeshredder",
           "pageName": "Hopeshredder",
           "rarity": "unique",
+          "itemClass": "Bow",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Hopeshredder%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Hopeshredder"
         },
         {
           "name": "Impresence",
           "pageName": "Impresence (Chaos)",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Impresence%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Chaos)"
         },
         {
           "name": "Impresence",
           "pageName": "Impresence (Cold)",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Impresence%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Cold)"
         },
         {
           "name": "Impresence",
           "pageName": "Impresence (Fire)",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Impresence%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Fire)"
         },
         {
           "name": "Impresence",
           "pageName": "Impresence (Lightning)",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Impresence%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Lightning)"
         },
         {
           "name": "Impresence",
           "pageName": "Impresence (Physical)",
           "rarity": "unique",
+          "itemClass": "Amulet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Impresence%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Physical)"
         },
         {
           "name": "Indigon",
           "pageName": "Indigon",
           "rarity": "unique",
+          "itemClass": "Helmet",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Indigon%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Indigon"
         },
         {
           "name": "Mark of the Elder",
           "pageName": "Mark of the Elder",
           "rarity": "unique",
+          "itemClass": "Ring",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Mark%20of%20the%20Elder%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Mark_of_the_Elder"
         },
         {
           "name": "Mark of the Shaper",
           "pageName": "Mark of the Shaper",
           "rarity": "unique",
+          "itemClass": "Ring",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Mark%20of%20the%20Shaper%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Mark_of_the_Shaper"
         },
         {
           "name": "Nebuloch",
           "pageName": "Nebuloch",
           "rarity": "unique",
+          "itemClass": "One Hand Mace",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Nebuloch%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Nebuloch"
         },
         {
           "name": "Orb of Dominance",
           "pageName": "Orb of Dominance",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Orb%20of%20Dominance%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
         },
         {
           "name": "Shimmeron",
           "pageName": "Shimmeron",
           "rarity": "unique",
+          "itemClass": "Wand",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Shimmeron%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Shimmeron"
         },
         {
           "name": "Void of the Elements",
           "pageName": "Void of the Elements",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Void%20of%20the%20Elements%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Void_of_the_Elements"
         },
         {
           "name": "Void Shockwave Support",
           "pageName": "Void Shockwave Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Void%20Shockwave%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Void_Shockwave_Support"
         },
         {
           "name": "Voidfletcher",
           "pageName": "Voidfletcher",
           "rarity": "unique",
+          "itemClass": "Quiver",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Voidfletcher%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Voidfletcher"
         },
         {
           "name": "Watcher's Eye",
           "pageName": "Watcher's Eye",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Watcher's%20Eye%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Watcher's_Eye"
         }
       ]
@@ -404,60 +512,80 @@
           "name": "Auspicious Ambitions",
           "pageName": "Auspicious Ambitions",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Auspicious%20Ambitions%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
         },
         {
           "name": "Eldritch Chaos Orb",
           "pageName": "Eldritch Chaos Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Chaos%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Chaos_Orb"
         },
         {
           "name": "Eldritch Exalted Orb",
           "pageName": "Eldritch Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Exalted_Orb"
         },
         {
           "name": "Eldritch Orb of Annulment",
           "pageName": "Eldritch Orb of Annulment",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Orb%20of%20Annulment%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Orb_of_Annulment"
         },
         {
           "name": "Exceptional Eldritch Ichor",
           "pageName": "Exceptional Eldritch Ichor",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Exceptional%20Eldritch%20Ichor%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Exceptional_Eldritch_Ichor"
         },
         {
           "name": "Forbidden Flesh",
           "pageName": "Forbidden Flesh",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Forbidden%20Flesh%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Forbidden_Flesh"
         },
         {
           "name": "Gluttony Support",
           "pageName": "Gluttony Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Gluttony%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Gluttony_Support"
         },
         {
           "name": "Inextricable Fate",
           "pageName": "Inextricable Fate",
           "rarity": "unique",
+          "itemClass": "Boots",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Inextricable%20Fate%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Inextricable_Fate"
         },
         {
           "name": "Melding of the Flesh",
           "pageName": "Melding of the Flesh",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Melding%20of%20the%20Flesh%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Melding_of_the_Flesh"
         },
         {
           "name": "The Gluttonous Tide",
           "pageName": "The Gluttonous Tide",
           "rarity": "unique",
+          "itemClass": "Bow",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Gluttonous%20Tide%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Gluttonous_Tide"
         }
       ]
@@ -473,60 +601,80 @@
           "name": "Auspicious Ambitions",
           "pageName": "Auspicious Ambitions",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Auspicious%20Ambitions%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
         },
         {
           "name": "Dawnbreaker",
           "pageName": "Dawnbreaker",
           "rarity": "unique",
+          "itemClass": "Shield",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dawnbreaker%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dawnbreaker"
         },
         {
           "name": "Dawnstrider",
           "pageName": "Dawnstrider",
           "rarity": "unique",
+          "itemClass": "Boots",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dawnstrider%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dawnstrider"
         },
         {
           "name": "Dissolution of the Flesh",
           "pageName": "Dissolution of the Flesh",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dissolution%20of%20the%20Flesh%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dissolution_of_the_Flesh"
         },
         {
           "name": "Eldritch Chaos Orb",
           "pageName": "Eldritch Chaos Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Chaos%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Chaos_Orb"
         },
         {
           "name": "Eldritch Exalted Orb",
           "pageName": "Eldritch Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Exalted_Orb"
         },
         {
           "name": "Eldritch Orb of Annulment",
           "pageName": "Eldritch Orb of Annulment",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Eldritch%20Orb%20of%20Annulment%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Orb_of_Annulment"
         },
         {
           "name": "Exceptional Eldritch Ember",
           "pageName": "Exceptional Eldritch Ember",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Exceptional%20Eldritch%20Ember%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Exceptional_Eldritch_Ember"
         },
         {
           "name": "Forbidden Flame",
           "pageName": "Forbidden Flame",
           "rarity": "unique",
+          "itemClass": "Jewel",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Forbidden%20Flame%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Forbidden_Flame"
         },
         {
           "name": "Overheat Support",
           "pageName": "Overheat Support",
           "rarity": "normal",
+          "itemClass": "Support Skill Gem",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Overheat%20Support%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Overheat_Support"
         }
       ]
@@ -549,48 +697,64 @@
           "name": "A Fate Worse Than Death",
           "pageName": "A Fate Worse Than Death",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/A%20Fate%20Worse%20Than%20Death%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
           "name": "Baran's Crest",
           "pageName": "Baran's Crest",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Baran's%20Crest%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Baran's_Crest"
         },
         {
           "name": "Crusader's Exalted Orb",
           "pageName": "Crusader's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Crusader's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Crusader's_Exalted_Orb"
         },
         {
           "name": "Dementophobia",
           "pageName": "Dementophobia",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dementophobia%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
           "name": "Justified Ambition",
           "pageName": "Justified Ambition",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Justified%20Ambition%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
         },
         {
           "name": "Succor of the Sinless",
           "pageName": "Succor of the Sinless",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Succor%20of%20the%20Sinless%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Succor_of_the_Sinless"
         },
         {
           "name": "The Eternal War",
           "pageName": "The Eternal War",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Eternal%20War%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
         },
         {
           "name": "The Price of Prescience",
           "pageName": "The Price of Prescience",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Price%20of%20Prescience%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
         }
       ]
@@ -613,48 +777,64 @@
           "name": "A Fate Worse Than Death",
           "pageName": "A Fate Worse Than Death",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/A%20Fate%20Worse%20Than%20Death%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
           "name": "Dementophobia",
           "pageName": "Dementophobia",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dementophobia%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
           "name": "Justified Ambition",
           "pageName": "Justified Ambition",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Justified%20Ambition%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
         },
         {
           "name": "Love Through Ice",
           "pageName": "Love Through Ice",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Love%20Through%20Ice%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Love_Through_Ice"
         },
         {
           "name": "Redeemer's Exalted Orb",
           "pageName": "Redeemer's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Redeemer's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Redeemer's_Exalted_Orb"
         },
         {
           "name": "The Eternal War",
           "pageName": "The Eternal War",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Eternal%20War%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
         },
         {
           "name": "The Price of Prescience",
           "pageName": "The Price of Prescience",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Price%20of%20Prescience%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
         },
         {
           "name": "Veritania's Crest",
           "pageName": "Veritania's Crest",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Veritania's%20Crest%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Veritania's_Crest"
         }
       ]
@@ -677,48 +857,64 @@
           "name": "A Fate Worse Than Death",
           "pageName": "A Fate Worse Than Death",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/A%20Fate%20Worse%20Than%20Death%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
           "name": "Al-Hezmin's Crest",
           "pageName": "Al-Hezmin's Crest",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Al-Hezmin's%20Crest%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Al-Hezmin's_Crest"
         },
         {
           "name": "Council of Cats",
           "pageName": "Council of Cats",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Council%20of%20Cats%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Council_of_Cats"
         },
         {
           "name": "Dementophobia",
           "pageName": "Dementophobia",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dementophobia%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
           "name": "Hunter's Exalted Orb",
           "pageName": "Hunter's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Hunter's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Hunter's_Exalted_Orb"
         },
         {
           "name": "Justified Ambition",
           "pageName": "Justified Ambition",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Justified%20Ambition%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
         },
         {
           "name": "The Eternal War",
           "pageName": "The Eternal War",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Eternal%20War%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
         },
         {
           "name": "The Price of Prescience",
           "pageName": "The Price of Prescience",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Price%20of%20Prescience%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
         }
       ]
@@ -741,48 +937,64 @@
           "name": "A Fate Worse Than Death",
           "pageName": "A Fate Worse Than Death",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/A%20Fate%20Worse%20Than%20Death%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
           "name": "Dementophobia",
           "pageName": "Dementophobia",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Dementophobia%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
           "name": "Drox's Crest",
           "pageName": "Drox's Crest",
           "rarity": "normal",
+          "itemClass": "MapFragment",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Drox's%20Crest%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Drox's_Crest"
         },
         {
           "name": "Justified Ambition",
           "pageName": "Justified Ambition",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Justified%20Ambition%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
         },
         {
           "name": "The Eternal War",
           "pageName": "The Eternal War",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Eternal%20War%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
         },
         {
           "name": "The Price of Prescience",
           "pageName": "The Price of Prescience",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Price%20of%20Prescience%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
         },
         {
           "name": "The Strategist",
           "pageName": "The Strategist",
           "rarity": "normal",
+          "itemClass": "DivinationCard",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/The%20Strategist%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/The_Strategist"
         },
         {
           "name": "Warlord's Exalted Orb",
           "pageName": "Warlord's Exalted Orb",
           "rarity": "normal",
+          "itemClass": "StackableCurrency",
+          "iconUrl": "https://www.poewiki.net/wiki/Special:FilePath/Warlord's%20Exalted%20Orb%20inventory%20icon.png",
           "wikiUrl": "https://www.poewiki.net/wiki/Warlord's_Exalted_Orb"
         }
       ]
