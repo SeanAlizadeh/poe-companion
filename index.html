@@ -189,10 +189,14 @@
   .loot-item-row a {
     font-family: var(--font-display);
     font-size: 14px;
-    color: var(--text);
     text-decoration: none;
   }
-  .loot-item-row a:hover { color: var(--gold); }
+  .loot-item-row a:hover { text-decoration: underline; }
+  .rarity-normal { color: #c8c8c8; }
+  .rarity-magic { color: #8888ff; }
+  .rarity-rare { color: #ffff77; }
+  .rarity-unique { color: #af6025; }
+  .rarity-currency, .rarity-gem { color: var(--gold); }
   .rarity-badge {
     font-size: 10px;
     text-transform: uppercase;
@@ -201,6 +205,16 @@
     border-radius: 3px;
     padding: 1px 5px;
     flex-shrink: 0;
+  }
+  .loot-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--gold-dim);
   }
   footer {
     margin-top: 16px;
@@ -257,11 +271,16 @@
       <p class="tag">What drops from what, sourced from the PoE Wiki</p>
     </header>
 
+    <p class="tag" style="margin-bottom:6px;">Choose a boss to see what it can drop:</p>
     <div class="toolbar">
       <select id="bossSelect"><option>Loading...</option></select>
     </div>
 
     <div id="loot-status">Starting up...</div>
+    <div class="loot-list-header">
+      <span>Item</span>
+      <span>Rarity</span>
+    </div>
     <div id="loot-list"></div>
 
     <footer>
@@ -528,20 +547,22 @@ function renderLoot(bossName) {
     const row = document.createElement('div');
     row.className = 'loot-item-row';
 
+    const rarityKey = (item.rarity || 'normal').toLowerCase();
+    const rarityClass = 'rarity-' + rarityKey.replace(/[^a-z]/g, '');
+
     const link = document.createElement('a');
     link.href = item.wikiUrl;
     link.target = '_blank';
     link.rel = 'noopener';
+    link.className = rarityClass;
     link.textContent = item.name;
 
     row.appendChild(link);
 
-    if (item.rarity) {
-      const badge = document.createElement('span');
-      badge.className = 'rarity-badge';
-      badge.textContent = item.rarity;
-      row.appendChild(badge);
-    }
+    const badge = document.createElement('span');
+    badge.className = 'rarity-badge';
+    badge.textContent = item.rarity ? rarityKey : 'unknown';
+    row.appendChild(badge);
 
     list.appendChild(row);
   });
