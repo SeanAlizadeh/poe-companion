@@ -44,7 +44,10 @@ const IMAGE_BASE = 'https://web.poecdn.com';
 
 function normalizeExchangeShape(data) {
   const primary = (data.core && data.core.primary) || 'chaos';
-  const itemsArray = (data.core && data.core.items) || [];
+  // data.items (top level) has full metadata for every currency in `lines`.
+  // data.core.items is a much smaller reference set (just the primary/
+  // secondary currencies used for rate conversion), not what we want here.
+  const itemsArray = data.items || [];
   const itemsById = {};
   itemsArray.forEach((it) => { itemsById[it.id] = it; });
   return (data.lines || []).map((line) => {
