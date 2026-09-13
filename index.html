@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Chaos Ledger</title>
+<title>PoE Companion</title>
 <style>
   :root {
     --bg: #14110d;
@@ -29,6 +29,29 @@
     min-height: 100vh;
   }
   .wrap { max-width: 640px; margin: 0 auto; }
+  .app-nav {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .app-nav button {
+    flex: 1;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    padding: 10px 6px;
+    cursor: pointer;
+  }
+  .app-nav button.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
   header h1 {
     font-family: var(--font-display);
     font-size: 28px;
@@ -48,7 +71,7 @@
     gap: 8px;
     margin-bottom: 12px;
   }
-  input[type="text"], select, button {
+  input[type="text"], select, button.ctrl {
     background: var(--panel);
     border: 1px solid var(--border);
     color: var(--text);
@@ -58,23 +81,23 @@
     font-size: 13px;
   }
   input[type="text"] { flex: 1; min-width: 120px; }
-  button {
+  button.ctrl {
     color: var(--gold);
     cursor: pointer;
     border-color: var(--gold-dim);
   }
-  button:hover { background: var(--panel-hover); }
+  button.ctrl:hover { background: var(--panel-hover); }
   button.toggle-active {
     background: var(--gold-dim);
     color: var(--bg);
   }
-  #status {
+  #status, #loot-status {
     font-size: 12px;
     color: var(--text-dim);
     margin-bottom: 10px;
     min-height: 16px;
   }
-  #status.err { color: var(--down); }
+  #status.err, #loot-status.err { color: var(--down); }
   .list-header {
     display: flex;
     align-items: center;
@@ -155,6 +178,30 @@
     color: var(--border);
   }
   .star.starred { color: var(--gold); }
+  .loot-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .loot-item-row a {
+    font-family: var(--font-display);
+    font-size: 14px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .loot-item-row a:hover { color: var(--gold); }
+  .rarity-badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1px 5px;
+    flex-shrink: 0;
+  }
   footer {
     margin-top: 16px;
     font-size: 11px;
@@ -165,40 +212,75 @@
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>The Chaos Ledger</h1>
-    <p class="tag">Live currency prices, sourced from poe.ninja</p>
-  </header>
-
-  <div class="toolbar">
-    <select id="leagueSelect"><option>Loading...</option></select>
-    <button id="refreshBtn">Refresh</button>
-    <button id="starredBtn">★ Starred only</button>
-    <button id="moversBtn">🔥 Big Movers</button>
-  </div>
-  <div class="toolbar">
-    <input type="text" id="searchInput" placeholder="Filter currencies...">
+  <div class="app-nav">
+    <button id="navLedger" class="active">💰 Chaos Ledger</button>
+    <button id="navLoot">🗺️ Loot Cheat Sheet</button>
   </div>
 
-  <div id="status">Starting up...</div>
-  <div class="list-header">
-    <span class="h-star">&nbsp;</span>
-    <span class="h-icon">&nbsp;</span>
-    <span class="h-name">Currency</span>
-    <span class="h-value">Chaos / Divine</span>
-    <span class="h-change">7d change</span>
-  </div>
-  <div id="list"></div>
+  <div id="tab-ledger" class="tab-panel active">
+    <header>
+      <h1>The Chaos Ledger</h1>
+      <p class="tag">Live currency prices, sourced from poe.ninja</p>
+    </header>
 
-  <footer>
-    Prices are fetched by a scheduled job and committed to this site, not called live from your browser. Data updates roughly every 30 minutes.
-    <br>"7d change" is poe.ninja's own week-over-week trend. A ⚠ flag means very low trade volume, treat that price as unreliable, it can be skewed by a single odd listing.
-    <br>Big Movers excludes thin-market currencies and anything worth under 1 chaos (tiny-value items can swing wildly in % terms without meaning anything), and splits results into Rising (consider selling) and Dropping (maybe a cheap buy).
-    <br>Currency count varies slightly run to run: poe.ninja only lists currencies with at least one active listing at snapshot time, we don't cut the list down ourselves.
-  </footer>
+    <div class="toolbar">
+      <select id="leagueSelect"><option>Loading...</option></select>
+      <button class="ctrl" id="refreshBtn">Refresh</button>
+      <button class="ctrl" id="starredBtn">★ Starred only</button>
+      <button class="ctrl" id="moversBtn">🔥 Big Movers</button>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="Filter currencies...">
+    </div>
+
+    <div id="status">Starting up...</div>
+    <div class="list-header">
+      <span class="h-star">&nbsp;</span>
+      <span class="h-icon">&nbsp;</span>
+      <span class="h-name">Currency</span>
+      <span class="h-value">Chaos / Divine</span>
+      <span class="h-change">7d change</span>
+    </div>
+    <div id="list"></div>
+
+    <footer>
+      Prices are fetched by a scheduled job and committed to this site, not called live from your browser. Data updates roughly every 30 minutes.
+      <br>"7d change" is poe.ninja's own week-over-week trend. A ⚠ flag means very low trade volume, treat that price as unreliable, it can be skewed by a single odd listing.
+      <br>Big Movers excludes thin-market currencies and anything worth under 1 chaos (tiny-value items can swing wildly in % terms without meaning anything), and splits results into Rising (consider selling) and Dropping (maybe a cheap buy).
+      <br>Currency count varies slightly run to run: poe.ninja only lists currencies with at least one active listing at snapshot time, we don't cut the list down ourselves.
+    </footer>
+  </div>
+
+  <div id="tab-loot" class="tab-panel">
+    <header>
+      <h1>Encounter Loot Cheat Sheet</h1>
+      <p class="tag">What drops from what, sourced from the PoE Wiki</p>
+    </header>
+
+    <div class="toolbar">
+      <select id="bossSelect"><option>Loading...</option></select>
+    </div>
+
+    <div id="loot-status">Starting up...</div>
+    <div id="loot-list"></div>
+
+    <footer>
+      Drop data is compiled from the PoE Wiki's structured database (Cargo), refreshed roughly daily, not scraped page-by-page.
+      <br>V1 covers a curated list of major pinnacle bosses. League mechanics (Betrayal, Breach, Legion, etc.) aren't included yet, they're structured differently on the wiki and need their own pass.
+    </footer>
+  </div>
 </div>
 
 <script>
+/* ---------- Shared ---------- */
+function switchTab(tab) {
+  document.getElementById('tab-ledger').classList.toggle('active', tab === 'ledger');
+  document.getElementById('tab-loot').classList.toggle('active', tab === 'loot');
+  document.getElementById('navLedger').classList.toggle('active', tab === 'ledger');
+  document.getElementById('navLoot').classList.toggle('active', tab === 'loot');
+}
+
+/* ---------- Tab 1: The Chaos Ledger ---------- */
 const STORAGE_KEY = 'chaos-ledger-starred';
 const DATA_URL = './data/currency.json';
 
@@ -238,7 +320,6 @@ let selectedLeague = null;
 async function loadCurrency() {
   setStatus('Loading prices...');
   try {
-    // Cache-bust so we don't get stuck on a stale copy from the browser cache.
     const res = await fetch(DATA_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     allData = await res.json();
@@ -295,9 +376,6 @@ function buildRow(l) {
   const name = document.createElement('div');
   name.className = 'name';
   name.textContent = l.name;
-  // poe.ninja's volume figure isn't precisely documented, but low values
-  // reliably correlate with thin markets, where one odd listing can
-  // distort the whole price. Threshold is a rough heuristic, not exact.
   if (l.volume !== null && l.volume !== undefined && l.volume < 20) {
     const flag = document.createElement('span');
     flag.className = 'thin-flag';
@@ -331,8 +409,6 @@ function buildRow(l) {
   return row;
 }
 
-// Below this chaos value, a big % swing is just noise, nobody's making
-// real profit off a currency worth a fraction of a chaos moving around.
 const MOVER_MIN_VALUE = 1;
 
 function renderBigMovers(rows) {
@@ -383,7 +459,7 @@ function render() {
   rows.sort((a, b) => {
     const aStar = starred.has(a.id) ? 1 : 0;
     const bStar = starred.has(b.id) ? 1 : 0;
-    if (aStar !== bStar) return bStar - aStar; // starred first
+    if (aStar !== bStar) return bStar - aStar;
     return (b.value || 0) - (a.value || 0);
   });
 
@@ -395,9 +471,90 @@ function render() {
   rows.forEach(l => list.appendChild(buildRow(l)));
 }
 
+/* ---------- Tab 2: Encounter Loot Cheat Sheet ---------- */
+const LOOT_DATA_URL = './data/loot.json';
+let lootData = null;
+
+function setLootStatus(msg, isErr) {
+  const el = document.getElementById('loot-status');
+  el.textContent = msg;
+  el.className = isErr ? 'err' : '';
+}
+
+async function loadLoot() {
+  setLootStatus('Loading boss list...');
+  try {
+    const res = await fetch(LOOT_DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    lootData = await res.json();
+
+    const select = document.getElementById('bossSelect');
+    select.innerHTML = '';
+    (lootData.bosses || []).forEach(b => {
+      const opt = document.createElement('option');
+      opt.value = b.name;
+      opt.textContent = b.name;
+      select.appendChild(opt);
+    });
+
+    if (lootData.bosses && lootData.bosses.length) {
+      select.value = lootData.bosses[0].name;
+      renderLoot(lootData.bosses[0].name);
+    } else {
+      setLootStatus('No boss data available.', true);
+    }
+  } catch (e) {
+    setLootStatus('Could not load data/loot.json (' + e.message + '). If this is the first deploy, the update-loot workflow may not have run yet, check the Actions tab.', true);
+  }
+}
+
+function renderLoot(bossName) {
+  const list = document.getElementById('loot-list');
+  const boss = (lootData.bosses || []).find(b => b.name === bossName);
+  if (!boss) {
+    list.innerHTML = '';
+    setLootStatus('No data for that boss.', true);
+    return;
+  }
+  const generatedAt = lootData.generatedAt ? new Date(lootData.generatedAt).toLocaleString() : 'unknown time';
+  setLootStatus(boss.items.length + ' item(s) tracked for ' + boss.name + '. Compiled ' + generatedAt);
+
+  list.innerHTML = '';
+  if (!boss.items.length) {
+    list.innerHTML = '<p style="color:var(--text-dim);font-size:13px;">No drop data found for this boss yet.</p>';
+    return;
+  }
+  boss.items.forEach(item => {
+    const row = document.createElement('div');
+    row.className = 'loot-item-row';
+
+    const link = document.createElement('a');
+    link.href = item.wikiUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = item.name;
+
+    row.appendChild(link);
+
+    if (item.rarity) {
+      const badge = document.createElement('span');
+      badge.className = 'rarity-badge';
+      badge.textContent = item.rarity;
+      row.appendChild(badge);
+    }
+
+    list.appendChild(row);
+  });
+}
+
+/* ---------- Init ---------- */
 async function init() {
+  document.getElementById('navLedger').onclick = () => switchTab('ledger');
+  document.getElementById('navLoot').onclick = () => switchTab('loot');
+
   await loadStarred();
   await loadCurrency();
+  await loadLoot();
 
   document.getElementById('refreshBtn').onclick = loadCurrency;
   document.getElementById('leagueSelect').onchange = (e) => {
@@ -423,6 +580,7 @@ async function init() {
     e.target.classList.toggle('toggle-active', showBigMovers);
     render();
   };
+  document.getElementById('bossSelect').onchange = (e) => renderLoot(e.target.value);
 }
 
 init();

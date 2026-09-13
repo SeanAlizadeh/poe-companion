@@ -1,0 +1,32 @@
+name: Update Loot Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-loot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch loot data
+        run: node scripts/fetch-loot.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "poe-companion-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/loot.json
+          git diff --staged --quiet || git commit -m "Update loot data [automated]"
+          git push
