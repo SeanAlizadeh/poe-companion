@@ -39,13 +39,19 @@ async function cargoQuery(params) {
 
 async function resolveMonsterIds(bossName) {
   // A boss can have more than one underlying monster id (difficulty
-  // tiers, phases). We collect all of them and match drops against any.
-  // Using LIKE rather than exact equality since wiki page titles can
-  // differ subtly from the display name (spacing, punctuation).
+  // tiers, phases, apparitions). We collect all of them and match drops
+  // against any. Match against monsters.name (the display name), not
+  // _pageName, which points to the monster's own technical wiki page
+  // (e.g. "Monster:Metadata/Monsters/...") rather than the boss's name.
+  //
+  // Every field is explicitly aliased: Cargo returns unaliased
+  // underscore-containing field names with a space instead of an
+  // underscore in the JSON (e.g. "metadata id"), which silently breaks
+  // plain dot-access in JS unless we rename them ourselves.
   const params = {
     tables: 'monsters',
-    fields: 'monsters.metadata_id,monsters._pageName=pageName',
-    where: 'monsters._pageName LIKE "%' + bossName.replace(/"/g, '\\"') + '%"',
+    fields: 'monsters.metadata_id=metadataId,monsters.name=name',
+    where: 'monsters.name LIKE "%' + bossName.replace(/"/g, '\\"') + '%"',
     limit: '20'
   };
   const rows = await cargoQuery(params);
@@ -53,7 +59,7 @@ async function resolveMonsterIds(bossName) {
     const debugUrl = API_BASE + '?' + new URLSearchParams({ action: 'cargoquery', format: 'json', ...params }).toString();
     console.warn('  Zero rows for "' + bossName + '". Inspect this URL directly: ' + debugUrl);
   }
-  return [...new Set(rows.map((r) => r.metadata_id).filter(Boolean))];
+  return [...new Set(rows.map((r) => r.metadataId).filter(Boolean))];
 }
 
 async function fetchDropsForIds(ids) {
@@ -64,7 +70,7 @@ async function fetchDropsForIds(ids) {
   const likeClauses = ids.map((id) => 'items.drop_monsters__full LIKE "%' + id + '%"').join(' OR ');
   const rows = await cargoQuery({
     tables: 'items',
-    fields: 'items.name,items._pageName=pageName,items.rarity_id',
+    fields: 'items.name,items._pageName=pageName,items.rarity_id=rarityId',
     where: likeClauses,
     limit: '500'
   });
@@ -79,7 +85,7 @@ async function fetchDropsForIds(ids) {
     items.push({
       name: row.name,
       pageName: row.pageName,
-      rarity: row.rarity_id || null,
+      rarity: row.rarityId || null,
       wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((row.pageName || row.name).replace(/ /g, '_'))
     });
   }
