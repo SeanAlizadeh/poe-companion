@@ -166,6 +166,7 @@
     <select id="leagueSelect"><option>Loading...</option></select>
     <button id="refreshBtn">Refresh</button>
     <button id="starredBtn">★ Starred only</button>
+    <button id="moversBtn">🔥 Big Movers</button>
   </div>
   <div class="toolbar">
     <input type="text" id="searchInput" placeholder="Filter currencies...">
@@ -195,6 +196,7 @@ const DATA_URL = './data/currency.json';
 let starred = new Set();
 let currentLines = [];
 let showStarredOnly = false;
+let showBigMovers = false;
 
 function setStatus(msg, isErr) {
   const el = document.getElementById('status');
@@ -270,7 +272,22 @@ function render() {
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
   let rows = currentLines.filter(l => l.name.toLowerCase().includes(query));
   if (showStarredOnly) rows = rows.filter(l => starred.has(l.id));
-  rows.sort((a, b) => (b.value || 0) - (a.value || 0));
+  if (showBigMovers) {
+    // Exclude anything we've flagged as thin-market, a big % swing on
+    // almost no volume is noise, not a real opportunity. Lines with
+    // unknown volume (older fallback data sources) are kept, since we
+    // can't judge them either way.
+    rows = rows.filter(l => !(l.volume !== null && l.volume !== undefined && l.volume < 20));
+    rows = rows.filter(l => l.changePct !== null && l.changePct !== undefined);
+    rows.sort((a, b) => Math.abs(b.changePct) - Math.abs(a.changePct));
+  } else {
+    rows.sort((a, b) => {
+      const aStar = starred.has(a.id) ? 1 : 0;
+      const bStar = starred.has(b.id) ? 1 : 0;
+      if (aStar !== bStar) return bStar - aStar; // starred first
+      return (b.value || 0) - (a.value || 0);
+    });
+  }
 
   list.innerHTML = '';
   if (!rows.length) {
@@ -345,7 +362,20 @@ async function init() {
   document.getElementById('searchInput').oninput = render;
   document.getElementById('starredBtn').onclick = (e) => {
     showStarredOnly = !showStarredOnly;
+    if (showStarredOnly) {
+      showBigMovers = false;
+      document.getElementById('moversBtn').classList.remove('toggle-active');
+    }
     e.target.classList.toggle('toggle-active', showStarredOnly);
+    render();
+  };
+  document.getElementById('moversBtn').onclick = (e) => {
+    showBigMovers = !showBigMovers;
+    if (showBigMovers) {
+      showStarredOnly = false;
+      document.getElementById('starredBtn').classList.remove('toggle-active');
+    }
+    e.target.classList.toggle('toggle-active', showBigMovers);
     render();
   };
 }
