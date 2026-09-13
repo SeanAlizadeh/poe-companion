@@ -7,6 +7,8 @@ const API_BASE = 'https://www.poewiki.net/w/api.php';
 
 const USER_AGENT = 'poe-companion/1.0 (personal project, github.com/Seanathustra/poe-companion)';
 
+const fsp = await import('node:fs/promises');
+
 // Curated V1 list. Add a name here to track a new boss, no id hunting
 // needed, resolveMonsterIds() looks up the wiki's own id for us.
 const BOSSES = [
@@ -83,6 +85,35 @@ function decodeEntities(str) {
   });
 }
 
+const iconCache = new Map(); // item name -> local relative path or null
+
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+async function downloadIcon(name) {
+  if (iconCache.has(name)) return iconCache.get(name);
+
+  const remoteUrl = 'https://www.poewiki.net/wiki/Special:FilePath/' + encodeURIComponent(name + ' inventory icon.png');
+  const localPath = 'data/icons/' + slugify(name) + '.png';
+
+  try {
+    const res = await fetch(remoteUrl, { headers: { 'User-Agent': USER_AGENT } });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const contentType = res.headers.get('content-type') || '';
+    if (!contentType.startsWith('image/')) throw new Error('Not an image (got ' + contentType + ')');
+    const buffer = Buffer.from(await res.arrayBuffer());
+    await fsp.mkdir('data/icons', { recursive: true });
+    await fsp.writeFile(localPath, buffer);
+    iconCache.set(name, './' + localPath);
+    return './' + localPath;
+  } catch (err) {
+    console.warn('  Icon download failed for "' + name + '":', err.message);
+    iconCache.set(name, null);
+    return null;
+  }
+}
+
 async function fetchDropsForIds(ids) {
   if (!ids.length) return [];
   // The wiki's HOLDS operator (meant for querying list fields like
@@ -105,16 +136,18 @@ async function fetchDropsForIds(ids) {
     const key = pageName || name;
     if (seen.has(key)) continue;
     seen.add(key);
+    // Downloaded once per unique item name and committed locally, rather
+    // than hotlinked at view time: the wiki's asset server appears to
+    // block cross-site embedded image requests (likely anti-bot
+    // protection that doesn't carry over to embeds), but plain
+    // server-side fetches like this one go through fine.
+    const iconPath = await downloadIcon(name);
     items.push({
       name: name,
       pageName: pageName,
       rarity: row.rarityId || null,
       itemClass: row.classId || null,
-      // MediaWiki's Special:FilePath serves a file directly without a
-      // second API round-trip, following the wiki's default inventory
-      // icon naming convention. A handful of items override this
-      // filename, we'll patch those exceptions once we see them.
-      iconUrl: 'https://www.poewiki.net/wiki/Special:FilePath/' + encodeURIComponent(name + ' inventory icon.png'),
+      iconUrl: iconPath,
       wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((pageName || name).replace(/ /g, '_'))
     });
   }
@@ -154,7 +187,7 @@ async function main() {
     bosses: bossResults
   };
 
-  const fs = await import('node:fs/promises');
+  const fs = fsp;
   await fs.mkdir('data', { recursive: true });
   await fs.writeFile('data/loot.json', JSON.stringify(output, null, 2));
   console.log('Wrote data/loot.json covering', bossResults.length, 'bosses');
