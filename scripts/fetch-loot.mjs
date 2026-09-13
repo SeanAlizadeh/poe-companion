@@ -42,7 +42,7 @@ async function resolveMonsterIds(bossName) {
   // tiers, phases). We collect all of them and match drops against any.
   const rows = await cargoQuery({
     tables: 'monsters',
-    fields: 'monsters.metadata_id,monsters._pageName',
+    fields: 'monsters.metadata_id,monsters._pageName=pageName',
     where: 'monsters._pageName="' + bossName.replace(/"/g, '\\"') + '"',
     limit: '20'
   });
@@ -57,7 +57,7 @@ async function fetchDropsForIds(ids) {
   const likeClauses = ids.map((id) => 'items.drop_monsters__full LIKE "%' + id + '%"').join(' OR ');
   const rows = await cargoQuery({
     tables: 'items',
-    fields: 'items.name,items._pageName,items.rarity_id',
+    fields: 'items.name,items._pageName=pageName,items.rarity_id',
     where: likeClauses,
     limit: '500'
   });
@@ -66,14 +66,14 @@ async function fetchDropsForIds(ids) {
   const seen = new Set();
   const items = [];
   for (const row of rows) {
-    const key = row._pageName || row.name;
+    const key = row.pageName || row.name;
     if (seen.has(key)) continue;
     seen.add(key);
     items.push({
       name: row.name,
-      pageName: row._pageName,
+      pageName: row.pageName,
       rarity: row.rarity_id || null,
-      wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((row._pageName || row.name).replace(/ /g, '_'))
+      wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((row.pageName || row.name).replace(/ /g, '_'))
     });
   }
   return items;
