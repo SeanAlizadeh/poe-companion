@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:14:43.422Z",
+  "generatedAt": "2026-09-13T18:18:27.788Z",
   "bosses": [
     {
       "name": "Sirus, Awakener of Worlds",
@@ -30,10 +30,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Annihilation_Support"
         },
         {
-          "name": "Awakener&#039;s Orb",
-          "pageName": "Awakener&#039;s Orb",
+          "name": "Awakener's Orb",
+          "pageName": "Awakener's Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Awakener%26%23039%3Bs_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Awakener's_Orb"
         },
         {
           "name": "Crown of the Inward Eye",
@@ -88,10 +88,10 @@
       ],
       "items": [
         {
-          "name": "Arn&#039;s Anguish",
-          "pageName": "Arn&#039;s Anguish",
+          "name": "Arn's Anguish",
+          "pageName": "Arn's Anguish",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Arn%26%23039%3Bs_Anguish"
+          "wikiUrl": "https://www.poewiki.net/wiki/Arn's_Anguish"
         },
         {
           "name": "Auspicious Ambitions",
@@ -124,10 +124,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Eclipse_Support"
         },
         {
-          "name": "Graven&#039;s Secret",
-          "pageName": "Graven&#039;s Secret",
+          "name": "Graven's Secret",
+          "pageName": "Graven's Secret",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Graven%26%23039%3Bs_Secret"
+          "wikiUrl": "https://www.poewiki.net/wiki/Graven's_Secret"
         },
         {
           "name": "Invert the Rules Support",
@@ -142,10 +142,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Legacy_of_Fury"
         },
         {
-          "name": "Olesya&#039;s Delight",
-          "pageName": "Olesya&#039;s Delight",
+          "name": "Olesya's Delight",
+          "pageName": "Olesya's Delight",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Olesya%26%23039%3Bs_Delight"
+          "wikiUrl": "https://www.poewiki.net/wiki/Olesya's_Delight"
         },
         {
           "name": "Orb of Conflict",
@@ -198,16 +198,16 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
         },
         {
-          "name": "Shaper&#039;s Exalted Orb",
-          "pageName": "Shaper&#039;s Exalted Orb",
+          "name": "Shaper's Exalted Orb",
+          "pageName": "Shaper's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Shaper%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Shaper's_Exalted_Orb"
         },
         {
-          "name": "Shaper&#039;s Touch",
-          "pageName": "Shaper&#039;s Touch",
+          "name": "Shaper's Touch",
+          "pageName": "Shaper's Touch",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Shaper%26%23039%3Bs_Touch"
+          "wikiUrl": "https://www.poewiki.net/wiki/Shaper's_Touch"
         },
         {
           "name": "Solstice Vigil",
@@ -248,10 +248,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
         },
         {
-          "name": "Blasphemer&#039;s Grasp",
-          "pageName": "Blasphemer&#039;s Grasp",
+          "name": "Blasphemer's Grasp",
+          "pageName": "Blasphemer's Grasp",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Blasphemer%26%23039%3Bs_Grasp"
+          "wikiUrl": "https://www.poewiki.net/wiki/Blasphemer's_Grasp"
         },
         {
           "name": "Cooldown Recovery Support",
@@ -272,10 +272,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Disintegrator"
         },
         {
-          "name": "Elder&#039;s Exalted Orb",
-          "pageName": "Elder&#039;s Exalted Orb",
+          "name": "Elder's Exalted Orb",
+          "pageName": "Elder's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Elder%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Elder's_Exalted_Orb"
         },
         {
           "name": "Eldritch Blasphemy Support",
@@ -386,10 +386,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Voidfletcher"
         },
         {
-          "name": "Watcher&#039;s Eye",
-          "pageName": "Watcher&#039;s Eye",
+          "name": "Watcher's Eye",
+          "pageName": "Watcher's Eye",
           "rarity": "unique",
-          "wikiUrl": "https://www.poewiki.net/wiki/Watcher%26%23039%3Bs_Eye"
+          "wikiUrl": "https://www.poewiki.net/wiki/Watcher's_Eye"
         }
       ]
     },
@@ -552,16 +552,16 @@
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
-          "name": "Baran&#039;s Crest",
-          "pageName": "Baran&#039;s Crest",
+          "name": "Baran's Crest",
+          "pageName": "Baran's Crest",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Baran%26%23039%3Bs_Crest"
+          "wikiUrl": "https://www.poewiki.net/wiki/Baran's_Crest"
         },
         {
-          "name": "Crusader&#039;s Exalted Orb",
-          "pageName": "Crusader&#039;s Exalted Orb",
+          "name": "Crusader's Exalted Orb",
+          "pageName": "Crusader's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Crusader%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Crusader's_Exalted_Orb"
         },
         {
           "name": "Dementophobia",
@@ -634,10 +634,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Love_Through_Ice"
         },
         {
-          "name": "Redeemer&#039;s Exalted Orb",
-          "pageName": "Redeemer&#039;s Exalted Orb",
+          "name": "Redeemer's Exalted Orb",
+          "pageName": "Redeemer's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Redeemer%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Redeemer's_Exalted_Orb"
         },
         {
           "name": "The Eternal War",
@@ -652,10 +652,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
         },
         {
-          "name": "Veritania&#039;s Crest",
-          "pageName": "Veritania&#039;s Crest",
+          "name": "Veritania's Crest",
+          "pageName": "Veritania's Crest",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Veritania%26%23039%3Bs_Crest"
+          "wikiUrl": "https://www.poewiki.net/wiki/Veritania's_Crest"
         }
       ]
     },
@@ -680,10 +680,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
         },
         {
-          "name": "Al-Hezmin&#039;s Crest",
-          "pageName": "Al-Hezmin&#039;s Crest",
+          "name": "Al-Hezmin's Crest",
+          "pageName": "Al-Hezmin's Crest",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Al-Hezmin%26%23039%3Bs_Crest"
+          "wikiUrl": "https://www.poewiki.net/wiki/Al-Hezmin's_Crest"
         },
         {
           "name": "Council of Cats",
@@ -698,10 +698,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
-          "name": "Hunter&#039;s Exalted Orb",
-          "pageName": "Hunter&#039;s Exalted Orb",
+          "name": "Hunter's Exalted Orb",
+          "pageName": "Hunter's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Hunter%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Hunter's_Exalted_Orb"
         },
         {
           "name": "Justified Ambition",
@@ -750,10 +750,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
         },
         {
-          "name": "Drox&#039;s Crest",
-          "pageName": "Drox&#039;s Crest",
+          "name": "Drox's Crest",
+          "pageName": "Drox's Crest",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Drox%26%23039%3Bs_Crest"
+          "wikiUrl": "https://www.poewiki.net/wiki/Drox's_Crest"
         },
         {
           "name": "Justified Ambition",
@@ -780,10 +780,10 @@
           "wikiUrl": "https://www.poewiki.net/wiki/The_Strategist"
         },
         {
-          "name": "Warlord&#039;s Exalted Orb",
-          "pageName": "Warlord&#039;s Exalted Orb",
+          "name": "Warlord's Exalted Orb",
+          "pageName": "Warlord's Exalted Orb",
           "rarity": "normal",
-          "wikiUrl": "https://www.poewiki.net/wiki/Warlord%26%23039%3Bs_Exalted_Orb"
+          "wikiUrl": "https://www.poewiki.net/wiki/Warlord's_Exalted_Orb"
         }
       ]
     }
