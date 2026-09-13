@@ -18,7 +18,7 @@
     }
   ],
   "defaultLeague": "Allflame",
-  "fetchedAt": "2026-09-13T12:51:03.547Z",
+  "fetchedAt": "2026-09-13T12:56:14.067Z",
   "data": {
     "Allflame": {
       "source": "exchange",
@@ -38,7 +38,7 @@
           "value": 1,
           "unit": "chaos",
           "changePct": 114.16040100250626,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
           "divineValue": 0.002864508736751647
         },
         {
@@ -47,7 +47,7 @@
           "value": 349.1,
           "unit": "chaos",
           "changePct": 100.96286107290233,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJzY2FsZSI6MX1d/ec48896769/CurrencyModValues.png",
           "divineValue": 1
         },
         {
@@ -952,7 +952,7 @@
           "value": 1,
           "unit": "chaos",
           "changePct": 220.7317073170732,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
           "divineValue": 0.005238344683080147
         },
         {
@@ -1033,7 +1033,7 @@
           "value": 190.9,
           "unit": "chaos",
           "changePct": 219.65317919075144,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJzY2FsZSI6MX1d/ec48896769/CurrencyModValues.png",
           "divineValue": 1
         },
         {
@@ -1506,7 +1506,7 @@
           "value": 786.3,
           "unit": "chaos",
           "changePct": -166.41651031894935,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJzY2FsZSI6MX1d/ec48896769/CurrencyModValues.png",
           "divineValue": 1
         },
         {
@@ -1524,7 +1524,7 @@
           "value": 1,
           "unit": "chaos",
           "changePct": -172.96222664015903,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
           "divineValue": 0.0012717792191275594
         },
         {
@@ -2329,7 +2329,7 @@
           "name": "Chaos Orb",
           "unit": "chaos",
           "changePct": null,
-          "icon": "",
+          "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
           "divineValue": null
         },
         {
