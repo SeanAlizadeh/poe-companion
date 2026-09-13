@@ -40,12 +40,19 @@ async function cargoQuery(params) {
 async function resolveMonsterIds(bossName) {
   // A boss can have more than one underlying monster id (difficulty
   // tiers, phases). We collect all of them and match drops against any.
-  const rows = await cargoQuery({
+  // Using LIKE rather than exact equality since wiki page titles can
+  // differ subtly from the display name (spacing, punctuation).
+  const params = {
     tables: 'monsters',
     fields: 'monsters.metadata_id,monsters._pageName=pageName',
-    where: 'monsters._pageName="' + bossName.replace(/"/g, '\\"') + '"',
+    where: 'monsters._pageName LIKE "%' + bossName.replace(/"/g, '\\"') + '%"',
     limit: '20'
-  });
+  };
+  const rows = await cargoQuery(params);
+  if (!rows.length) {
+    const debugUrl = API_BASE + '?' + new URLSearchParams({ action: 'cargoquery', format: 'json', ...params }).toString();
+    console.warn('  Zero rows for "' + bossName + '". Inspect this URL directly: ' + debugUrl);
+  }
   return [...new Set(rows.map((r) => r.metadata_id).filter(Boolean))];
 }
 
