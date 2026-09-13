@@ -1,0 +1,818 @@
+{
+  "league": {
+    "id": "Allflame",
+    "name": "Allflame"
+  },
+  "source": "exchange",
+  "fetchedAt": "2026-09-13T11:13:30.975Z",
+  "lines": [
+    {
+      "id": "accelerating-catalyst",
+      "name": "accelerating-catalyst",
+      "value": 2.89,
+      "unit": "chaos",
+      "changePct": -244.11764705882354,
+      "icon": ""
+    },
+    {
+      "id": "chaos",
+      "name": "chaos",
+      "value": 1,
+      "unit": "chaos",
+      "changePct": 112.9319955406912,
+      "icon": ""
+    },
+    {
+      "id": "divine",
+      "name": "divine",
+      "value": 348.7,
+      "unit": "chaos",
+      "changePct": 97.53997539975397,
+      "icon": ""
+    },
+    {
+      "id": "blessed",
+      "name": "blessed",
+      "value": 0.2228,
+      "unit": "chaos",
+      "changePct": 9.603621238071947,
+      "icon": ""
+    },
+    {
+      "id": "abrasive-catalyst",
+      "name": "abrasive-catalyst",
+      "value": 1.64,
+      "unit": "chaos",
+      "changePct": -159.43992773261064,
+      "icon": ""
+    },
+    {
+      "id": "alch",
+      "name": "alch",
+      "value": 0.01502,
+      "unit": "chaos",
+      "changePct": 325.4847645429363,
+      "icon": ""
+    },
+    {
+      "id": "alt",
+      "name": "alt",
+      "value": 0.2349,
+      "unit": "chaos",
+      "changePct": 117.5933609958506,
+      "icon": ""
+    },
+    {
+      "id": "ancient-orb",
+      "name": "ancient-orb",
+      "value": 11.95,
+      "unit": "chaos",
+      "changePct": 412.5514403292181,
+      "icon": ""
+    },
+    {
+      "id": "annul",
+      "name": "annul",
+      "value": 24.8,
+      "unit": "chaos",
+      "changePct": -44.505985349294264,
+      "icon": ""
+    },
+    {
+      "id": "aug",
+      "name": "aug",
+      "value": 0.04199,
+      "unit": "chaos",
+      "changePct": -29.758493655341788,
+      "icon": ""
+    },
+    {
+      "id": "awakeners-orb",
+      "name": "awakeners-orb",
+      "value": 944,
+      "unit": "chaos",
+      "changePct": -190.09174311926606,
+      "icon": ""
+    },
+    {
+      "id": "bauble",
+      "name": "bauble",
+      "value": 0.8321,
+      "unit": "chaos",
+      "changePct": 116.12349914236708,
+      "icon": ""
+    },
+    {
+      "id": "chance",
+      "name": "chance",
+      "value": 0.1417,
+      "unit": "chaos",
+      "changePct": -413.10160427807483,
+      "icon": ""
+    },
+    {
+      "id": "dead-mans-sulphur",
+      "name": "dead-mans-sulphur",
+      "value": 0.0113,
+      "unit": "chaos",
+      "changePct": -125.71090047393365,
+      "icon": ""
+    },
+    {
+      "id": "elders-exalted-orb",
+      "name": "elders-exalted-orb",
+      "value": 132.4,
+      "unit": "chaos",
+      "changePct": 2257.142857142857,
+      "icon": ""
+    },
+    {
+      "id": "eldritch-chaos-orb",
+      "name": "eldritch-chaos-orb",
+      "value": 93.5,
+      "unit": "chaos",
+      "changePct": -78.42364532019705,
+      "icon": ""
+    },
+    {
+      "id": "eldritch-exalted-orb",
+      "name": "eldritch-exalted-orb",
+      "value": 4.35,
+      "unit": "chaos",
+      "changePct": -44.68814256339959,
+      "icon": ""
+    },
+    {
+      "id": "eldritch-orb-of-annulment",
+      "name": "eldritch-orb-of-annulment",
+      "value": 58.08,
+      "unit": "chaos",
+      "changePct": -125.68079972423303,
+      "icon": ""
+    },
+    {
+      "id": "enkindling-orb",
+      "name": "enkindling-orb",
+      "value": 2.21,
+      "unit": "chaos",
+      "changePct": 79.05215321359012,
+      "icon": ""
+    },
+    {
+      "id": "exalted",
+      "name": "exalted",
+      "value": 2.2,
+      "unit": "chaos",
+      "changePct": -6.485771012574445,
+      "icon": ""
+    },
+    {
+      "id": "exceptional-eldritch-ichor",
+      "name": "exceptional-eldritch-ichor",
+      "value": 263.6,
+      "unit": "chaos",
+      "changePct": -10372.727272727274,
+      "icon": ""
+    },
+    {
+      "id": "fertile-catalyst",
+      "name": "fertile-catalyst",
+      "value": 50.46,
+      "unit": "chaos",
+      "changePct": 152.13849287169043,
+      "icon": ""
+    },
+    {
+      "id": "fracturing-orb",
+      "name": "fracturing-orb",
+      "value": 663.8,
+      "unit": "chaos",
+      "changePct": 60.46986721144027,
+      "icon": ""
+    },
+    {
+      "id": "fracturing-shard",
+      "name": "fracturing-shard",
+      "value": 25.82,
+      "unit": "chaos",
+      "changePct": -84.32671081677705,
+      "icon": ""
+    },
+    {
+      "id": "fusing",
+      "name": "fusing",
+      "value": 0.1499,
+      "unit": "chaos",
+      "changePct": 66.54528903049616,
+      "icon": ""
+    },
+    {
+      "id": "grand-eldritch-ember",
+      "name": "grand-eldritch-ember",
+      "value": 17.34,
+      "unit": "chaos",
+      "changePct": -357.01559020044544,
+      "icon": ""
+    },
+    {
+      "id": "grand-eldritch-ichor",
+      "name": "grand-eldritch-ichor",
+      "value": 9.85,
+      "unit": "chaos",
+      "changePct": -53.44660194174757,
+      "icon": ""
+    },
+    {
+      "id": "greater-eldritch-ember",
+      "name": "greater-eldritch-ember",
+      "value": 1.27,
+      "unit": "chaos",
+      "changePct": -88.05163614530171,
+      "icon": ""
+    },
+    {
+      "id": "greater-eldritch-ichor",
+      "name": "greater-eldritch-ichor",
+      "value": 0.8946,
+      "unit": "chaos",
+      "changePct": 5.498652291105115,
+      "icon": ""
+    },
+    {
+      "id": "imbued-catalyst",
+      "name": "imbued-catalyst",
+      "value": 1.53,
+      "unit": "chaos",
+      "changePct": 232.00000000000003,
+      "icon": ""
+    },
+    {
+      "id": "instilling-orb",
+      "name": "instilling-orb",
+      "value": 0.2111,
+      "unit": "chaos",
+      "changePct": -16.208393632416797,
+      "icon": ""
+    },
+    {
+      "id": "intrinsic-catalyst",
+      "name": "intrinsic-catalyst",
+      "value": 2.83,
+      "unit": "chaos",
+      "changePct": 188.64306784660764,
+      "icon": ""
+    },
+    {
+      "id": "jewellers",
+      "name": "jewellers",
+      "value": 0.01378,
+      "unit": "chaos",
+      "changePct": -52.506082725060836,
+      "icon": ""
+    },
+    {
+      "id": "lesser-eldritch-ember",
+      "name": "lesser-eldritch-ember",
+      "value": 0.3371,
+      "unit": "chaos",
+      "changePct": -139.97766610831937,
+      "icon": ""
+    },
+    {
+      "id": "lesser-eldritch-ichor",
+      "name": "lesser-eldritch-ichor",
+      "value": 0.2793,
+      "unit": "chaos",
+      "changePct": 183.22520852641335,
+      "icon": ""
+    },
+    {
+      "id": "mavens-chisel-of-avarice",
+      "name": "mavens-chisel-of-avarice",
+      "value": 149.5,
+      "unit": "chaos",
+      "changePct": 20.364010989010975,
+      "icon": ""
+    },
+    {
+      "id": "mavens-chisel-of-scarabs",
+      "name": "mavens-chisel-of-scarabs",
+      "value": 51.33,
+      "unit": "chaos",
+      "changePct": -253.5012594458438,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-binding",
+      "name": "orb-of-binding",
+      "value": 0.01429,
+      "unit": "chaos",
+      "changePct": -10.15807560137457,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-conflict",
+      "name": "orb-of-conflict",
+      "value": 592.7,
+      "unit": "chaos",
+      "changePct": 897.1428571428571,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-intention",
+      "name": "orb-of-intention",
+      "value": 1.82,
+      "unit": "chaos",
+      "changePct": -131.15530303030303,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-remembrance",
+      "name": "orb-of-remembrance",
+      "value": 133.2,
+      "unit": "chaos",
+      "changePct": -65.36796536796537,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-unmaking",
+      "name": "orb-of-unmaking",
+      "value": 0.3169,
+      "unit": "chaos",
+      "changePct": -9.520616828695944,
+      "icon": ""
+    },
+    {
+      "id": "orb-of-unravelling",
+      "name": "orb-of-unravelling",
+      "value": 25.18,
+      "unit": "chaos",
+      "changePct": 438.6879730866274,
+      "icon": ""
+    },
+    {
+      "id": "primal-lifeforce",
+      "name": "primal-lifeforce",
+      "value": 0.04194,
+      "unit": "chaos",
+      "changePct": 198.1707317073171,
+      "icon": ""
+    },
+    {
+      "id": "redeemers-exalted-orb",
+      "name": "redeemers-exalted-orb",
+      "value": 118.2,
+      "unit": "chaos",
+      "changePct": 1456.9148936170213,
+      "icon": ""
+    },
+    {
+      "id": "reflecting-mist",
+      "name": "reflecting-mist",
+      "value": 1644,
+      "unit": "chaos",
+      "changePct": -840.2542372881356,
+      "icon": ""
+    },
+    {
+      "id": "regal",
+      "name": "regal",
+      "value": 0.06514,
+      "unit": "chaos",
+      "changePct": -193.44091618948462,
+      "icon": ""
+    },
+    {
+      "id": "regret",
+      "name": "regret",
+      "value": 3.09,
+      "unit": "chaos",
+      "changePct": 170.47189451769606,
+      "icon": ""
+    },
+    {
+      "id": "sacred-lifeforce",
+      "name": "sacred-lifeforce",
+      "value": 49.78,
+      "unit": "chaos",
+      "changePct": -291.5151515151515,
+      "icon": ""
+    },
+    {
+      "id": "sandswept-lifeforce",
+      "name": "sandswept-lifeforce",
+      "value": 573.7,
+      "unit": "chaos",
+      "changePct": -41.964285714285715,
+      "icon": ""
+    },
+    {
+      "id": "scour",
+      "name": "scour",
+      "value": 0.9048,
+      "unit": "chaos",
+      "changePct": -3708.510638297872,
+      "icon": ""
+    },
+    {
+      "id": "scrap",
+      "name": "scrap",
+      "value": 0.2819,
+      "unit": "chaos",
+      "changePct": 2872.7540500736377,
+      "icon": ""
+    },
+    {
+      "id": "shapers-exalted-orb",
+      "name": "shapers-exalted-orb",
+      "value": 155.4,
+      "unit": "chaos",
+      "changePct": 2590.74074074074,
+      "icon": ""
+    },
+    {
+      "id": "tainted-blacksmiths-whetstone",
+      "name": "tainted-blacksmiths-whetstone",
+      "value": 2.31,
+      "unit": "chaos",
+      "changePct": -33.594841483073616,
+      "icon": ""
+    },
+    {
+      "id": "tainted-exalted-orb",
+      "name": "tainted-exalted-orb",
+      "value": 348.7,
+      "unit": "chaos",
+      "changePct": -535.8633776091082,
+      "icon": ""
+    },
+    {
+      "id": "tainted-orb-of-fusing",
+      "name": "tainted-orb-of-fusing",
+      "value": 22.36,
+      "unit": "chaos",
+      "changePct": -38.670076726342714,
+      "icon": ""
+    },
+    {
+      "id": "tempering-catalyst",
+      "name": "tempering-catalyst",
+      "value": 8.03,
+      "unit": "chaos",
+      "changePct": 11.841713775662017,
+      "icon": ""
+    },
+    {
+      "id": "turbulent-catalyst",
+      "name": "turbulent-catalyst",
+      "value": 2.33,
+      "unit": "chaos",
+      "changePct": -53.36848271821909,
+      "icon": ""
+    },
+    {
+      "id": "veiled-exalted-orb",
+      "name": "veiled-exalted-orb",
+      "value": 4677,
+      "unit": "chaos",
+      "changePct": 234.965034965035,
+      "icon": ""
+    },
+    {
+      "id": "vivid-lifeforce",
+      "name": "vivid-lifeforce",
+      "value": 0.1859,
+      "unit": "chaos",
+      "changePct": 811.2499999999999,
+      "icon": ""
+    },
+    {
+      "id": "wild-lifeforce",
+      "name": "wild-lifeforce",
+      "value": 0.03138,
+      "unit": "chaos",
+      "changePct": -31.95402298850574,
+      "icon": ""
+    },
+    {
+      "id": "chrome",
+      "name": "chrome",
+      "value": 5.35,
+      "unit": "chaos",
+      "changePct": -120.83928061661433,
+      "icon": ""
+    },
+    {
+      "id": "crusaders-exalted-orb",
+      "name": "crusaders-exalted-orb",
+      "value": 209.7,
+      "unit": "chaos",
+      "changePct": 258.4745762711865,
+      "icon": ""
+    },
+    {
+      "id": "hinekoras-lock",
+      "name": "hinekoras-lock",
+      "value": 88652,
+      "unit": "chaos",
+      "changePct": 44.444444444444464,
+      "icon": ""
+    },
+    {
+      "id": "exceptional-eldritch-ember",
+      "name": "exceptional-eldritch-ember",
+      "value": 257.4,
+      "unit": "chaos",
+      "changePct": 36.259977194982895,
+      "icon": ""
+    },
+    {
+      "id": "flesh-of-xesht",
+      "name": "flesh-of-xesht",
+      "value": 95.65,
+      "unit": "chaos",
+      "changePct": 112.7039627039627,
+      "icon": ""
+    },
+    {
+      "id": "foulborn-exalted-orb",
+      "name": "foulborn-exalted-orb",
+      "value": 2308,
+      "unit": "chaos",
+      "changePct": 576.9230769230769,
+      "icon": ""
+    },
+    {
+      "id": "foulborn-orb-of-augmentation",
+      "name": "foulborn-orb-of-augmentation",
+      "value": 2.46,
+      "unit": "chaos",
+      "changePct": -16.546595398559155,
+      "icon": ""
+    },
+    {
+      "id": "foulborn-regal-orb",
+      "name": "foulborn-regal-orb",
+      "value": 19.96,
+      "unit": "chaos",
+      "changePct": -44.974814104101696,
+      "icon": ""
+    },
+    {
+      "id": "gcp",
+      "name": "gcp",
+      "value": 3.07,
+      "unit": "chaos",
+      "changePct": -1.3636363636363669,
+      "icon": ""
+    },
+    {
+      "id": "hunters-exalted-orb",
+      "name": "hunters-exalted-orb",
+      "value": 443.7,
+      "unit": "chaos",
+      "changePct": 476.22282608695645,
+      "icon": ""
+    },
+    {
+      "id": "mavens-chisel-of-divination",
+      "name": "mavens-chisel-of-divination",
+      "value": 37.38,
+      "unit": "chaos",
+      "changePct": -155.28455284552848,
+      "icon": ""
+    },
+    {
+      "id": "mavens-chisel-of-procurement",
+      "name": "mavens-chisel-of-procurement",
+      "value": 4.07,
+      "unit": "chaos",
+      "changePct": -2.27882037533512,
+      "icon": ""
+    },
+    {
+      "id": "mavens-chisel-of-proliferation",
+      "name": "mavens-chisel-of-proliferation",
+      "value": 30.4,
+      "unit": "chaos",
+      "changePct": 295.16695957820735,
+      "icon": ""
+    },
+    {
+      "id": "mavens-orb",
+      "name": "mavens-orb",
+      "value": 1520,
+      "unit": "chaos",
+      "changePct": -818.9189189189187,
+      "icon": ""
+    },
+    {
+      "id": "mirror",
+      "name": "mirror",
+      "value": 376138,
+      "unit": "chaos",
+      "changePct": 322.14983713355053,
+      "icon": ""
+    },
+    {
+      "id": "mirror-shard",
+      "name": "mirror-shard",
+      "value": 19875,
+      "unit": "chaos",
+      "changePct": 1435.897435897436,
+      "icon": ""
+    },
+    {
+      "id": "noxious-catalyst",
+      "name": "noxious-catalyst",
+      "value": 1.52,
+      "unit": "chaos",
+      "changePct": 108.25734549138805,
+      "icon": ""
+    },
+    {
+      "id": "portal",
+      "name": "portal",
+      "value": 0.03213,
+      "unit": "chaos",
+      "changePct": 1218.867924528302,
+      "icon": ""
+    },
+    {
+      "id": "prismatic-catalyst",
+      "name": "prismatic-catalyst",
+      "value": 117.8,
+      "unit": "chaos",
+      "changePct": -28.796561604584536,
+      "icon": ""
+    },
+    {
+      "id": "rogues-marker",
+      "name": "rogues-marker",
+      "value": 0.0003354,
+      "unit": "chaos",
+      "changePct": -96.52853507815341,
+      "icon": ""
+    },
+    {
+      "id": "sacred-orb",
+      "name": "sacred-orb",
+      "value": 115.9,
+      "unit": "chaos",
+      "changePct": -291.3696060037523,
+      "icon": ""
+    },
+    {
+      "id": "stacked-deck",
+      "name": "stacked-deck",
+      "value": 6.17,
+      "unit": "chaos",
+      "changePct": -316.19897959183675,
+      "icon": ""
+    },
+    {
+      "id": "tailoring-orb",
+      "name": "tailoring-orb",
+      "value": 680.1,
+      "unit": "chaos",
+      "changePct": -699.6031746031745,
+      "icon": ""
+    },
+    {
+      "id": "tainted-armourers-scrap",
+      "name": "tainted-armourers-scrap",
+      "value": 3.12,
+      "unit": "chaos",
+      "changePct": -36.233543216943325,
+      "icon": ""
+    },
+    {
+      "id": "tainted-catalyst",
+      "name": "tainted-catalyst",
+      "value": 11.67,
+      "unit": "chaos",
+      "changePct": -267.37089201877933,
+      "icon": ""
+    },
+    {
+      "id": "tainted-chaos-orb",
+      "name": "tainted-chaos-orb",
+      "value": 14.97,
+      "unit": "chaos",
+      "changePct": -41.47605432451751,
+      "icon": ""
+    },
+    {
+      "id": "tainted-chromatic-orb",
+      "name": "tainted-chromatic-orb",
+      "value": 8.69,
+      "unit": "chaos",
+      "changePct": -50.967741935483865,
+      "icon": ""
+    },
+    {
+      "id": "tainted-divine-orb",
+      "name": "tainted-divine-orb",
+      "value": 2024,
+      "unit": "chaos",
+      "changePct": -144.82758620689654,
+      "icon": ""
+    },
+    {
+      "id": "tainted-divine-teardrop",
+      "name": "tainted-divine-teardrop",
+      "value": 1918,
+      "unit": "chaos",
+      "changePct": 287.4258600237248,
+      "icon": ""
+    },
+    {
+      "id": "tainted-jewellers-orb",
+      "name": "tainted-jewellers-orb",
+      "value": 1.23,
+      "unit": "chaos",
+      "changePct": 16.171456405260596,
+      "icon": ""
+    },
+    {
+      "id": "tainted-mythic-orb",
+      "name": "tainted-mythic-orb",
+      "value": 17.23,
+      "unit": "chaos",
+      "changePct": -349.59514170040484,
+      "icon": ""
+    },
+    {
+      "id": "tempering-orb",
+      "name": "tempering-orb",
+      "value": 666.8,
+      "unit": "chaos",
+      "changePct": 53.05410122164047,
+      "icon": ""
+    },
+    {
+      "id": "transmutation-shard",
+      "name": "transmutation-shard",
+      "value": 242.7,
+      "unit": "chaos",
+      "changePct": -64.71394740122149,
+      "icon": ""
+    },
+    {
+      "id": "transmute",
+      "name": "transmute",
+      "value": 0.00734,
+      "unit": "chaos",
+      "changePct": 2424.7491638795987,
+      "icon": ""
+    },
+    {
+      "id": "unstable-catalyst",
+      "name": "unstable-catalyst",
+      "value": 9.75,
+      "unit": "chaos",
+      "changePct": 118.06930693069309,
+      "icon": ""
+    },
+    {
+      "id": "vaal",
+      "name": "vaal",
+      "value": 1.05,
+      "unit": "chaos",
+      "changePct": 23.04794075613875,
+      "icon": ""
+    },
+    {
+      "id": "veiled-chaos-orb",
+      "name": "veiled-chaos-orb",
+      "value": 87.36,
+      "unit": "chaos",
+      "changePct": 600.8665511265165,
+      "icon": ""
+    },
+    {
+      "id": "warlords-exalted-orb",
+      "name": "warlords-exalted-orb",
+      "value": 492.5,
+      "unit": "chaos",
+      "changePct": 214.75,
+      "icon": ""
+    },
+    {
+      "id": "whetstone",
+      "name": "whetstone",
+      "value": 0.09414,
+      "unit": "chaos",
+      "changePct": -747.7160696680908,
+      "icon": ""
+    },
+    {
+      "id": "wisdom",
+      "name": "wisdom",
+      "value": 0.007732,
+      "unit": "chaos",
+      "changePct": -91.42927308447936,
+      "icon": ""
+    }
+  ]
+}
