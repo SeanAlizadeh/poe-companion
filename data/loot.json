@@ -1,0 +1,791 @@
+{
+  "generatedAt": "2026-09-13T18:10:24.447Z",
+  "bosses": [
+    {
+      "name": "Sirus, Awakener of Worlds",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasExiles/AtlasExile5",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Apparition",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5ApparitionDetached",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5ApparitionInfluence",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Gauntlet",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Intruder",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Standalone",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5StandaloneMirage",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Throne",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5Wild",
+        "Metadata/Monsters/AtlasExiles/AtlasExile5WildUber__"
+      ],
+      "items": [
+        {
+          "name": "A Fate Worse Than Death",
+          "pageName": "A Fate Worse Than Death",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
+        },
+        {
+          "name": "Annihilation Support",
+          "pageName": "Annihilation Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Annihilation_Support"
+        },
+        {
+          "name": "Awakener&#039;s Orb",
+          "pageName": "Awakener&#039;s Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Awakener%26%23039%3Bs_Orb"
+        },
+        {
+          "name": "Crown of the Inward Eye",
+          "pageName": "Crown of the Inward Eye",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Crown_of_the_Inward_Eye"
+        },
+        {
+          "name": "Hands of the High Templar",
+          "pageName": "Hands of the High Templar",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Hands_of_the_High_Templar"
+        },
+        {
+          "name": "Orb of Dominance",
+          "pageName": "Orb of Dominance",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
+        },
+        {
+          "name": "The Burden of Truth",
+          "pageName": "The Burden of Truth",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Burden_of_Truth"
+        },
+        {
+          "name": "The Saviour",
+          "pageName": "The Saviour",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Saviour"
+        },
+        {
+          "name": "Thread of Hope",
+          "pageName": "Thread of Hope",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Thread_of_Hope"
+        }
+      ]
+    },
+    {
+      "name": "The Maven",
+      "monsterIds": [
+        "Metadata/Monsters/MavenBoss/MavenBrainBoss",
+        "Metadata/Monsters/MavenBoss/MavenBrainBossGauntlet_",
+        "Metadata/Monsters/MavenBoss/TheMaven",
+        "Metadata/Monsters/MavenBoss/TheMavenEnragedGauntlet",
+        "Metadata/Monsters/MavenBoss/TheMavenEnraged_",
+        "Metadata/Monsters/MavenBoss/TheMavenMap",
+        "Metadata/Monsters/MavenBoss/TheMavenMapSupporter",
+        "Metadata/Monsters/MavenBoss/TheMavenMapSupporterGauntlet",
+        "Metadata/Monsters/MavenBoss/TheMavenProvingGrounds"
+      ],
+      "items": [
+        {
+          "name": "Arn&#039;s Anguish",
+          "pageName": "Arn&#039;s Anguish",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Arn%26%23039%3Bs_Anguish"
+        },
+        {
+          "name": "Auspicious Ambitions",
+          "pageName": "Auspicious Ambitions",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
+        },
+        {
+          "name": "Ceremonial Voidstone",
+          "pageName": "Ceremonial Voidstone",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Ceremonial_Voidstone"
+        },
+        {
+          "name": "Doppelgänger Guise",
+          "pageName": "Doppelgänger Guise",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Doppelg%C3%A4nger_Guise"
+        },
+        {
+          "name": "Echoforge",
+          "pageName": "Echoforge",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Echoforge"
+        },
+        {
+          "name": "Eclipse Support",
+          "pageName": "Eclipse Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eclipse_Support"
+        },
+        {
+          "name": "Graven&#039;s Secret",
+          "pageName": "Graven&#039;s Secret",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Graven%26%23039%3Bs_Secret"
+        },
+        {
+          "name": "Invert the Rules Support",
+          "pageName": "Invert the Rules Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Invert_the_Rules_Support"
+        },
+        {
+          "name": "Legacy of Fury",
+          "pageName": "Legacy of Fury",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Legacy_of_Fury"
+        },
+        {
+          "name": "Olesya&#039;s Delight",
+          "pageName": "Olesya&#039;s Delight",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Olesya%26%23039%3Bs_Delight"
+        },
+        {
+          "name": "Orb of Conflict",
+          "pageName": "Orb of Conflict",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Conflict"
+        }
+      ]
+    },
+    {
+      "name": "The Shaper",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasBosses/TheShaperBoss",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossBeamOnly",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossElder",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossElderEncounter",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossGauntlet",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossMeleeOnly",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossProjectilesOnly",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossProjectilesOnlyAmbush",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossProjectilesOnlyAmbushUber",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossStandalone",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossStandaloneMirage",
+        "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder",
+        "Metadata/Monsters/Daemon/UberMapShaperDaemon"
+      ],
+      "items": [
+        {
+          "name": "Dying Sun",
+          "pageName": "Dying Sun",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dying_Sun"
+        },
+        {
+          "name": "Fragment of Knowledge",
+          "pageName": "Fragment of Knowledge",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Knowledge"
+        },
+        {
+          "name": "Fragment of Shape",
+          "pageName": "Fragment of Shape",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Shape"
+        },
+        {
+          "name": "Orb of Dominance",
+          "pageName": "Orb of Dominance",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
+        },
+        {
+          "name": "Shaper&#039;s Exalted Orb",
+          "pageName": "Shaper&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Shaper%26%23039%3Bs_Exalted_Orb"
+        },
+        {
+          "name": "Shaper&#039;s Touch",
+          "pageName": "Shaper&#039;s Touch",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Shaper%26%23039%3Bs_Touch"
+        },
+        {
+          "name": "Solstice Vigil",
+          "pageName": "Solstice Vigil",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Solstice_Vigil"
+        },
+        {
+          "name": "Voidstorm Support",
+          "pageName": "Voidstorm Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Voidstorm_Support"
+        },
+        {
+          "name": "Voidwalker",
+          "pageName": "Voidwalker",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Voidwalker"
+        }
+      ]
+    },
+    {
+      "name": "The Elder",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElder",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderGauntlet",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderStandaloneMirage_",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderStandalone_",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderUberGauntlet",
+        "Metadata/Monsters/AtlasBosses/TheElder/TheElderUnstable"
+      ],
+      "items": [
+        {
+          "name": "Auspicious Ambitions",
+          "pageName": "Auspicious Ambitions",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
+        },
+        {
+          "name": "Blasphemer&#039;s Grasp",
+          "pageName": "Blasphemer&#039;s Grasp",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Blasphemer%26%23039%3Bs_Grasp"
+        },
+        {
+          "name": "Cooldown Recovery Support",
+          "pageName": "Cooldown Recovery Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Cooldown_Recovery_Support"
+        },
+        {
+          "name": "Cyclopean Coil",
+          "pageName": "Cyclopean Coil",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Cyclopean_Coil"
+        },
+        {
+          "name": "Disintegrator",
+          "pageName": "Disintegrator",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Disintegrator"
+        },
+        {
+          "name": "Elder&#039;s Exalted Orb",
+          "pageName": "Elder&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Elder%26%23039%3Bs_Exalted_Orb"
+        },
+        {
+          "name": "Eldritch Blasphemy Support",
+          "pageName": "Eldritch Blasphemy Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Blasphemy_Support"
+        },
+        {
+          "name": "Fragment of Emptiness",
+          "pageName": "Fragment of Emptiness",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Emptiness"
+        },
+        {
+          "name": "Fragment of Terror",
+          "pageName": "Fragment of Terror",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Terror"
+        },
+        {
+          "name": "Hopeshredder",
+          "pageName": "Hopeshredder",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Hopeshredder"
+        },
+        {
+          "name": "Impresence",
+          "pageName": "Impresence (Chaos)",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Chaos)"
+        },
+        {
+          "name": "Impresence",
+          "pageName": "Impresence (Cold)",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Cold)"
+        },
+        {
+          "name": "Impresence",
+          "pageName": "Impresence (Fire)",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Fire)"
+        },
+        {
+          "name": "Impresence",
+          "pageName": "Impresence (Lightning)",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Lightning)"
+        },
+        {
+          "name": "Impresence",
+          "pageName": "Impresence (Physical)",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Impresence_(Physical)"
+        },
+        {
+          "name": "Indigon",
+          "pageName": "Indigon",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Indigon"
+        },
+        {
+          "name": "Mark of the Elder",
+          "pageName": "Mark of the Elder",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Mark_of_the_Elder"
+        },
+        {
+          "name": "Mark of the Shaper",
+          "pageName": "Mark of the Shaper",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Mark_of_the_Shaper"
+        },
+        {
+          "name": "Nebuloch",
+          "pageName": "Nebuloch",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Nebuloch"
+        },
+        {
+          "name": "Orb of Dominance",
+          "pageName": "Orb of Dominance",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Orb_of_Dominance"
+        },
+        {
+          "name": "Shimmeron",
+          "pageName": "Shimmeron",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Shimmeron"
+        },
+        {
+          "name": "Void of the Elements",
+          "pageName": "Void of the Elements",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Void_of_the_Elements"
+        },
+        {
+          "name": "Void Shockwave Support",
+          "pageName": "Void Shockwave Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Void_Shockwave_Support"
+        },
+        {
+          "name": "Voidfletcher",
+          "pageName": "Voidfletcher",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Voidfletcher"
+        },
+        {
+          "name": "Watcher&#039;s Eye",
+          "pageName": "Watcher&#039;s Eye",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Watcher%26%23039%3Bs_Eye"
+        }
+      ]
+    },
+    {
+      "name": "The Eater of Worlds",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasInvaders/ConsumeMonsters/ConsumeBoss",
+        "Metadata/Monsters/AtlasInvaders/ConsumeMonsters/ConsumeBossGauntlet"
+      ],
+      "items": [
+        {
+          "name": "Auspicious Ambitions",
+          "pageName": "Auspicious Ambitions",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
+        },
+        {
+          "name": "Eldritch Chaos Orb",
+          "pageName": "Eldritch Chaos Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Chaos_Orb"
+        },
+        {
+          "name": "Eldritch Exalted Orb",
+          "pageName": "Eldritch Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Exalted_Orb"
+        },
+        {
+          "name": "Eldritch Orb of Annulment",
+          "pageName": "Eldritch Orb of Annulment",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Orb_of_Annulment"
+        },
+        {
+          "name": "Exceptional Eldritch Ichor",
+          "pageName": "Exceptional Eldritch Ichor",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Exceptional_Eldritch_Ichor"
+        },
+        {
+          "name": "Forbidden Flesh",
+          "pageName": "Forbidden Flesh",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Forbidden_Flesh"
+        },
+        {
+          "name": "Gluttony Support",
+          "pageName": "Gluttony Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Gluttony_Support"
+        },
+        {
+          "name": "Inextricable Fate",
+          "pageName": "Inextricable Fate",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Inextricable_Fate"
+        },
+        {
+          "name": "Melding of the Flesh",
+          "pageName": "Melding of the Flesh",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Melding_of_the_Flesh"
+        },
+        {
+          "name": "The Gluttonous Tide",
+          "pageName": "The Gluttonous Tide",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Gluttonous_Tide"
+        }
+      ]
+    },
+    {
+      "name": "The Searing Exarch",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasInvaders/CleansingMonsters/CleansingBoss",
+        "Metadata/Monsters/AtlasInvaders/CleansingMonsters/CleansingBossGauntlet"
+      ],
+      "items": [
+        {
+          "name": "Auspicious Ambitions",
+          "pageName": "Auspicious Ambitions",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Auspicious_Ambitions"
+        },
+        {
+          "name": "Dawnbreaker",
+          "pageName": "Dawnbreaker",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dawnbreaker"
+        },
+        {
+          "name": "Dawnstrider",
+          "pageName": "Dawnstrider",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dawnstrider"
+        },
+        {
+          "name": "Dissolution of the Flesh",
+          "pageName": "Dissolution of the Flesh",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dissolution_of_the_Flesh"
+        },
+        {
+          "name": "Eldritch Chaos Orb",
+          "pageName": "Eldritch Chaos Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Chaos_Orb"
+        },
+        {
+          "name": "Eldritch Exalted Orb",
+          "pageName": "Eldritch Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Exalted_Orb"
+        },
+        {
+          "name": "Eldritch Orb of Annulment",
+          "pageName": "Eldritch Orb of Annulment",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Eldritch_Orb_of_Annulment"
+        },
+        {
+          "name": "Exceptional Eldritch Ember",
+          "pageName": "Exceptional Eldritch Ember",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Exceptional_Eldritch_Ember"
+        },
+        {
+          "name": "Forbidden Flame",
+          "pageName": "Forbidden Flame",
+          "rarity": "unique",
+          "wikiUrl": "https://www.poewiki.net/wiki/Forbidden_Flame"
+        },
+        {
+          "name": "Overheat Support",
+          "pageName": "Overheat Support",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Overheat_Support"
+        }
+      ]
+    },
+    {
+      "name": "Baran, the Crusader",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasExiles/AtlasExile1",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1Apparition",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1ApparitionAtlas___",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1ApparitionStandalone",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1ApparitionStandaloneScarab",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1ApparitionUber",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1Influence",
+        "Metadata/Monsters/AtlasExiles/AtlasExile1Standalone",
+        "Metadata/Monsters/AtlasExiles/Player/AtlasExile1ApparitionAtlas"
+      ],
+      "items": [
+        {
+          "name": "A Fate Worse Than Death",
+          "pageName": "A Fate Worse Than Death",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
+        },
+        {
+          "name": "Baran&#039;s Crest",
+          "pageName": "Baran&#039;s Crest",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Baran%26%23039%3Bs_Crest"
+        },
+        {
+          "name": "Crusader&#039;s Exalted Orb",
+          "pageName": "Crusader&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Crusader%26%23039%3Bs_Exalted_Orb"
+        },
+        {
+          "name": "Dementophobia",
+          "pageName": "Dementophobia",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
+        },
+        {
+          "name": "Justified Ambition",
+          "pageName": "Justified Ambition",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
+        },
+        {
+          "name": "Succor of the Sinless",
+          "pageName": "Succor of the Sinless",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Succor_of_the_Sinless"
+        },
+        {
+          "name": "The Eternal War",
+          "pageName": "The Eternal War",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
+        },
+        {
+          "name": "The Price of Prescience",
+          "pageName": "The Price of Prescience",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
+        }
+      ]
+    },
+    {
+      "name": "Veritania, the Redeemer",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasExiles/AtlasExile2Apparition",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2ApparitionAtlas",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2ApparitionStandalone",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2ApparitionStandaloneScarab",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2ApparitionUber",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2Influence",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2_",
+        "Metadata/Monsters/AtlasExiles/AtlasExile2_Standalone",
+        "Metadata/Monsters/AtlasExiles/Player/AtlasExile2ApparitionAtlas"
+      ],
+      "items": [
+        {
+          "name": "A Fate Worse Than Death",
+          "pageName": "A Fate Worse Than Death",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
+        },
+        {
+          "name": "Dementophobia",
+          "pageName": "Dementophobia",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
+        },
+        {
+          "name": "Justified Ambition",
+          "pageName": "Justified Ambition",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
+        },
+        {
+          "name": "Love Through Ice",
+          "pageName": "Love Through Ice",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Love_Through_Ice"
+        },
+        {
+          "name": "Redeemer&#039;s Exalted Orb",
+          "pageName": "Redeemer&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Redeemer%26%23039%3Bs_Exalted_Orb"
+        },
+        {
+          "name": "The Eternal War",
+          "pageName": "The Eternal War",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
+        },
+        {
+          "name": "The Price of Prescience",
+          "pageName": "The Price of Prescience",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
+        },
+        {
+          "name": "Veritania&#039;s Crest",
+          "pageName": "Veritania&#039;s Crest",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Veritania%26%23039%3Bs_Crest"
+        }
+      ]
+    },
+    {
+      "name": "Al-Hezmin, the Hunter",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasExiles/AtlasExile3",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3Apparition",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3ApparitionAtlas_",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3ApparitionStandalone",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3ApparitionStandaloneScarab",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3ApparitionUber",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3Influence_",
+        "Metadata/Monsters/AtlasExiles/AtlasExile3Standalone",
+        "Metadata/Monsters/AtlasExiles/Player/AtlasExile3ApparitionAtlas__"
+      ],
+      "items": [
+        {
+          "name": "A Fate Worse Than Death",
+          "pageName": "A Fate Worse Than Death",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
+        },
+        {
+          "name": "Al-Hezmin&#039;s Crest",
+          "pageName": "Al-Hezmin&#039;s Crest",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Al-Hezmin%26%23039%3Bs_Crest"
+        },
+        {
+          "name": "Council of Cats",
+          "pageName": "Council of Cats",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Council_of_Cats"
+        },
+        {
+          "name": "Dementophobia",
+          "pageName": "Dementophobia",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
+        },
+        {
+          "name": "Hunter&#039;s Exalted Orb",
+          "pageName": "Hunter&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Hunter%26%23039%3Bs_Exalted_Orb"
+        },
+        {
+          "name": "Justified Ambition",
+          "pageName": "Justified Ambition",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
+        },
+        {
+          "name": "The Eternal War",
+          "pageName": "The Eternal War",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
+        },
+        {
+          "name": "The Price of Prescience",
+          "pageName": "The Price of Prescience",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
+        }
+      ]
+    },
+    {
+      "name": "Drox, the Warlord",
+      "monsterIds": [
+        "Metadata/Monsters/AtlasExiles/AtlasExile4",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4Apparition",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4ApparitionAtlas",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4ApparitionStandaloneScarab",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4ApparitionStandalone_",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4ApparitionUber",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4Influence",
+        "Metadata/Monsters/AtlasExiles/AtlasExile4Standalone",
+        "Metadata/Monsters/AtlasExiles/Player/AtlasExile4ApparitionAtlas"
+      ],
+      "items": [
+        {
+          "name": "A Fate Worse Than Death",
+          "pageName": "A Fate Worse Than Death",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/A_Fate_Worse_Than_Death"
+        },
+        {
+          "name": "Dementophobia",
+          "pageName": "Dementophobia",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Dementophobia"
+        },
+        {
+          "name": "Drox&#039;s Crest",
+          "pageName": "Drox&#039;s Crest",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Drox%26%23039%3Bs_Crest"
+        },
+        {
+          "name": "Justified Ambition",
+          "pageName": "Justified Ambition",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Justified_Ambition"
+        },
+        {
+          "name": "The Eternal War",
+          "pageName": "The Eternal War",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Eternal_War"
+        },
+        {
+          "name": "The Price of Prescience",
+          "pageName": "The Price of Prescience",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Prescience"
+        },
+        {
+          "name": "The Strategist",
+          "pageName": "The Strategist",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/The_Strategist"
+        },
+        {
+          "name": "Warlord&#039;s Exalted Orb",
+          "pageName": "Warlord&#039;s Exalted Orb",
+          "rarity": "normal",
+          "wikiUrl": "https://www.poewiki.net/wiki/Warlord%26%23039%3Bs_Exalted_Orb"
+        }
+      ]
+    }
+  ]
+}
