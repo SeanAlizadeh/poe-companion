@@ -155,7 +155,8 @@
 const STORAGE_KEY = 'chaos-ledger-starred';
 const LEGACY_URL = 'https://poe.ninja/api/data/currencyoverview';
 const NEW_LEAGUES_URL = 'https://poe.ninja/poe1/api/economy/leagues';
-const NEW_CURRENCY_URL = 'https://poe.ninja/poe1/api/economy/stash/current/currency/overview';
+const EXCHANGE_URL = 'https://poe.ninja/poe1/api/economy/exchange/current/overview';
+const STASH_CURRENCY_URL = 'https://poe.ninja/poe1/api/economy/stash/current/currency/overview';
 // Tried in order. If one proxy is down or misconfigured, we fall through
 // to the next rather than failing outright.
 const PROXIES = [
@@ -257,8 +258,8 @@ function normalizeLegacy(data) {
 }
 
 function normalizeNew(data) {
-  const primary = data.core ? data.core.primary : '';
-  const items = data.core ? data.core.items : {};
+  const primary = (data.core && data.core.primary) || 'chaos';
+  const items = (data.core && data.core.items) || {};
   return (data.lines || []).map(line => ({
     id: line.id,
     name: (items[line.id] && items[line.id].name) || line.id,
@@ -271,26 +272,36 @@ function normalizeNew(data) {
 
 async function loadCurrency(league) {
   setStatus('Fetching prices for ' + league + '...');
-  // Try the current documented endpoint first, fall back to the older
-  // long-standing endpoint if the new one errors or returns nothing usable.
+  // Prefer the Exchange overview: it reflects GGG's in-game Currency Exchange
+  // (bulk trading), which is what most players and tools like Awakened PoE
+  // Trade actually price against these days. Fall back to the older
+  // stash-tab-scan endpoints if that fails or looks empty.
   try {
-    const data = await fetchJSON(NEW_CURRENCY_URL + '?league=' + encodeURIComponent(league) + '&type=Currency');
+    const data = await fetchJSON(EXCHANGE_URL + '?league=' + encodeURIComponent(league) + '&type=Currency');
     if (data && data.lines && data.lines.length) {
-      currentLines = normalizeLegacy(data); // this endpoint's shape matches the legacy CurrencyOverviewLineModel
-      setStatus('Loaded ' + currentLines.length + ' currencies for ' + league + '. Last updated ' + new Date().toLocaleTimeString());
+      currentLines = normalizeNew(data);
+      setStatus('Loaded ' + currentLines.length + ' currencies for ' + league + ' (exchange market). Last updated ' + new Date().toLocaleTimeString());
       render();
       return;
     }
     throw new Error('empty response');
   } catch (e1) {
     try {
-      const data2 = await fetchJSON(LEGACY_URL + '?league=' + encodeURIComponent(league) + '&type=Currency');
+      const data2 = await fetchJSON(STASH_CURRENCY_URL + '?league=' + encodeURIComponent(league) + '&type=Currency');
       currentLines = normalizeLegacy(data2);
-      setStatus('Loaded ' + currentLines.length + ' currencies for ' + league + ' via legacy endpoint. Last updated ' + new Date().toLocaleTimeString());
+      setStatus('Loaded ' + currentLines.length + ' currencies for ' + league + ' (stash-tab market, fallback). Last updated ' + new Date().toLocaleTimeString());
       render();
+      return;
     } catch (e2) {
-      setStatus('Both endpoints failed. New: ' + e1.message + ' | Legacy: ' + e2.message, true);
-      document.getElementById('list').innerHTML = '';
+      try {
+        const data3 = await fetchJSON(LEGACY_URL + '?league=' + encodeURIComponent(league) + '&type=Currency');
+        currentLines = normalizeLegacy(data3);
+        setStatus('Loaded ' + currentLines.length + ' currencies for ' + league + ' (legacy endpoint, fallback). Last updated ' + new Date().toLocaleTimeString());
+        render();
+      } catch (e3) {
+        setStatus('All endpoints failed. Exchange: ' + e1.message + ' | Stash: ' + e2.message + ' | Legacy: ' + e3.message, true);
+        document.getElementById('list').innerHTML = '';
+      }
     }
   }
 }
@@ -329,7 +340,8 @@ function render() {
 
     const value = document.createElement('div');
     value.className = 'value';
-    value.textContent = l.value ? l.value.toFixed(1) + ' c' : '-';
+    const unitLabel = (l.unit === 'chaos' || !l.unit) ? 'c' : l.unit;
+    value.textContent = l.value ? l.value.toFixed(1) + ' ' + unitLabel : '-';
 
     const change = document.createElement('div');
     if (l.changePct === null || l.changePct === undefined) {
