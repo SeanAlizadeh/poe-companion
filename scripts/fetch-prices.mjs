@@ -40,19 +40,24 @@ function normalizeLegacyShape(data) {
   }));
 }
 
+const IMAGE_BASE = 'https://web.poecdn.com';
+
 function normalizeExchangeShape(data) {
   const primary = (data.core && data.core.primary) || 'chaos';
   const itemsArray = (data.core && data.core.items) || [];
   const itemsById = {};
   itemsArray.forEach((it) => { itemsById[it.id] = it; });
-  return (data.lines || []).map((line) => ({
-    id: line.id,
-    name: (itemsById[line.id] && itemsById[line.id].name) || String(line.id),
-    value: line.primaryValue,
-    unit: primary,
-    changePct: computeChange(line.sparkline),
-    icon: (itemsById[line.id] && itemsById[line.id].icon) || ''
-  }));
+  return (data.lines || []).map((line) => {
+    const meta = itemsById[line.id];
+    return {
+      id: line.id,
+      name: (meta && meta.name) || String(line.id),
+      value: line.primaryValue,
+      unit: primary,
+      changePct: computeChange(line.sparkline),
+      icon: (meta && meta.image) ? IMAGE_BASE + meta.image : ''
+    };
+  });
 }
 
 function addDivineValues(lines) {
@@ -128,29 +133,6 @@ async function main() {
   await fs.mkdir('data', { recursive: true });
   await fs.writeFile('data/currency.json', JSON.stringify(output, null, 2));
   console.log('Wrote data/currency.json covering', leagueSummaries.length, 'leagues');
-
-  // TEMPORARY DEBUG: dump the raw, untouched exchange overview response for
-  // the default league so we can see poe.ninja's real field names directly,
-  // instead of guessing from secondhand write-ups. Safe to delete once the
-  // icon lookup is confirmed correct.
-  try {
-    const rawUrl = EXCHANGE_URL + '?league=' + encodeURIComponent(leagueSummaries[0].id) + '&type=Currency';
-    const raw = await getJSON(rawUrl);
-    const sample = {
-      topLevelKeys: Object.keys(raw),
-      coreKeys: raw.core ? Object.keys(raw.core) : null,
-      firstTwoLines: (raw.lines || []).slice(0, 2),
-      itemsIsArray: Array.isArray(raw.core && raw.core.items),
-      itemsSample: raw.core && Array.isArray(raw.core.items)
-        ? raw.core.items.slice(0, 2)
-        : (raw.core && raw.core.items ? Object.entries(raw.core.items).slice(0, 2) : null),
-      topLevelItemsSample: raw.items ? (Array.isArray(raw.items) ? raw.items.slice(0, 2) : Object.entries(raw.items).slice(0, 2)) : null
-    };
-    await fs.writeFile('data/debug-raw.json', JSON.stringify(sample, null, 2));
-    console.log('Wrote data/debug-raw.json for inspection');
-  } catch (debugErr) {
-    console.warn('Debug dump failed (non-fatal):', debugErr.message);
-  }
 }
 
 main().catch((err) => {

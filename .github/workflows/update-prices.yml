@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "poe-companion-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/currency.json data/debug-raw.json
+          git add data/currency.json
           git diff --staged --quiet || git commit -m "Update currency prices [automated]"
           git push
