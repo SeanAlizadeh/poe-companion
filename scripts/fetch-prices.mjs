@@ -10,7 +10,7 @@ const LEGACY_URL = 'https://poe.ninja/api/data/currencyoverview';
 // poe.ninja's docs ask clients to send a descriptive User-Agent identifying
 // the app and a contact, so a scheduled job (rather than raw per-user
 // browser traffic) can do that properly.
-const USER_AGENT = 'poe-companion/1.0 (personal project, github.com/SeanAlizadeh/poe-companion)';
+const USER_AGENT = 'poe-companion/1.0 (personal project, github.com/Seanathustra/poe-companion)';
 
 async function getJSON(url) {
   const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
