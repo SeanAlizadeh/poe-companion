@@ -156,7 +156,13 @@ const STORAGE_KEY = 'chaos-ledger-starred';
 const LEGACY_URL = 'https://poe.ninja/api/data/currencyoverview';
 const NEW_LEAGUES_URL = 'https://poe.ninja/poe1/api/economy/leagues';
 const NEW_CURRENCY_URL = 'https://poe.ninja/poe1/api/economy/stash/current/currency/overview';
-const PROXY_PREFIX = 'https://api.allorigins.win/raw?url=';
+// Tried in order. If one proxy is down or misconfigured, we fall through
+// to the next rather than failing outright.
+const PROXIES = [
+  (url) => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(url),
+  (url) => 'https://corsproxy.io/?url=' + encodeURIComponent(url),
+  (url) => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url)
+];
 
 let starred = new Set();
 let currentLines = [];
@@ -169,21 +175,26 @@ function setStatus(msg, isErr) {
 }
 
 async function fetchJSON(url) {
-  // Try direct first. poe.ninja may not send CORS headers for browser JS,
-  // in which case we retry through a public read-only CORS proxy.
+  // Try direct first. poe.ninja doesn't send CORS headers for browser JS,
+  // so this is expected to fail and we fall through to a proxy.
+  const errors = [];
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     return await res.json();
   } catch (directErr) {
+    errors.push('direct: ' + directErr.message);
+  }
+  for (const buildProxyUrl of PROXIES) {
     try {
-      const res = await fetch(PROXY_PREFIX + encodeURIComponent(url));
+      const res = await fetch(buildProxyUrl(url));
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return await res.json();
     } catch (proxyErr) {
-      throw new Error('Direct fetch failed (' + directErr.message + '), proxy fetch also failed (' + proxyErr.message + ')');
+      errors.push('proxy: ' + proxyErr.message);
     }
   }
+  throw new Error(errors.join(' | '));
 }
 
 async function loadStarred() {
