@@ -66,6 +66,23 @@ async function resolveMonsterIds(bossName) {
   return [...new Set(rows.map((r) => r.metadataId).filter(Boolean))];
 }
 
+const NAMED_ENTITIES = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' '
+};
+
+function decodeEntities(str) {
+  if (!str) return str;
+  return str.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (match, ent) => {
+    if (ent[0] === '#') {
+      const code = ent[1] === 'x' || ent[1] === 'X'
+        ? parseInt(ent.slice(2), 16)
+        : parseInt(ent.slice(1), 10);
+      return Number.isFinite(code) ? String.fromCodePoint(code) : match;
+    }
+    return Object.prototype.hasOwnProperty.call(NAMED_ENTITIES, ent) ? NAMED_ENTITIES[ent] : match;
+  });
+}
+
 async function fetchDropsForIds(ids) {
   if (!ids.length) return [];
   // The wiki's HOLDS operator (meant for querying list fields like
@@ -83,14 +100,16 @@ async function fetchDropsForIds(ids) {
   const seen = new Set();
   const items = [];
   for (const row of rows) {
-    const key = row.pageName || row.name;
+    const name = decodeEntities(row.name);
+    const pageName = decodeEntities(row.pageName);
+    const key = pageName || name;
     if (seen.has(key)) continue;
     seen.add(key);
     items.push({
-      name: row.name,
-      pageName: row.pageName,
+      name: name,
+      pageName: pageName,
       rarity: row.rarityId || null,
-      wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((row.pageName || row.name).replace(/ /g, '_'))
+      wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((pageName || name).replace(/ /g, '_'))
     });
   }
   return items;
