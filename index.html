@@ -75,6 +75,32 @@
     min-height: 16px;
   }
   #status.err { color: var(--down); }
+  .list-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--gold-dim);
+  }
+  .list-header .h-star { width: 24px; flex-shrink: 0; }
+  .list-header .h-icon { width: 28px; flex-shrink: 0; }
+  .list-header .h-name { flex: 1; }
+  .list-header .h-value { min-width: 90px; text-align: right; }
+  .list-header .h-change { min-width: 60px; text-align: right; }
+  .thin-flag {
+    display: inline-block;
+    font-size: 9px;
+    color: var(--down);
+    border: 1px solid var(--down);
+    border-radius: 3px;
+    padding: 0 3px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -146,9 +172,20 @@
   </div>
 
   <div id="status">Starting up...</div>
+  <div class="list-header">
+    <span class="h-star">&nbsp;</span>
+    <span class="h-icon">&nbsp;</span>
+    <span class="h-name">Currency</span>
+    <span class="h-value">Chaos / Divine</span>
+    <span class="h-change">7d change</span>
+  </div>
   <div id="list"></div>
 
-  <footer>Prices are fetched by a scheduled job and committed to this site, not called live from your browser. Data updates roughly every 30 minutes.</footer>
+  <footer>
+    Prices are fetched by a scheduled job and committed to this site, not called live from your browser. Data updates roughly every 30 minutes.
+    <br>"7d change" is poe.ninja's own week-over-week trend. A ⚠ flag means very low trade volume, treat that price as unreliable, it can be skewed by a single odd listing.
+    <br>Currency count varies slightly run to run: poe.ninja only lists currencies with at least one active listing at snapshot time, we don't cut the list down ourselves.
+  </footer>
 </div>
 
 <script>
@@ -259,6 +296,16 @@ function render() {
     const name = document.createElement('div');
     name.className = 'name';
     name.textContent = l.name;
+    // poe.ninja's volume figure isn't precisely documented, but low values
+    // reliably correlate with thin markets, where one odd listing can
+    // distort the whole price. Threshold is a rough heuristic, not exact.
+    if (l.volume !== null && l.volume !== undefined && l.volume < 20) {
+      const flag = document.createElement('span');
+      flag.className = 'thin-flag';
+      flag.textContent = '⚠';
+      flag.title = 'Low trade volume, price may be unreliable';
+      name.appendChild(flag);
+    }
 
     const value = document.createElement('div');
     value.className = 'value';

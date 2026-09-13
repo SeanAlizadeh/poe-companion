@@ -18,14 +18,12 @@ async function getJSON(url) {
   return res.json();
 }
 
-function computeChange(sparkline) {
-  if (!sparkline || !sparkline.data) return null;
-  const points = sparkline.data.filter((v) => v !== null && v !== undefined);
-  if (points.length < 2) return null;
-  const first = points[0];
-  const last = points[points.length - 1];
-  if (!first) return null;
-  return ((last - first) / first) * 100;
+function getChangePct(sparkline) {
+  // poe.ninja's sparkline.data is already a week of daily percentage
+  // changes, not raw price points. totalChange is the correct end-to-end
+  // percentage over that window, no further math needed.
+  if (!sparkline) return null;
+  return (typeof sparkline.totalChange === 'number') ? sparkline.totalChange : null;
 }
 
 function normalizeLegacyShape(data) {
@@ -35,7 +33,8 @@ function normalizeLegacyShape(data) {
     name: line.currencyTypeName,
     value: line.chaosEquivalent,
     unit: 'chaos',
-    changePct: computeChange(line.receiveSparkLine),
+    changePct: getChangePct(line.receiveSparkLine),
+    volume: null, // not exposed by this endpoint
     icon: (details.find((d) => d.name === line.currencyTypeName) || {}).icon || ''
   }));
 }
@@ -57,7 +56,8 @@ function normalizeExchangeShape(data) {
       name: (meta && meta.name) || String(line.id),
       value: line.primaryValue,
       unit: primary,
-      changePct: computeChange(line.sparkline),
+      changePct: getChangePct(line.sparkline),
+      volume: (typeof line.volumePrimaryValue === 'number') ? line.volumePrimaryValue : null,
       icon: (meta && meta.image) ? IMAGE_BASE + meta.image : ''
     };
   });
