@@ -1,0 +1,86 @@
+{
+  "topLevelKeys": [
+    "core",
+    "lines",
+    "items"
+  ],
+  "coreKeys": [
+    "items",
+    "rates",
+    "primary",
+    "secondary"
+  ],
+  "firstTwoLines": [
+    {
+      "id": "accelerating-catalyst",
+      "primaryValue": 2.98,
+      "volumePrimaryValue": 171.3,
+      "maxVolumeCurrency": "chaos",
+      "maxVolumeRate": 0.3356,
+      "sparkline": {
+        "totalChange": -1.7,
+        "data": [
+          -11.83,
+          -21.75,
+          -11.43,
+          20.86,
+          27.16,
+          -10.91,
+          -1.7
+        ]
+      }
+    },
+    {
+      "id": "chaos",
+      "primaryValue": 1,
+      "volumePrimaryValue": 2318365,
+      "maxVolumeCurrency": "divine",
+      "maxVolumeRate": 349.1,
+      "sparkline": {
+        "totalChange": 17.09,
+        "data": [
+          7.98,
+          13.05,
+          16.92,
+          19.6,
+          16.03,
+          16.62,
+          17.09
+        ]
+      }
+    }
+  ],
+  "itemsIsArray": true,
+  "itemsSample": [
+    {
+      "id": "chaos",
+      "name": "Chaos Orb",
+      "image": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
+      "category": "Currency",
+      "detailsId": "chaos-orb"
+    },
+    {
+      "id": "divine",
+      "name": "Divine Orb",
+      "image": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJzY2FsZSI6MX1d/ec48896769/CurrencyModValues.png",
+      "category": "Currency",
+      "detailsId": "divine-orb"
+    }
+  ],
+  "topLevelItemsSample": [
+    {
+      "id": "accelerating-catalyst",
+      "name": "Accelerating Catalyst",
+      "image": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ2F0YWx5c3RzL1NwZWVkTW9kaWZpZXJDYXRhbHlzdCIsInNjYWxlIjoxfV0/6493f34e78/SpeedModifierCatalyst.png",
+      "category": "Catalysts",
+      "detailsId": "accelerating-catalyst"
+    },
+    {
+      "id": "chaos",
+      "name": "Chaos Orb",
+      "image": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwic2NhbGUiOjF9XQ/46a2347805/CurrencyRerollRare.png",
+      "category": "Currency",
+      "detailsId": "chaos-orb"
+    }
+  ]
+}
