@@ -518,6 +518,7 @@ function render() {
 /* ---------- Tab 2: Encounter Loot Cheat Sheet ---------- */
 const LOOT_DATA_URL = './data/loot.json';
 let lootData = null;
+let allBossEntries = []; // flattened across categories, for lookup by name
 
 function setLootStatus(msg, isErr) {
   const el = document.getElementById('loot-status');
@@ -532,18 +533,40 @@ async function loadLoot() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     lootData = await res.json();
 
+    const bossCategory = (lootData.categories || []).find(c => c.id === 'boss');
+    allBossEntries = (bossCategory && bossCategory.entries) || [];
+
     const select = document.getElementById('bossSelect');
     select.innerHTML = '';
-    (lootData.bosses || []).forEach(b => {
-      const opt = document.createElement('option');
-      opt.value = b.name;
-      opt.textContent = b.name;
-      select.appendChild(opt);
+
+    // Group entries under optgroups by their `group` label, preserving
+    // first-seen order rather than alphabetizing.
+    const groups = [];
+    const groupMap = {};
+    allBossEntries.forEach(b => {
+      const g = b.group || 'Other';
+      if (!groupMap[g]) {
+        groupMap[g] = [];
+        groups.push(g);
+      }
+      groupMap[g].push(b);
     });
 
-    if (lootData.bosses && lootData.bosses.length) {
-      select.value = lootData.bosses[0].name;
-      renderLoot(lootData.bosses[0].name);
+    groups.forEach(g => {
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = g;
+      groupMap[g].forEach(b => {
+        const opt = document.createElement('option');
+        opt.value = b.name;
+        opt.textContent = b.name;
+        optgroup.appendChild(opt);
+      });
+      select.appendChild(optgroup);
+    });
+
+    if (allBossEntries.length) {
+      select.value = allBossEntries[0].name;
+      renderLoot(allBossEntries[0].name);
     } else {
       setLootStatus('No boss data available.', true);
     }
@@ -554,7 +577,7 @@ async function loadLoot() {
 
 function renderLoot(bossName) {
   const list = document.getElementById('loot-list');
-  const boss = (lootData.bosses || []).find(b => b.name === bossName);
+  const boss = allBossEntries.find(b => b.name === bossName);
   if (!boss) {
     list.innerHTML = '';
     setLootStatus('No data for that boss.', true);

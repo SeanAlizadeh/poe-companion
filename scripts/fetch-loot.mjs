@@ -9,24 +9,30 @@ const USER_AGENT = 'poe-companion/1.0 (personal project, github.com/Seanathustra
 
 const fsp = await import('node:fs/promises');
 
-// Curated V1 list. Add a name here to track a new boss, no id hunting
-// needed, resolveMonsterIds() looks up the wiki's own id for us.
-const BOSSES = [
-  'Sirus, Awakener of Worlds',
-  'The Maven',
-  'The Shaper',
-  'The Elder',
-  'The Eater of Worlds',
-  'The Searing Exarch',
-  'Baran, the Crusader',
-  'Veritania, the Redeemer',
-  'Al-Hezmin, the Hunter',
-  'Drox, the Warlord'
+// Curated V1 sources. Add an entry here to track a new boss, no id
+// hunting needed, resolveMonsterIds() looks up the wiki's own id for us.
+// `group` just organizes the dropdown into labeled sections.
+const BOSS_SOURCES = [
+  { name: 'Sirus, Awakener of Worlds', group: 'Pinnacle Bosses' },
+  { name: 'The Maven', group: 'Pinnacle Bosses' },
+  { name: 'The Shaper', group: 'Pinnacle Bosses' },
+  { name: 'The Elder', group: 'Pinnacle Bosses' },
+  { name: 'The Eater of Worlds', group: 'Pinnacle Bosses' },
+  { name: 'The Searing Exarch', group: 'Pinnacle Bosses' },
+  { name: 'Baran, the Crusader', group: 'Pinnacle Bosses' },
+  { name: 'Veritania, the Redeemer', group: 'Pinnacle Bosses' },
+  { name: 'Al-Hezmin, the Hunter', group: 'Pinnacle Bosses' },
+  { name: 'Drox, the Warlord', group: 'Pinnacle Bosses' },
   // 'The Feared' deliberately excluded: it's an encounter name (the four
   // Conquerors fought together in Ultimatum), not a distinct monster
-  // entity with its own drop_monsters link. Its rewards are likely
-  // tracked via a different, Ultimatum-specific system on the wiki.
-  // Worth its own investigation later, not a fit for this simple pattern.
+  // entity with its own drop_monsters link. Needs its own investigation.
+  { name: 'Aul, the Crystal King', group: 'Delve' },
+  { name: 'Kurgal, the Blackblooded', group: 'Delve' },
+  { name: 'Olroth, Origin of the Fall', group: 'Expedition' },
+  { name: 'Farrul, First of the Plains', group: 'Bestiary' },
+  { name: 'Fenumus, First of the Night', group: 'Bestiary' },
+  { name: 'Craiceann, First of the Deep', group: 'Bestiary' },
+  { name: 'Saqawal, First of the Sky', group: 'Bestiary' }
 ];
 
 async function cargoQuery(params) {
@@ -155,42 +161,46 @@ async function fetchDropsForIds(ids) {
 }
 
 async function main() {
-  const bossResults = [];
+  const bossEntries = [];
 
-  for (const bossName of BOSSES) {
+  for (const source of BOSS_SOURCES) {
     let ids;
     try {
-      ids = await resolveMonsterIds(bossName);
+      ids = await resolveMonsterIds(source.name);
     } catch (err) {
-      console.warn('[' + bossName + '] Failed to resolve monster id(s):', err.message);
+      console.warn('[' + source.name + '] Failed to resolve monster id(s):', err.message);
       continue;
     }
     if (!ids.length) {
-      console.warn('No monster id found for "' + bossName + '", skipping. Check the exact wiki page name.');
+      console.warn('No monster id found for "' + source.name + '", skipping. Check the exact wiki page name.');
       continue;
     }
     try {
       const items = await fetchDropsForIds(ids);
-      bossResults.push({ name: bossName, monsterIds: ids, items });
-      console.log('Resolved "' + bossName + '" -> ' + ids.length + ' id(s), ' + items.length + ' item(s)');
+      bossEntries.push({ name: source.name, group: source.group, monsterIds: ids, items });
+      console.log('Resolved "' + source.name + '" -> ' + ids.length + ' id(s), ' + items.length + ' item(s)');
     } catch (err) {
-      console.warn('[' + bossName + '] Resolved id(s) ' + ids.join(', ') + ' but failed to fetch drops:', err.message);
+      console.warn('[' + source.name + '] Resolved id(s) ' + ids.join(', ') + ' but failed to fetch drops:', err.message);
     }
   }
 
-  if (!bossResults.length) {
+  if (!bossEntries.length) {
     throw new Error('Every boss failed to resolve, nothing to write');
   }
 
+  // Category-based shape: "Bosses" is one category today, "Mechanics" (or
+  // others) can be added as a sibling entry here later without touching
+  // this one or needing a data migration.
   const output = {
     generatedAt: new Date().toISOString(),
-    bosses: bossResults
+    categories: [
+      { id: 'boss', label: 'Bosses', entries: bossEntries }
+    ]
   };
 
-  const fs = fsp;
-  await fs.mkdir('data', { recursive: true });
-  await fs.writeFile('data/loot.json', JSON.stringify(output, null, 2));
-  console.log('Wrote data/loot.json covering', bossResults.length, 'bosses');
+  await fsp.mkdir('data', { recursive: true });
+  await fsp.writeFile('data/loot.json', JSON.stringify(output, null, 2));
+  console.log('Wrote data/loot.json covering', bossEntries.length, 'bosses across', output.categories.length, 'categor(y/ies)');
 }
 
 main().catch((err) => {
