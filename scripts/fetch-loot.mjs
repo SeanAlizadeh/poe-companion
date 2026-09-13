@@ -91,7 +91,7 @@ async function fetchDropsForIds(ids) {
   const likeClauses = ids.map((id) => 'items.drop_monsters__full LIKE "%' + id + '%"').join(' OR ');
   const rows = await cargoQuery({
     tables: 'items',
-    fields: 'items.name,items._pageName=pageName,items.rarity_id=rarityId',
+    fields: 'items.name,items._pageName=pageName,items.rarity_id=rarityId,items.class_id=classId',
     where: likeClauses,
     limit: '500'
   });
@@ -109,6 +109,12 @@ async function fetchDropsForIds(ids) {
       name: name,
       pageName: pageName,
       rarity: row.rarityId || null,
+      itemClass: row.classId || null,
+      // MediaWiki's Special:FilePath serves a file directly without a
+      // second API round-trip, following the wiki's default inventory
+      // icon naming convention. A handful of items override this
+      // filename, we'll patch those exceptions once we see them.
+      iconUrl: 'https://www.poewiki.net/wiki/Special:FilePath/' + encodeURIComponent(name + ' inventory icon.png'),
       wikiUrl: 'https://www.poewiki.net/wiki/' + encodeURIComponent((pageName || name).replace(/ /g, '_'))
     });
   }

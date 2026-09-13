@@ -179,6 +179,7 @@
   }
   .star.starred { color: var(--gold); }
   .loot-item-row {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -192,12 +193,17 @@
     text-decoration: none;
   }
   .loot-item-row a:hover { text-decoration: underline; }
+  .loot-item-badges {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
   .rarity-normal { color: #c8c8c8; }
   .rarity-magic { color: #8888ff; }
   .rarity-rare { color: #ffff77; }
   .rarity-unique { color: #af6025; }
   .rarity-currency, .rarity-gem { color: var(--gold); }
-  .rarity-badge {
+  .rarity-badge, .class-badge {
     font-size: 10px;
     text-transform: uppercase;
     color: var(--text-dim);
@@ -206,6 +212,25 @@
     padding: 1px 5px;
     flex-shrink: 0;
   }
+  .hover-preview {
+    display: none;
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    transform: translateY(-100%);
+    background: var(--panel);
+    border: 1px solid var(--gold-dim);
+    border-radius: 4px;
+    padding: 6px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .hover-preview img {
+    display: block;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  .loot-item-row:hover .hover-preview { display: block; }
   .loot-list-header {
     display: flex;
     justify-content: space-between;
@@ -556,14 +581,37 @@ function renderLoot(bossName) {
     link.rel = 'noopener';
     link.className = rarityClass;
     link.textContent = item.name;
-
     row.appendChild(link);
 
-    const badge = document.createElement('span');
-    badge.className = 'rarity-badge';
-    badge.textContent = item.rarity ? rarityKey : 'unknown';
-    row.appendChild(badge);
+    if (item.iconUrl) {
+      const preview = document.createElement('div');
+      preview.className = 'hover-preview';
+      const img = document.createElement('img');
+      img.src = item.iconUrl;
+      img.alt = '';
+      // If the guessed filename is wrong for this item, just hide the
+      // empty preview rather than showing a broken image icon.
+      img.onerror = () => { preview.style.display = 'none'; };
+      preview.appendChild(img);
+      row.appendChild(preview);
+    }
 
+    const badges = document.createElement('div');
+    badges.className = 'loot-item-badges';
+
+    if (item.itemClass) {
+      const classBadge = document.createElement('span');
+      classBadge.className = 'class-badge';
+      classBadge.textContent = item.itemClass;
+      badges.appendChild(classBadge);
+    }
+
+    const rarityBadge = document.createElement('span');
+    rarityBadge.className = 'rarity-badge';
+    rarityBadge.textContent = item.rarity ? rarityKey : 'unknown';
+    badges.appendChild(rarityBadge);
+
+    row.appendChild(badges);
     list.appendChild(row);
   });
 }
