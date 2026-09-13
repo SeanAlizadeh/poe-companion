@@ -263,7 +263,9 @@ function render() {
     const value = document.createElement('div');
     value.className = 'value';
     const unitLabel = (l.unit === 'chaos' || !l.unit) ? 'c' : l.unit;
-    value.textContent = l.value ? l.value.toFixed(1) + ' ' + unitLabel : '-';
+    const chaosText = l.value ? l.value.toFixed(1) + ' ' + unitLabel : '-';
+    const divineText = (l.divineValue !== null && l.divineValue !== undefined) ? l.divineValue.toFixed(2) + ' div' : '';
+    value.innerHTML = chaosText + (divineText ? '<br><span style="color:var(--text-dim);font-size:11px;">' + divineText + '</span>' : '');
 
     const change = document.createElement('div');
     if (l.changePct === null || l.changePct === undefined) {
