@@ -16,11 +16,15 @@ const BOSSES = [
   'The Elder',
   'The Eater of Worlds',
   'The Searing Exarch',
-  'The Feared',
   'Baran, the Crusader',
   'Veritania, the Redeemer',
   'Al-Hezmin, the Hunter',
   'Drox, the Warlord'
+  // 'The Feared' deliberately excluded: it's an encounter name (the four
+  // Conquerors fought together in Ultimatum), not a distinct monster
+  // entity with its own drop_monsters link. Its rewards are likely
+  // tracked via a different, Ultimatum-specific system on the wiki.
+  // Worth its own investigation later, not a fit for this simple pattern.
 ];
 
 async function cargoQuery(params) {
