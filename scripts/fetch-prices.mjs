@@ -53,50 +53,64 @@ function normalizeExchangeShape(data) {
   }));
 }
 
+async function fetchLeagueLines(leagueId) {
+  try {
+    const data = await getJSON(EXCHANGE_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
+    if (data.lines && data.lines.length) {
+      return { lines: normalizeExchangeShape(data), source: 'exchange' };
+    }
+    throw new Error('empty exchange response');
+  } catch (e1) {
+    console.warn('[' + leagueId + '] Exchange overview failed, falling back to stash overview:', e1.message);
+    try {
+      const data2 = await getJSON(STASH_CURRENCY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
+      return { lines: normalizeLegacyShape(data2), source: 'stash' };
+    } catch (e2) {
+      console.warn('[' + leagueId + '] Stash overview failed, falling back to legacy endpoint:', e2.message);
+      const data3 = await getJSON(LEGACY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
+      return { lines: normalizeLegacyShape(data3), source: 'legacy' };
+    }
+  }
+}
+
 async function main() {
   const leagues = await getJSON(LEAGUES_URL);
   if (!Array.isArray(leagues) || !leagues.length) {
     throw new Error('Leagues endpoint returned no leagues');
   }
-  const league = leagues[0]; // first entry is the current temporary challenge league
-  const leagueId = league.id;
 
-  let lines = [];
-  let source = '';
+  const leagueSummaries = [];
+  const dataByLeague = {};
 
-  try {
-    const data = await getJSON(EXCHANGE_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
-    if (data.lines && data.lines.length) {
-      lines = normalizeExchangeShape(data);
-      source = 'exchange';
-    } else {
-      throw new Error('empty exchange response');
-    }
-  } catch (e1) {
-    console.warn('Exchange overview failed, falling back to stash overview:', e1.message);
+  // Fetch every league the endpoint lists (typically the current challenge
+  // league, its hardcore variant, Standard, and Hardcore). One at a time to
+  // stay polite to poe.ninja rather than firing requests in parallel.
+  for (const league of leagues) {
     try {
-      const data2 = await getJSON(STASH_CURRENCY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
-      lines = normalizeLegacyShape(data2);
-      source = 'stash';
-    } catch (e2) {
-      console.warn('Stash overview failed, falling back to legacy endpoint:', e2.message);
-      const data3 = await getJSON(LEGACY_URL + '?league=' + encodeURIComponent(leagueId) + '&type=Currency');
-      lines = normalizeLegacyShape(data3);
-      source = 'legacy';
+      const { lines, source } = await fetchLeagueLines(league.id);
+      leagueSummaries.push({ id: league.id, name: league.name || league.id });
+      dataByLeague[league.id] = { source, lines };
+      console.log('Fetched', lines.length, 'lines for', league.name || league.id, 'via', source);
+    } catch (err) {
+      console.warn('Skipping league', league.id, 'entirely, all sources failed:', err.message);
     }
   }
 
+  if (!leagueSummaries.length) {
+    throw new Error('Every league failed to fetch, nothing to write');
+  }
+
   const output = {
-    league: { id: leagueId, name: league.name || leagueId },
-    source,
+    leagues: leagueSummaries,
+    defaultLeague: leagueSummaries[0].id, // first entry is the current temporary challenge league
     fetchedAt: new Date().toISOString(),
-    lines
+    data: dataByLeague
   };
 
   const fs = await import('node:fs/promises');
   await fs.mkdir('data', { recursive: true });
   await fs.writeFile('data/currency.json', JSON.stringify(output, null, 2));
-  console.log('Wrote data/currency.json:', lines.length, 'lines from', source, 'for league', league.name || leagueId);
+  console.log('Wrote data/currency.json covering', leagueSummaries.length, 'leagues');
 }
 
 main().catch((err) => {
