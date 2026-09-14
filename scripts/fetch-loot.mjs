@@ -32,7 +32,23 @@ const BOSS_SOURCES = [
   { name: 'Farrul, First of the Plains', group: 'Bestiary' },
   { name: 'Fenumus, First of the Night', group: 'Bestiary' },
   { name: 'Craiceann, First of the Deep', group: 'Bestiary' },
-  { name: 'Saqawal, First of the Sky', group: 'Bestiary' }
+  { name: 'Saqawal, First of the Sky', group: 'Bestiary' },
+  { name: 'Xoph, Dark Embers', group: 'Breach' },
+  { name: 'Esh, Forked Thought', group: 'Breach' },
+  { name: 'Tul, Creeping Avalanche', group: 'Breach' },
+  { name: 'Uul-Netol, Unburdened Flesh', group: 'Breach' },
+  { name: 'Chayula, Who Dreamt', group: 'Breach' },
+  { name: 'Atziri, Queen of the Vaal', group: 'Vaal Temple' },
+  { name: 'The Trialmaster', group: 'Ultimatum' },
+  { name: 'The Hydra', group: "Shaper's Guardians" },
+  { name: 'The Phoenix', group: "Shaper's Guardians" },
+  { name: 'The Minotaur', group: "Shaper's Guardians" },
+  { name: 'The Chimera', group: "Shaper's Guardians" },
+  { name: 'The Constrictor', group: "Elder's Guardians" },
+  { name: 'The Enslaver', group: "Elder's Guardians" },
+  { name: 'The Eradicator', group: "Elder's Guardians" },
+  { name: 'The Purifier', group: "Elder's Guardians" },
+  { name: 'The Metamorph', group: 'Metamorph' }
 ];
 
 async function cargoQuery(params) {
