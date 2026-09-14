@@ -296,9 +296,12 @@
       <p class="tag">What drops from what, sourced from the PoE Wiki</p>
     </header>
 
-    <p class="tag" style="margin-bottom:6px;">Choose a boss to see what it can drop:</p>
+    <p class="tag" style="margin-bottom:6px;">Choose a boss, or search for an item across all of them:</p>
     <div class="toolbar">
       <select id="bossSelect"><option>Loading...</option></select>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="lootSearchInput" placeholder="Search items across all bosses...">
     </div>
 
     <div id="loot-status">Starting up...</div>
@@ -575,6 +578,61 @@ async function loadLoot() {
   }
 }
 
+function buildLootRow(item, bossTag) {
+  const row = document.createElement('div');
+  row.className = 'loot-item-row';
+
+  const rarityKey = (item.rarity || 'normal').toLowerCase();
+  const rarityClass = 'rarity-' + rarityKey.replace(/[^a-z]/g, '');
+
+  const link = document.createElement('a');
+  link.href = item.wikiUrl;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.className = rarityClass;
+  link.textContent = item.name;
+  row.appendChild(link);
+
+  if (item.iconUrl) {
+    const preview = document.createElement('div');
+    preview.className = 'hover-preview';
+    const img = document.createElement('img');
+    img.src = item.iconUrl;
+    img.alt = '';
+    img.referrerPolicy = 'no-referrer';
+    // If the guessed filename is wrong for this item, just hide the
+    // empty preview rather than showing a broken image icon.
+    img.onerror = () => { preview.style.display = 'none'; };
+    preview.appendChild(img);
+    row.appendChild(preview);
+  }
+
+  const badges = document.createElement('div');
+  badges.className = 'loot-item-badges';
+
+  if (bossTag) {
+    const bossBadge = document.createElement('span');
+    bossBadge.className = 'class-badge';
+    bossBadge.textContent = bossTag;
+    badges.appendChild(bossBadge);
+  }
+
+  if (item.itemClass) {
+    const classBadge = document.createElement('span');
+    classBadge.className = 'class-badge';
+    classBadge.textContent = item.itemClass.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
+    badges.appendChild(classBadge);
+  }
+
+  const rarityBadge = document.createElement('span');
+  rarityBadge.className = 'rarity-badge';
+  rarityBadge.textContent = item.rarity ? rarityKey : 'unknown';
+  badges.appendChild(rarityBadge);
+
+  row.appendChild(badges);
+  return row;
+}
+
 function renderLoot(bossName) {
   const list = document.getElementById('loot-list');
   const boss = allBossEntries.find(b => b.name === bossName);
@@ -591,53 +649,41 @@ function renderLoot(bossName) {
     list.innerHTML = '<p style="color:var(--text-dim);font-size:13px;">No drop data found for this boss yet.</p>';
     return;
   }
-  boss.items.forEach(item => {
-    const row = document.createElement('div');
-    row.className = 'loot-item-row';
+  boss.items.forEach(item => list.appendChild(buildLootRow(item)));
+}
 
-    const rarityKey = (item.rarity || 'normal').toLowerCase();
-    const rarityClass = 'rarity-' + rarityKey.replace(/[^a-z]/g, '');
-
-    const link = document.createElement('a');
-    link.href = item.wikiUrl;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.className = rarityClass;
-    link.textContent = item.name;
-    row.appendChild(link);
-
-    if (item.iconUrl) {
-      const preview = document.createElement('div');
-      preview.className = 'hover-preview';
-      const img = document.createElement('img');
-      img.src = item.iconUrl;
-      img.alt = '';
-      img.referrerPolicy = 'no-referrer';
-      // If the guessed filename is wrong for this item, just hide the
-      // empty preview rather than showing a broken image icon.
-      img.onerror = () => { preview.style.display = 'none'; };
-      preview.appendChild(img);
-      row.appendChild(preview);
-    }
-
-    const badges = document.createElement('div');
-    badges.className = 'loot-item-badges';
-
-    if (item.itemClass) {
-      const classBadge = document.createElement('span');
-      classBadge.className = 'class-badge';
-      classBadge.textContent = item.itemClass.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
-      badges.appendChild(classBadge);
-    }
-
-    const rarityBadge = document.createElement('span');
-    rarityBadge.className = 'rarity-badge';
-    rarityBadge.textContent = item.rarity ? rarityKey : 'unknown';
-    badges.appendChild(rarityBadge);
-
-    row.appendChild(badges);
-    list.appendChild(row);
+function renderItemSearch(query) {
+  const list = document.getElementById('loot-list');
+  const q = query.trim().toLowerCase();
+  const matches = [];
+  allBossEntries.forEach(boss => {
+    boss.items.forEach(item => {
+      if (item.name.toLowerCase().includes(q)) {
+        matches.push({ item, bossTag: boss.name });
+      }
+    });
   });
+
+  // De-dupe by item name across bosses, listing which bosses drop it, so
+  // an item dropped by three of your curated bosses shows once, not thrice.
+  const byName = new Map();
+  matches.forEach(({ item, bossTag }) => {
+    if (!byName.has(item.name)) {
+      byName.set(item.name, { item, bosses: [bossTag] });
+    } else {
+      byName.get(item.name).bosses.push(bossTag);
+    }
+  });
+
+  const results = [...byName.values()];
+  setLootStatus(results.length + ' item(s) match "' + query + '" across all tracked bosses.');
+
+  list.innerHTML = '';
+  if (!results.length) {
+    list.innerHTML = '<p style="color:var(--text-dim);font-size:13px;">No items match that search.</p>';
+    return;
+  }
+  results.forEach(({ item, bosses }) => list.appendChild(buildLootRow(item, bosses.join(', '))));
 }
 
 /* ---------- Init ---------- */
@@ -674,6 +720,17 @@ async function init() {
     render();
   };
   document.getElementById('bossSelect').onchange = (e) => renderLoot(e.target.value);
+  document.getElementById('lootSearchInput').oninput = (e) => {
+    const query = e.target.value;
+    const select = document.getElementById('bossSelect');
+    if (query.trim()) {
+      select.disabled = true;
+      renderItemSearch(query);
+    } else {
+      select.disabled = false;
+      renderLoot(select.value);
+    }
+  };
 }
 
 init();
