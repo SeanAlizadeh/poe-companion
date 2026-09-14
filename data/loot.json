@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:36:12.340Z",
+  "generatedAt": "2026-09-14T16:23:59.241Z",
   "categories": [
     {
       "id": "boss",
@@ -1622,6 +1622,704 @@
               "itemClass": "Amulet",
               "iconUrl": "./data/icons/saqawine-talisman.png",
               "wikiUrl": "https://www.poewiki.net/wiki/Saqawine_Talisman"
+            }
+          ]
+        },
+        {
+          "name": "Xoph, Dark Embers",
+          "group": "Breach",
+          "monsterIds": [
+            "Metadata/Monsters/BreachBosses/BreachBossFireMap",
+            "Metadata/Monsters/BreachBosses/BreachBossFireMapStandalone",
+            "Metadata/Monsters/BreachBosses/BreachBossFireWild",
+            "Metadata/Monsters/BreachBosses/BreachBossOverlordCloneFire"
+          ],
+          "items": []
+        },
+        {
+          "name": "Esh, Forked Thought",
+          "group": "Breach",
+          "monsterIds": [
+            "Metadata/Monsters/BreachBosses/BreachBossLightningMap",
+            "Metadata/Monsters/BreachBosses/BreachBossLightningMapStandalone",
+            "Metadata/Monsters/BreachBosses/BreachBossLightningWild",
+            "Metadata/Monsters/BreachBosses/BreachBossOverlordCloneLightning"
+          ],
+          "items": []
+        },
+        {
+          "name": "Tul, Creeping Avalanche",
+          "group": "Breach",
+          "monsterIds": [
+            "Metadata/Monsters/BreachBosses/BreachBossColdMap",
+            "Metadata/Monsters/BreachBosses/BreachBossColdMapStandalone",
+            "Metadata/Monsters/BreachBosses/BreachBossColdWild",
+            "Metadata/Monsters/BreachBosses/BreachBossOverlordCloneCold"
+          ],
+          "items": []
+        },
+        {
+          "name": "Uul-Netol, Unburdened Flesh",
+          "group": "Breach",
+          "monsterIds": [
+            "Metadata/Monsters/BreachBosses/BreachBossOverlordClonePhysical",
+            "Metadata/Monsters/BreachBosses/BreachBossPhysicalMap",
+            "Metadata/Monsters/BreachBosses/BreachBossPhysicalMapStandalone",
+            "Metadata/Monsters/BreachBosses/BreachBossPhysicalWild"
+          ],
+          "items": []
+        },
+        {
+          "name": "Chayula, Who Dreamt",
+          "group": "Breach",
+          "monsterIds": [
+            "Metadata/Monsters/BreachBosses/BreachBossChaosMap",
+            "Metadata/Monsters/BreachBosses/BreachBossChaosMapClone",
+            "Metadata/Monsters/BreachBosses/BreachBossChaosMapStandalone",
+            "Metadata/Monsters/BreachBosses/BreachBossChaosWild",
+            "Metadata/Monsters/BreachBosses/BreachBossOverlordCloneChaos"
+          ],
+          "items": []
+        },
+        {
+          "name": "Atziri, Queen of the Vaal",
+          "group": "Vaal Temple",
+          "monsterIds": [
+            "Metadata/Monsters/Atziri/Atziri",
+            "Metadata/Monsters/Atziri/Atziri2",
+            "Metadata/Monsters/Atziri/Atziri2Gauntlet",
+            "Metadata/Monsters/Atziri/Atziri2Standalone",
+            "Metadata/Monsters/Atziri/AtziriFire",
+            "Metadata/Monsters/Atziri/AtziriFire2",
+            "Metadata/Monsters/Atziri/AtziriIncursion",
+            "Metadata/Monsters/Atziri/AtziriLightning",
+            "Metadata/Monsters/Atziri/AtziriLightning2",
+            "Metadata/Monsters/Atziri/AtziriMirror",
+            "Metadata/Monsters/Atziri/AtziriMirror2",
+            "Metadata/Monsters/Atziri/AtziriSpear",
+            "Metadata/Monsters/Atziri/AtziriSpear2"
+          ],
+          "items": [
+            {
+              "name": "Atziri's Acuity",
+              "pageName": "Atziri's Acuity",
+              "rarity": "unique",
+              "itemClass": "Gloves",
+              "iconUrl": "./data/icons/atziri-s-acuity.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Acuity"
+            },
+            {
+              "name": "Atziri's Disfavour",
+              "pageName": "Atziri's Disfavour",
+              "rarity": "unique",
+              "itemClass": "Two Hand Axe",
+              "iconUrl": "./data/icons/atziri-s-disfavour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Disfavour"
+            },
+            {
+              "name": "Atziri's Promise",
+              "pageName": "Atziri's Promise",
+              "rarity": "unique",
+              "itemClass": "UtilityFlask",
+              "iconUrl": "./data/icons/atziri-s-promise.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Promise"
+            },
+            {
+              "name": "Atziri's Reflection",
+              "pageName": "Atziri's Reflection",
+              "rarity": "unique",
+              "itemClass": "Shield",
+              "iconUrl": "./data/icons/atziri-s-reflection.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Reflection"
+            },
+            {
+              "name": "Atziri's Rule",
+              "pageName": "Atziri's Rule",
+              "rarity": "unique",
+              "itemClass": "Warstaff",
+              "iconUrl": "./data/icons/atziri-s-rule.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Rule"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Armour and Energy Shield)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Armour_and_Energy_Shield)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Armour and Life)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Armour_and_Life)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Armour, Energy Shield and Life)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Armour%2C_Energy_Shield_and_Life)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Armour, Evasion and Energy Shield)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Armour%2C_Evasion_and_Energy_Shield)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Armour, Evasion and Life)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Armour%2C_Evasion_and_Life)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Energy Shield)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Energy_Shield)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Evasion and Energy Shield)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Evasion_and_Energy_Shield)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Evasion and Life)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Evasion_and_Life)"
+            },
+            {
+              "name": "Atziri's Splendour",
+              "pageName": "Atziri's Splendour (Evasion, Energy Shield and Life)",
+              "rarity": "unique",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/atziri-s-splendour.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Splendour_(Evasion%2C_Energy_Shield_and_Life)"
+            },
+            {
+              "name": "Atziri's Step",
+              "pageName": "Atziri's Step",
+              "rarity": "unique",
+              "itemClass": "Boots",
+              "iconUrl": "./data/icons/atziri-s-step.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Atziri's_Step"
+            },
+            {
+              "name": "Beauty",
+              "pageName": "Beauty",
+              "rarity": "unique",
+              "itemClass": "UniqueFragment",
+              "iconUrl": "./data/icons/beauty.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Beauty"
+            },
+            {
+              "name": "Doryani's Catalyst",
+              "pageName": "Doryani's Catalyst",
+              "rarity": "unique",
+              "itemClass": "Sceptre",
+              "iconUrl": "./data/icons/doryani-s-catalyst.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Doryani's_Catalyst"
+            },
+            {
+              "name": "Doryani's Invitation",
+              "pageName": "Doryani's Invitation (Cold Damage)",
+              "rarity": "unique",
+              "itemClass": "Belt",
+              "iconUrl": "./data/icons/doryani-s-invitation.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Doryani's_Invitation_(Cold_Damage)"
+            },
+            {
+              "name": "Doryani's Invitation",
+              "pageName": "Doryani's Invitation (Fire Damage)",
+              "rarity": "unique",
+              "itemClass": "Belt",
+              "iconUrl": "./data/icons/doryani-s-invitation.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Doryani's_Invitation_(Fire_Damage)"
+            },
+            {
+              "name": "Doryani's Invitation",
+              "pageName": "Doryani's Invitation (Lightning Damage)",
+              "rarity": "unique",
+              "itemClass": "Belt",
+              "iconUrl": "./data/icons/doryani-s-invitation.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Doryani's_Invitation_(Lightning_Damage)"
+            },
+            {
+              "name": "Doryani's Invitation",
+              "pageName": "Doryani's Invitation (Physical Damage)",
+              "rarity": "unique",
+              "itemClass": "Belt",
+              "iconUrl": "./data/icons/doryani-s-invitation.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Doryani's_Invitation_(Physical_Damage)"
+            },
+            {
+              "name": "Greater Spell Echo Support",
+              "pageName": "Greater Spell Echo Support",
+              "rarity": "normal",
+              "itemClass": "Support Skill Gem",
+              "iconUrl": "./data/icons/greater-spell-echo-support.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Greater_Spell_Echo_Support"
+            },
+            {
+              "name": "Mortal Grief",
+              "pageName": "Mortal Grief",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/mortal-grief.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Mortal_Grief"
+            },
+            {
+              "name": "Mortal Hope",
+              "pageName": "Mortal Hope",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/mortal-hope.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Mortal_Hope"
+            },
+            {
+              "name": "Mortal Ignorance",
+              "pageName": "Mortal Ignorance",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/mortal-ignorance.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Mortal_Ignorance"
+            },
+            {
+              "name": "Mortal Rage",
+              "pageName": "Mortal Rage",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/mortal-rage.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Mortal_Rage"
+            },
+            {
+              "name": "Pledge of Hands",
+              "pageName": "Pledge of Hands",
+              "rarity": "unique",
+              "itemClass": "Warstaff",
+              "iconUrl": "./data/icons/pledge-of-hands.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Pledge_of_Hands"
+            },
+            {
+              "name": "Sacrificial Garb",
+              "pageName": "Sacrificial Garb",
+              "rarity": "normal",
+              "itemClass": "Body Armour",
+              "iconUrl": "./data/icons/sacrificial-garb.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Sacrificial_Garb"
+            },
+            {
+              "name": "The Price of Devotion",
+              "pageName": "The Price of Devotion",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Price_of_Devotion"
+            },
+            {
+              "name": "The Vertex",
+              "pageName": "The Vertex",
+              "rarity": "unique",
+              "itemClass": "Helmet",
+              "iconUrl": "./data/icons/the-vertex.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Vertex"
+            },
+            {
+              "name": "Triskaidekaphobia",
+              "pageName": "Triskaidekaphobia",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Triskaidekaphobia"
+            },
+            {
+              "name": "Triumvirate Authority",
+              "pageName": "Triumvirate Authority (3 random modifiers)",
+              "rarity": "unique",
+              "itemClass": "Ring",
+              "iconUrl": "./data/icons/triumvirate-authority.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Triumvirate_Authority_(3_random_modifiers)"
+            },
+            {
+              "name": "Triumvirate Authority",
+              "pageName": "Triumvirate Authority (4 random modifiers)",
+              "rarity": "unique",
+              "itemClass": "Ring",
+              "iconUrl": "./data/icons/triumvirate-authority.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Triumvirate_Authority_(4_random_modifiers)"
+            },
+            {
+              "name": "Vaal Sacrifice Support",
+              "pageName": "Vaal Sacrifice Support",
+              "rarity": "normal",
+              "itemClass": "Support Skill Gem",
+              "iconUrl": "./data/icons/vaal-sacrifice-support.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Vaal_Sacrifice_Support"
+            }
+          ]
+        },
+        {
+          "name": "The Trialmaster",
+          "group": "Ultimatum",
+          "monsterIds": [
+            "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss",
+            "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBossProjectileApparition",
+            "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBossSlamApparition_",
+            "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBossStandalone"
+          ],
+          "items": [
+            {
+              "name": "Glimpse of Chaos",
+              "pageName": "Glimpse of Chaos",
+              "rarity": "unique",
+              "itemClass": "Helmet",
+              "iconUrl": "./data/icons/glimpse-of-chaos.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Glimpse_of_Chaos"
+            },
+            {
+              "name": "Hateforge",
+              "pageName": "Hateforge",
+              "rarity": "unique",
+              "itemClass": "Gloves",
+              "iconUrl": "./data/icons/hateforge.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Hateforge"
+            },
+            {
+              "name": "Ixchel's Temptation",
+              "pageName": "Ixchel's Temptation",
+              "rarity": "unique",
+              "itemClass": "Ring",
+              "iconUrl": "./data/icons/ixchel-s-temptation.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Ixchel's_Temptation"
+            },
+            {
+              "name": "Machinations Support",
+              "pageName": "Machinations Support",
+              "rarity": "normal",
+              "itemClass": "Support Skill Gem",
+              "iconUrl": "./data/icons/machinations-support.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Machinations_Support"
+            },
+            {
+              "name": "Mahuxotl's Machination",
+              "pageName": "Mahuxotl's Machination",
+              "rarity": "unique",
+              "itemClass": "Shield",
+              "iconUrl": "./data/icons/mahuxotl-s-machination.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Mahuxotl's_Machination"
+            },
+            {
+              "name": "Tainted Catalyst",
+              "pageName": "Tainted Catalyst",
+              "rarity": "normal",
+              "itemClass": "StackableCurrency",
+              "iconUrl": "./data/icons/tainted-catalyst.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Tainted_Catalyst"
+            },
+            {
+              "name": "Vaal Temptation Support",
+              "pageName": "Vaal Temptation Support",
+              "rarity": "normal",
+              "itemClass": "Support Skill Gem",
+              "iconUrl": "./data/icons/vaal-temptation-support.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Vaal_Temptation_Support"
+            },
+            {
+              "name": "Yaomac's Accord",
+              "pageName": "Yaomac's Accord",
+              "rarity": "unique",
+              "itemClass": "Sceptre",
+              "iconUrl": "./data/icons/yaomac-s-accord.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Yaomac's_Accord"
+            }
+          ]
+        },
+        {
+          "name": "The Hydra",
+          "group": "Shaper's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/HydraBoss",
+            "Metadata/Monsters/AtlasBosses/HydraBossElder",
+            "Metadata/Monsters/AtlasBosses/HydraBossStandalone",
+            "Metadata/Monsters/AtlasBosses/HydraBossStandaloneGauntlet",
+            "Metadata/Monsters/AtlasBosses/HydraBossStandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of the Hydra",
+              "pageName": "Fragment of the Hydra",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-the-hydra.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_the_Hydra"
+            },
+            {
+              "name": "Perfection",
+              "pageName": "Perfection",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Perfection"
+            }
+          ]
+        },
+        {
+          "name": "The Phoenix",
+          "group": "Shaper's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/PhoenixBoss",
+            "Metadata/Monsters/AtlasBosses/PhoenixBossElder",
+            "Metadata/Monsters/AtlasBosses/PhoenixBossStandalone",
+            "Metadata/Monsters/AtlasBosses/PhoenixBossStandaloneGauntlet",
+            "Metadata/Monsters/AtlasBosses/PhoenixBossStandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of the Phoenix",
+              "pageName": "Fragment of the Phoenix",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-the-phoenix.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_the_Phoenix"
+            },
+            {
+              "name": "Perfection",
+              "pageName": "Perfection",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Perfection"
+            }
+          ]
+        },
+        {
+          "name": "The Minotaur",
+          "group": "Shaper's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/MinotaurBoss",
+            "Metadata/Monsters/AtlasBosses/MinotaurBossElder",
+            "Metadata/Monsters/AtlasBosses/MinotaurBossStandalone",
+            "Metadata/Monsters/AtlasBosses/MinotaurBossStandaloneGauntlet",
+            "Metadata/Monsters/AtlasBosses/MinotaurBossStandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of the Minotaur",
+              "pageName": "Fragment of the Minotaur",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-the-minotaur.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_the_Minotaur"
+            },
+            {
+              "name": "Perfection",
+              "pageName": "Perfection",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Perfection"
+            }
+          ]
+        },
+        {
+          "name": "The Chimera",
+          "group": "Shaper's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/ChimeraBoss",
+            "Metadata/Monsters/AtlasBosses/ChimeraBossElder",
+            "Metadata/Monsters/AtlasBosses/ChimeraBossStandalone",
+            "Metadata/Monsters/AtlasBosses/ChimeraBossStandaloneGauntlet",
+            "Metadata/Monsters/AtlasBosses/ChimeraBossStandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "A Familiar Call",
+              "pageName": "A Familiar Call",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/A_Familiar_Call"
+            },
+            {
+              "name": "Fragment of the Chimera",
+              "pageName": "Fragment of the Chimera",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-the-chimera.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_the_Chimera"
+            },
+            {
+              "name": "Perfection",
+              "pageName": "Perfection",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Perfection"
+            }
+          ]
+        },
+        {
+          "name": "The Constrictor",
+          "group": "Elder's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3Clone",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3StandaloneScarab",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3Standalone_"
+          ],
+          "items": [
+            {
+              "name": "Fragment of Constriction",
+              "pageName": "Fragment of Constriction",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-constriction.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Constriction"
+            },
+            {
+              "name": "The Eldritch Decay",
+              "pageName": "The Eldritch Decay",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Eldritch_Decay"
+            },
+            {
+              "name": "The Hale Heart",
+              "pageName": "The Hale Heart",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Hale_Heart"
+            }
+          ]
+        },
+        {
+          "name": "The Enslaver",
+          "group": "Elder's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1Standalone",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1StandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of Enslavement",
+              "pageName": "Fragment of Enslavement",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-enslavement.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Enslavement"
+            },
+            {
+              "name": "The Eldritch Decay",
+              "pageName": "The Eldritch Decay",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Eldritch_Decay"
+            },
+            {
+              "name": "The Hale Heart",
+              "pageName": "The Hale Heart",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Hale_Heart"
+            }
+          ]
+        },
+        {
+          "name": "The Eradicator",
+          "group": "Elder's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2Standalone",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2StandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of Eradication",
+              "pageName": "Fragment of Eradication",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-eradication.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Eradication"
+            },
+            {
+              "name": "Reckless Ambition",
+              "pageName": "Reckless Ambition",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/Reckless_Ambition"
+            },
+            {
+              "name": "The Eldritch Decay",
+              "pageName": "The Eldritch Decay",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Eldritch_Decay"
+            },
+            {
+              "name": "The Hale Heart",
+              "pageName": "The Hale Heart",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Hale_Heart"
+            }
+          ]
+        },
+        {
+          "name": "The Purifier",
+          "group": "Elder's Guardians",
+          "monsterIds": [
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_Standalone",
+            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_StandaloneScarab"
+          ],
+          "items": [
+            {
+              "name": "Fragment of Purification",
+              "pageName": "Fragment of Purification",
+              "rarity": "normal",
+              "itemClass": "MapFragment",
+              "iconUrl": "./data/icons/fragment-of-purification.png",
+              "wikiUrl": "https://www.poewiki.net/wiki/Fragment_of_Purification"
+            },
+            {
+              "name": "The Eldritch Decay",
+              "pageName": "The Eldritch Decay",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Eldritch_Decay"
+            },
+            {
+              "name": "The Hale Heart",
+              "pageName": "The Hale Heart",
+              "rarity": "normal",
+              "itemClass": "DivinationCard",
+              "iconUrl": null,
+              "wikiUrl": "https://www.poewiki.net/wiki/The_Hale_Heart"
             }
           ]
         }
